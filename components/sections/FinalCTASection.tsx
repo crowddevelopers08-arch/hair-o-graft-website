@@ -13,7 +13,7 @@ export default function FinalCTASection() {
       <div className="absolute inset-0 bg-[#354C9C]/60" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[1280px] mx-auto px-6 sm:px-10 md:px-16 py-10 sm:py-12 md:py-14">
+      <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-10 md:px-16 py-10 sm:py-12 md:py-14">
         <div className="max-w-[660px]">
 
           {/* Heading */}
@@ -36,14 +36,14 @@ export default function FinalCTASection() {
           </p>
 
           {/* Contact cards */}
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <div className="flex flex-col gap-3 sm:gap-4">
 
             {/* Phone */}
             <a
               href="tel:+917448866675"
               className="group flex items-center gap-3 bg-white/10 hover:bg-white/20
                          border border-white/20 hover:border-white/40
-                         transition-all duration-200 px-4 py-3.5 rounded-xl"
+                         transition-all duration-200 px-4 py-3.5 rounded-xl w-full"
             >
               <div className="w-9 h-9 rounded-lg bg-[#FEEA1B] flex items-center justify-center flex-shrink-0">
                 <svg className="w-4 h-4 text-[#363435]" viewBox="0 0 24 24" fill="none"
@@ -59,7 +59,7 @@ export default function FinalCTASection() {
 
             {/* Address */}
             <div className="flex items-start gap-3 bg-white/10 border border-white/20
-                            px-4 py-3.5 rounded-xl flex-1">
+                            px-4 py-3.5 rounded-xl w-full">
               <div className="w-9 h-9 rounded-lg bg-[#FEEA1B] flex items-center justify-center flex-shrink-0 mt-0.5">
                 <svg className="w-4 h-4 text-[#363435]" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">

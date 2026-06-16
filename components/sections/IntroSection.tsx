@@ -50,7 +50,7 @@ export default function IntroSection() {
           "
         >
           Why Patients Choose
-          <br className="hidden xs:block" />
+          <br className="hidden sm:block" />
           {" "}<span className="text-[#354C9C]">Hair O Graft</span>{" "}for HydraFacial
         </h2>
 
@@ -107,7 +107,7 @@ export default function IntroSection() {
           {/* ② Horizontal rail */}
           <div
             className="absolute bg-[#D8DDE8]"
-            style={{ top: "18px", left: "7.14%", right: "7.14%", height: "3px" }}
+            style={{ top: "18px", left: "8.14%", right: "8.14%", height: "3px" }}
           />
 
           {/* ③ Left outer rounded cap */}
@@ -171,7 +171,8 @@ export default function IntroSection() {
           className="
             mt-0
             grid gap-3 sm:gap-4
-            grid-cols-2
+            grid-cols-1
+            min-[380px]:grid-cols-2
             sm:grid-cols-3
             md:grid-cols-4
             xl:grid-cols-7
@@ -186,9 +187,10 @@ export default function IntroSection() {
                 shadow-[0_4px_20px_rgba(53,76,156,0.06)]
                 hover:shadow-[0_8px_32px_rgba(53,76,156,0.14)]
                 hover:-translate-y-1 transition-all duration-300
-                px-2 pt-4 pb-4
+                px-3 pt-4 pb-4
                 sm:px-3 sm:pt-5 sm:pb-5
                 md:px-4 md:pt-6 md:pb-6
+                min-h-[132px] sm:min-h-[148px]
               "
             >
               {/* Icon circle — scales: 56 → 64 → 72 px */}
@@ -215,7 +217,7 @@ export default function IntroSection() {
                 className="
                   font-bold text-[#363435] leading-snug
                   mt-2 sm:mt-2.5 md:mt-3
-                  text-[10px] sm:text-[11px] md:text-[12px]
+                  text-[11px] sm:text-[11px] md:text-[12px]
                 "
               >
                 {item.title}

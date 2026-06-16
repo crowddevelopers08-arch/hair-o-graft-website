@@ -20,7 +20,7 @@ function StarIcon({ className }: { className?: string }) {
 
 export default function ExpertsSection() {
   return (
-    <section className="py-20 sm:py-24 bg-white overflow-hidden">
+    <section className="py-14 sm:py-20 md:py-24 bg-white overflow-hidden">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-16">
 
         {/* Section header */}
@@ -62,7 +62,7 @@ export default function ExpertsSection() {
           </div>
 
           {/* Testimonial */}
-          <div className="col-span-1 md:col-span-2 bg-[#F7F8FC] p-7 sm:p-8 md:p-10 rounded-3xl text-left border border-gray-100 relative hover:shadow-xl transition-all duration-300">
+          <div className="col-span-1 md:col-span-2 bg-[#F7F8FC] p-6 sm:p-8 md:p-10 rounded-3xl text-left border border-gray-100 relative hover:shadow-xl transition-all duration-300">
             {/* Decorative quote mark */}
             <QuoteIcon className="w-12 h-12 sm:w-14 sm:h-14 text-[#FEEA1B] opacity-50 mb-4 sm:mb-5 md:mb-6" />
 
@@ -73,7 +73,7 @@ export default function ExpertsSection() {
             </p>
 
             {/* Reviewer */}
-            <div className="flex items-center gap-4 sm:gap-5">
+            <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:gap-5">
               <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#354C9C] text-white flex items-center justify-center font-bold text-lg sm:text-xl shadow-md flex-shrink-0">
                 SC
               </div>
@@ -85,7 +85,7 @@ export default function ExpertsSection() {
               </div>
 
               {/* Stars aligned right on larger screens */}
-              <div className="ml-auto hidden sm:flex items-center gap-1">
+              <div className="sm:ml-auto flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <StarIcon key={i} className="w-4 h-4 text-[#FEEA1B]" />
                 ))}

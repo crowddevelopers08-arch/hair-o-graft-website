@@ -18,19 +18,19 @@ const tips = [
 
 export default function RecoverySection() {
   return (
-    <section className="py-20 sm:py-24 bg-[#F7F8FC]">
+    <section className="py-14 sm:py-20 md:py-24 bg-[#F7F8FC]">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-16 grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
 
         {/* Text */}
-        <div className="space-y-6 sm:space-y-8 order-1">
+        <div className="space-y-6 sm:space-y-8 order-2 md:order-1">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200">
             <span className="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0" />
             <span className="text-amber-700 text-xs font-bold tracking-widest uppercase">Post-Treatment Care</span>
           </div>
-          <h2 className="text-2xl sm:text-[30px] md:text-[32px] font-bold leading-[1.3] text-[#354C9C]">
+          <h2 className="text-[24px] sm:text-[30px] md:text-[32px] font-bold leading-[1.3] text-[#354C9C]">
             Zero Downtime. Instant Results.
           </h2>
-          <p className="text-base sm:text-lg leading-relaxed text-gray-500">
+          <p className="text-[14px] sm:text-base md:text-lg leading-relaxed text-gray-500">
             The session typically lasts 30–60 minutes, allowing you to return to your daily
             activities immediately. To maintain results, follow our expert tips:
           </p>
@@ -47,7 +47,7 @@ export default function RecoverySection() {
         </div>
 
         {/* Image with tilt decoration */}
-        <div className="relative group order-2">
+        <div className="relative group order-1 md:order-2">
           <div className="absolute inset-0 bg-[#354C9C]/10 rounded-2xl transform rotate-3 group-hover:rotate-0 transition-transform duration-500 pointer-events-none" />
           <div className="relative z-10 w-full aspect-[4/3]">
             <Image

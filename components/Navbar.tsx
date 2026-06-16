@@ -189,22 +189,19 @@ export default function Navbar() {
 
   return (
     <>
-      {/* thin top accent */}
-      <div className="fixed top-0 w-full z-50 h-[3px] bg-gradient-to-r from-[#354C9C] via-[#e95b8a] to-[#354C9C]" />
-
       <nav
         ref={navRef}
-        className={`fixed top-[3px] w-full z-50 transition-all duration-500 ${
+        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
           scrolled
             ? "bg-white shadow-[0_4px_32px_rgba(53,76,156,0.14)] py-2"
             : "bg-white/98 backdrop-blur-md shadow-[0_2px_16px_rgba(53,76,156,0.08)] py-2"
         }`}
       >
-        <div className="max-w-[1340px] mx-auto px-4 sm:px-6 xl:px-8 flex items-center justify-between h-[60px]">
+        <div className="max-w-[1340px] mx-auto px-3 sm:px-6 xl:px-8 flex items-center justify-between gap-3 h-[60px] sm:h-[64px]">
 
           {/* ── Logo ── */}
-          <a href="/" className="flex items-center gap-3 flex-shrink-0 group">
-            <div className="relative w-16 h-16 rounded-full overflow-hidden ring-2 ring-[#354C9C]/20 group-hover:ring-[#354C9C]/50 transition-all duration-300 shadow-md group-hover:shadow-lg group-hover:scale-105 transform-gpu will-change-transform">
+          <a href="/" className="flex items-center gap-2 sm:gap-3 min-w-0 flex-shrink group">
+            <div className="relative w-12 h-12 sm:w-16 sm:h-16 rounded-full overflow-hidden ring-2 ring-[#354C9C]/20 group-hover:ring-[#354C9C]/50 transition-all duration-300 shadow-md group-hover:shadow-lg group-hover:scale-105 transform-gpu will-change-transform flex-shrink-0">
               <Image
                 src="/image.png"
                 alt="Hair O Graft Logo"
@@ -213,8 +210,8 @@ export default function Navbar() {
                 priority
               />
             </div>
-            <div className="leading-tight">
-              <span className="block text-[17px] font-extrabold tracking-tight text-[#354C9C]">Hair O Graft</span>
+            <div className="leading-tight min-w-0">
+              <span className="block text-[14px] sm:text-[17px] font-extrabold tracking-tight text-[#354C9C] truncate">Hair O Graft</span>
               <span className="block text-[9px] font-semibold text-gray-400 tracking-[0.18em] uppercase">Hair · Skin · Dental</span>
             </div>
           </a>
@@ -385,7 +382,7 @@ export default function Navbar() {
             </a>
             <a href={`mailto:${contact.email}`}>
               <button className="bg-gradient-to-r from-[#ED3136] to-[#ED3136] text-white px-5 py-2.5 rounded-full text-[13px] font-bold shadow-[0_4px_16px_rgba(237,49,54,0.35)] hover:shadow-[0_6px_24px_rgba(237,49,54,0.45)] hover:scale-[1.04] active:scale-95 transition-all duration-200 whitespace-nowrap">
-                Book Free Consult
+                Book Your Consultation
               </button>
             </a>
           </div>
@@ -393,7 +390,7 @@ export default function Navbar() {
           {/* ── Mobile hamburger ── */}
           <button
             onClick={() => setMobileOpen((v) => !v)}
-            className="lg:hidden w-10 h-10 flex flex-col justify-center items-center gap-[5px] rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors"
+            className="lg:hidden w-10 h-10 sm:w-11 sm:h-11 flex flex-col justify-center items-center gap-[5px] rounded-xl bg-blue-50 hover:bg-blue-100 transition-colors flex-shrink-0"
             aria-label="Toggle menu"
           >
             <span className={`block w-5 h-[2px] bg-[#354C9C] rounded-full transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
@@ -412,7 +409,7 @@ export default function Navbar() {
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={() => setMobileOpen(false)} />
 
         <div
-          className={`absolute top-0 right-0 h-full w-[320px] max-w-[92vw] bg-white flex flex-col shadow-2xl transition-transform duration-300 ${
+          className={`absolute top-0 right-0 h-full w-full max-w-[320px] bg-white flex flex-col shadow-2xl transition-transform duration-300 ${
             mobileOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >

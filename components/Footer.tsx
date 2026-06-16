@@ -54,7 +54,7 @@ export default function Footer() {
     <footer className="bg-[#0f1320] text-white">
 
       {/* ── Main 5-column grid ── */}
-      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 pt-14 pb-10">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-10 md:px-16 pt-14 pb-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-6">
 
           {/* ── Col 1: Brand ── */}
@@ -150,7 +150,7 @@ export default function Footer() {
 
       {/* ── Bottom bar ── */}
       <div className="border-t border-white/[0.07]">
-        <div className="max-w-[1440px] mx-auto px-6 sm:px-10 md:px-16 py-5
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-10 md:px-16 py-5
                         flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-white/35 text-[11px] sm:text-[12px] font-medium text-center sm:text-left">
             © 2025 Hair O Graft. All rights reserved.

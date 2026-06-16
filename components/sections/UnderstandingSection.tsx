@@ -211,9 +211,9 @@ export default function UnderstandingSection() {
         </p>
 
         {/* ── Pill with horizontal lines ─────────────────────────────── */}
-        <div className="mt-4 sm:mt-5 flex items-center gap-3 sm:gap-4">
+        <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
           {/* Left: dot → line */}
-          <div className="flex items-center gap-1.5 flex-1 min-w-0">
+          <div className="hidden sm:flex items-center gap-1.5 flex-1 min-w-0">
             <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C]" />
             <div className="flex-1 h-px bg-[#D8DDE8]" />
           </div>
@@ -224,14 +224,14 @@ export default function UnderstandingSection() {
               flex-shrink-0 bg-[#354C9C] text-white font-semibold rounded-lg
               px-4 sm:px-5 md:px-7 py-2 sm:py-2.5
               text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px]
-              text-center
+              text-center mx-auto sm:mx-0
             "
           >
             You may be a good candidate if you have:
           </div>
 
           {/* Right: line → dot */}
-          <div className="flex items-center gap-1.5 flex-1 min-w-0">
+          <div className="hidden sm:flex items-center gap-1.5 flex-1 min-w-0">
             <div className="flex-1 h-px bg-[#D8DDE8]" />
             <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C]" />
           </div>
@@ -257,7 +257,8 @@ export default function UnderstandingSection() {
                 hover:-translate-y-0.5
                 transition-all duration-200
                 p-3 sm:p-4 md:p-4
-                w-[calc(50%_-_5px)]
+                w-full
+                min-[420px]:w-[calc(50%_-_5px)]
                 sm:w-[calc(33.33%_-_6px)]
                 lg:w-[calc(20%_-_10px)]
               "
@@ -300,7 +301,7 @@ export default function UnderstandingSection() {
             mt-4 sm:mt-5
             relative overflow-hidden
             bg-[#F7F8FC] border border-[#D8DDE8] rounded-2xl
-            flex items-center gap-3 sm:gap-4
+            flex flex-col items-start sm:flex-row sm:items-center gap-3 sm:gap-4
             p-4 sm:p-5
           "
         >
@@ -330,7 +331,7 @@ export default function UnderstandingSection() {
           </div>
 
           {/* Vertical separator */}
-          <div className="relative z-10 flex-shrink-0 w-px self-stretch bg-[#D8DDE8]" />
+          <div className="relative z-10 hidden sm:block flex-shrink-0 w-px self-stretch bg-[#D8DDE8]" />
 
           {/* Text */}
           <p

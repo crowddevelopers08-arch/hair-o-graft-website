@@ -38,7 +38,7 @@ export default function HydraFacialPage() {
   return (
     <>
       <Navbar />
-      <main className="mt-[79px]">
+      <main className="mt-[76px]">
         <ScrollReveal>
           <HeroSection />
           <IntroSection />

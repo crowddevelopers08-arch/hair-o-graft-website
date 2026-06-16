@@ -272,22 +272,22 @@ export default function ProcessSection() {
         <div className="lg:hidden relative">
 
           {/* Vertical spine */}
-          <div className="absolute left-5 top-5 bottom-5 w-[2px] bg-[#D8DDE8]" />
+          <div className="absolute left-6 sm:left-7 top-5 bottom-5 w-[2px] bg-[#D8DDE8]" />
 
           <div className="space-y-4 sm:space-y-5">
             {steps.map((step, i) => (
-              <div key={i} className="flex items-start gap-4 relative">
+              <div key={i} className="flex items-start gap-3 sm:gap-4 relative">
 
                 {/* Circle node */}
                 <div
                   className="
-                    flex-shrink-0 w-14 h-14 rounded-full bg-[#354C9C]
+                    flex-shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#354C9C]
                     flex items-center justify-center
                     shadow-[0_4px_16px_rgba(53,76,156,0.35)]
                     relative z-10
                   "
                 >
-                  <step.Icon className="text-white w-7 h-7" />
+                  <step.Icon className="text-white w-6 h-6 sm:w-7 sm:h-7" />
                 </div>
 
                 {/* Card */}
@@ -295,21 +295,21 @@ export default function ProcessSection() {
                   className="
                     flex-1 bg-white rounded-2xl border border-[#D8DDE8]
                     shadow-[0_2px_14px_rgba(53,76,156,0.07)]
-                    p-4 sm:p-5
+                    p-4 sm:p-5 min-w-0
                   "
                 >
                   <div className="flex items-center gap-2.5 mb-2.5">
-                    <div className="w-10 h-10 rounded-xl bg-[#F7F8FC] flex items-center justify-center flex-shrink-0">
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-[#F7F8FC] flex items-center justify-center flex-shrink-0">
                       <step.Icon className="text-[#354C9C] w-5 h-5" />
                     </div>
                     <span className="text-[#354C9C] font-black text-[11px] sm:text-[12px] tracking-widest uppercase">
                       Step {step.num}
                     </span>
                   </div>
-                  <h4 className="font-extrabold text-[#363435] text-[15px] sm:text-[17px] leading-snug mb-2">
+                  <h4 className="font-extrabold text-[#363435] text-[14px] sm:text-[17px] leading-snug mb-2">
                     {step.title}
                   </h4>
-                  <p className="text-gray-500 text-[13px] sm:text-[14px] leading-relaxed">
+                  <p className="text-gray-500 text-[12px] sm:text-[14px] leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

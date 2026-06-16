@@ -66,18 +66,11 @@ export default function WhyChooseUsSection() {
             <br />
             <span className="text-[#354C9C]">HydraFacial</span>
           </h2>
-
-          {/* Divider */}
-          <div className="flex items-center gap-2.5 mt-3 sm:mt-4">
-            <div className="w-10 sm:w-12 bg-[#354C9C] rounded-full" style={{ height: "1.5px", opacity: 0.45 }} />
-            <div className="w-2.5 h-2.5 rounded-full bg-[#354C9C]" />
-            <div className="w-10 sm:w-12 bg-[#354C9C] rounded-full" style={{ height: "1.5px", opacity: 0.45 }} />
-          </div>
-
+          
           {/* Rows */}
           <div className="mt-6 sm:mt-7 lg:mt-8 space-y-4 sm:space-y-5">
             {rows.map((row, i) => (
-              <div key={i} className="flex items-center gap-3 sm:gap-4">
+              <div key={i} className="flex flex-col items-start gap-3 rounded-[28px] sm:rounded-none sm:flex-row sm:items-center sm:gap-4">
 
                 {/* Image circle */}
                 <div
@@ -100,12 +93,12 @@ export default function WhyChooseUsSection() {
                 </div>
 
                 {/* Bullet dot */}
-                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C] opacity-60" />
+                <div className="hidden sm:block flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C] opacity-60" />
 
                 {/* Text card */}
                 <div
                   className="
-                    flex-1 bg-white rounded-2xl
+                    w-full flex-1 bg-white rounded-2xl
                     border border-[#D8DDE8]
                     shadow-[0_2px_16px_rgba(53,76,156,0.07)]
                     px-4 sm:px-5 py-3 sm:py-4
@@ -114,7 +107,7 @@ export default function WhyChooseUsSection() {
                   <p
                     className="
                       text-[#555555] leading-[1.72]
-                      text-[11px] sm:text-[12px] md:text-[13px] lg:text-[13px] xl:text-[14px]
+                      text-[12px] sm:text-[12px] md:text-[13px] lg:text-[13px] xl:text-[14px]
                     "
                   >
                     {row.text}

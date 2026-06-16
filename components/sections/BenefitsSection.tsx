@@ -76,9 +76,9 @@ export default function BenefitsSection() {
           </div>
           <div className="flex-1 h-px bg-[#D8DDE8]" />
         </div> */}
-          <div className="mt-4 sm:mt-5 flex items-center gap-3 sm:gap-4">
+          <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
           {/* Left: dot → line */}
-          <div className="flex items-center gap-1.5 flex-1 min-w-0">
+          <div className="hidden sm:flex items-center gap-1.5 flex-1 min-w-0">
             <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C]" />
             <div className="flex-1 h-px bg-[#D8DDE8]" />
           </div>
@@ -89,14 +89,14 @@ export default function BenefitsSection() {
               flex-shrink-0 bg-[#354C9C] text-white font-semibold rounded-lg
               px-4 sm:px-5 md:px-7 py-2 sm:py-2.5
               text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px]
-              text-center
+              text-center mx-auto sm:mx-0
             "
           >
             HydraFacial offers:
           </div>
 
           {/* Right: line → dot */}
-          <div className="flex items-center gap-1.5 flex-1 min-w-0">
+          <div className="hidden sm:flex items-center gap-1.5 flex-1 min-w-0">
             <div className="flex-1 h-px bg-[#D8DDE8]" />
             <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C]" />
           </div>

@@ -153,7 +153,8 @@ export default function FAQSection() {
             mt-8 sm:mt-10 rounded-2xl overflow-hidden relative
             flex flex-col sm:flex-row items-center justify-between
             gap-4 sm:gap-6
-            px-6 sm:px-8 py-5 sm:py-6
+            px-5 sm:px-8 py-5 sm:py-6
+            text-center sm:text-left
           "
           style={{ background: "linear-gradient(135deg,#354C9C 0%,#1a3080 60%,#363435 100%)" }}
         >
@@ -165,10 +166,11 @@ export default function FAQSection() {
             Still have questions?
           </p>
 
-          <a href="tel:+917448866675" className="flex-shrink-0 relative z-10">
+          <a href="tel:+917448866675" className="flex-shrink-0 relative z-10 w-full sm:w-auto">
             <button
               className="
                 flex items-center gap-2
+                justify-center w-full sm:w-auto
                 bg-white text-[#354C9C] font-bold rounded-full
                 px-5 sm:px-6 py-2.5 sm:py-3
                 text-[12px] sm:text-[13px]

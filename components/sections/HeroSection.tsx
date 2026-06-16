@@ -6,11 +6,11 @@ export default function HeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/hhs.png')",
+          backgroundImage:    "url('/7b94b15d-2be9-4436-9439-f037beb443f8.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",
-          minHeight:          "60vw",
+          minHeight:          "150vw",
         }}
       />
 
@@ -18,13 +18,13 @@ export default function HeroSection() {
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage:    "url('/hhs.png')",
+          backgroundImage:    "url('/b437e76c-e09c-4270-9b9e-74ac00533fce.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center center",
           backgroundRepeat:   "no-repeat",
-          minHeight:          "520px",
-          maxHeight:          "720px",
-          height:             "52vw",
+          minHeight:          "420px",
+          maxHeight:          "660px",
+          height:             "45vw",
         }}
       />
 
