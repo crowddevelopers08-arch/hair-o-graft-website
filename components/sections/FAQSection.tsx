@@ -71,7 +71,7 @@ export default function FAQSection() {
           <h2
             className="
               font-extrabold text-white leading-[1.1] tracking-tight
-              text-[22px] sm:text-[28px] md:text-[34px] lg:text-[40px]
+              text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]
             "
           >
             Frequently Asked{" "}
@@ -123,7 +123,7 @@ export default function FAQSection() {
                 <h3
                   className="
                     font-extrabold text-[#363435] leading-snug
-                    text-[13px] sm:text-[14px] md:text-[15px]
+                    text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px]
                   "
                 >
                   {faq.q}
@@ -138,7 +138,7 @@ export default function FAQSection() {
               <p
                 className="
                   text-gray-500 leading-[1.65] relative z-10
-                  text-[12px] sm:text-[13px] md:text-[13px]
+                  text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px]
                 "
               >
                 {faq.a}
@@ -162,7 +162,7 @@ export default function FAQSection() {
           <div className="absolute -right-8 -top-8 w-32 h-32 rounded-full border-[16px] border-white/10 pointer-events-none" />
 
           <p className="text-white font-semibold text-center sm:text-left
-                        text-[13px] sm:text-[14px] relative z-10">
+                        text-[14px] sm:text-[15px] md:text-[16px] relative z-10">
             Still have questions?
           </p>
 
@@ -173,7 +173,7 @@ export default function FAQSection() {
                 justify-center w-full sm:w-auto
                 bg-white text-[#354C9C] font-bold rounded-full
                 px-5 sm:px-6 py-2.5 sm:py-3
-                text-[12px] sm:text-[13px]
+                text-[13px] sm:text-[14px]
                 shadow-[0_4px_16px_rgba(0,0,0,0.15)]
                 hover:scale-105 active:scale-95 transition-all
               "

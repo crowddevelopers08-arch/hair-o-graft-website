@@ -18,19 +18,19 @@ export default function FinalCTASection() {
 
           {/* Heading */}
           <h2 className="font-extrabold text-white leading-[1.1] tracking-tight mb-3
-                         text-[24px] sm:text-[30px] md:text-[38px] lg:text-[44px]">
+                         text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]">
             Book Your HydraFacial
             <span className="block text-[#FEEA1B]">Consultation</span>
           </h2>
 
           {/* Subheading */}
-          <p className="text-white font-semibold mb-2 text-[14px] sm:text-[15px] md:text-[16px]">
+          <p className="text-white font-semibold mb-2 text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px]">
             Ready to achieve healthier, brighter-looking skin?
           </p>
 
           {/* Body */}
           <p className="text-white/70 leading-relaxed mb-7
-                        text-[12px] sm:text-[13px] md:text-[14px] max-w-[520px]">
+                        text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] max-w-[520px]">
             Schedule your HydraFacial consultation at Hair O Graft and take the
             first step towards refreshed and rejuvenated skin.
           </p>
@@ -53,7 +53,7 @@ export default function FinalCTASection() {
               </div>
               <div>
                 <p className="text-white/50 text-[9px] font-bold tracking-widest uppercase leading-none mb-1">Call Us</p>
-                <p className="text-white font-bold text-[14px]">74488 66675</p>
+                <p className="text-white font-bold text-[15px] sm:text-[16px]">74488 66675</p>
               </div>
             </a>
 
@@ -69,7 +69,7 @@ export default function FinalCTASection() {
               </div>
               <div>
                 <p className="text-white/50 text-[9px] font-bold tracking-widest uppercase leading-none mb-1">Address</p>
-                <p className="text-white font-medium text-[12px] sm:text-[13px] leading-relaxed">
+                <p className="text-white font-medium text-[13px] sm:text-[14px] md:text-[15px] leading-relaxed">
                   25, Nehru Bazaar, Thirumalai Rajapuram,
                   Kondithope, Avadi, Chennai, Tamil Nadu 600054
                 </p>

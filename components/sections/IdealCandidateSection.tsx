@@ -151,7 +151,7 @@ export default function IdealCandidateSection() {
           <h2
             className="
               relative z-10 font-extrabold leading-[1.1] tracking-tight text-white
-              text-[22px] sm:text-[28px] md:text-[34px] lg:text-[32px] xl:text-[38px]
+              text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]
             "
           >
             Benefits of{" "}
@@ -170,7 +170,7 @@ export default function IdealCandidateSection() {
           <p
             className="
               relative z-10 mt-4 sm:mt-5 text-white/65 leading-[1.75]
-              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[13px] xl:text-[14px]
+              text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
             "
           >
             HydraFacial offers multiple skin benefits in a single session,
@@ -185,7 +185,7 @@ export default function IdealCandidateSection() {
               px-4 sm:px-5 py-4
             "
           >
-            <p className="text-white/80 leading-[1.7] text-[12px] sm:text-[13px]">
+            <p className="text-white/80 leading-[1.7] text-[13px] sm:text-[14px] md:text-[15px]">
               Many patients notice an{" "}
               <span className="text-[#FEEA1B] font-semibold">immediate improvement</span>{" "}
               in skin quality following treatment.
@@ -206,41 +206,56 @@ export default function IdealCandidateSection() {
           <div className="inline-flex self-start items-center gap-2 mb-5 sm:mb-6
                           bg-[#354C9C] text-white font-semibold rounded-lg
                           px-4 sm:px-5 py-2
-                          text-[11px] sm:text-[12px] md:text-[13px]">
+                          text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]">
             Benefits may include:
           </div>
 
-          {/* Benefit rows — numbered list */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-0">
+          {/* Benefit list — 2×2 cards on mobile, numbered rows on sm+ */}
+          {/* ── Mobile grid (hidden sm+) ── */}
+          <div className="grid grid-cols-2 gap-2 sm:hidden">
             {benefits.map((b, i) => (
-              <div key={i} className="flex items-center gap-3 py-3 border-b border-[#D8DDE8] last:border-b-0 sm:[&:nth-last-child(2)]:border-b-0">
-
-                {/* Number badge */}
-                <span
-                  className="
-                    flex-shrink-0 flex items-center justify-center
-                    rounded-full bg-[#354C9C] text-white font-bold
-                    w-7 h-7 sm:w-8 sm:h-8
-                    text-[10px] sm:text-[11px]
-                  "
-                >
+              <div key={i}
+                className={`relative flex flex-col items-center text-center
+                            bg-[#F7F8FC] border border-[#D8DDE8] rounded-xl
+                            px-2 py-3 gap-1.5
+                            ${i === benefits.length - 1 ? "col-span-2 max-w-[50%] mx-auto w-full" : ""}`}>
+                {/* Number chip */}
+                <span className="absolute top-1.5 left-1.5 flex items-center justify-center
+                                  rounded-full bg-[#354C9C] text-white font-bold
+                                  w-4 h-4 text-[8px]">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-
                 {/* Icon */}
-                <div
-                  className="
-                    flex-shrink-0 flex items-center justify-center
-                    rounded-lg bg-[#F7F8FC]
-                    w-8 h-8 sm:w-9 sm:h-9
-                  "
-                >
+                <div className="flex items-center justify-center rounded-lg bg-white
+                                shadow-sm w-9 h-9 mt-1">
+                  <b.Icon className="text-[#354C9C] w-5 h-5" />
+                </div>
+                {/* Title */}
+                <p className="font-semibold text-[#363435] leading-snug text-[10px]">
+                  {b.title}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* ── sm+ list (hidden on mobile) ── */}
+          <div className="hidden sm:grid grid-cols-2 gap-x-6 gap-y-0">
+            {benefits.map((b, i) => (
+              <div key={i} className="flex items-center gap-3 py-3 border-b border-[#D8DDE8] last:border-b-0 [&:nth-last-child(2)]:border-b-0">
+                {/* Number badge */}
+                <span className="flex-shrink-0 flex items-center justify-center
+                                  rounded-full bg-[#354C9C] text-white font-bold
+                                  w-7 h-7 sm:w-8 sm:h-8 text-[10px] sm:text-[11px]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                {/* Icon */}
+                <div className="flex-shrink-0 flex items-center justify-center
+                                rounded-lg bg-[#F7F8FC] w-8 h-8 sm:w-9 sm:h-9">
                   <b.Icon className="text-[#354C9C] w-4 h-4 sm:w-[18px] sm:h-[18px]" />
                 </div>
-
                 {/* Title */}
                 <p className="font-semibold text-[#363435] leading-snug
-                              text-[11px] sm:text-[12px] md:text-[13px]">
+                              text-[13px] sm:text-[14px] md:text-[15px]">
                   {b.title}
                 </p>
               </div>

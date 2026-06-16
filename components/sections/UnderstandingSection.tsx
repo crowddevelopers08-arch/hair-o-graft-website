@@ -187,7 +187,7 @@ export default function UnderstandingSection() {
         <h2
           className="
             text-center font-extrabold leading-[1.12] tracking-tight text-[#363435]
-            text-[20px] sm:text-[26px] md:text-[32px] lg:text-[40px] xl:text-[48px]
+            text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]
           "
         >
           Who Is an Ideal Candidate
@@ -203,7 +203,7 @@ export default function UnderstandingSection() {
           className="
             mt-2 sm:mt-3 mx-auto text-center text-gray-500 leading-[1.75]
             max-w-[540px] sm:max-w-[620px] lg:max-w-[680px]
-            text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]
+            text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
           "
         >
           HydraFacial may be suitable for individuals who want to
@@ -223,7 +223,7 @@ export default function UnderstandingSection() {
             className="
               flex-shrink-0 bg-[#354C9C] text-white font-semibold rounded-lg
               px-4 sm:px-5 md:px-7 py-2 sm:py-2.5
-              text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px]
+              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]
               text-center mx-auto sm:mx-0
             "
           >
@@ -286,7 +286,7 @@ export default function UnderstandingSection() {
               <p
                 className="
                   mt-1.5 sm:mt-2 font-bold text-[#363435] leading-snug
-                  text-[10px] sm:text-[11px] md:text-[12px]
+                  text-[11px] sm:text-[12px] md:text-[13px]
                 "
               >
                 {cond.title}
@@ -337,7 +337,7 @@ export default function UnderstandingSection() {
           <p
             className="
               relative z-10 text-gray-700 leading-[1.7]
-              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]
+              text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
             "
           >
             Our specialists will assess your skin condition and recommend

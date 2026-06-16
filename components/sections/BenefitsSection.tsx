@@ -43,7 +43,7 @@ export default function BenefitsSection() {
           <h2
             className="
               font-extrabold leading-[1.1] tracking-tight text-[#363435]
-              text-[20px] sm:text-[26px] md:text-[32px] lg:text-[38px] xl:text-[44px]
+              text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]
             "
           >
             Why Choose{" "}
@@ -54,7 +54,7 @@ export default function BenefitsSection() {
           <p
             className="
               mt-4 sm:mt-5 text-gray-500 leading-[1.8]
-              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]
+              text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
             "
           >
             While traditional facials primarily focus on cleansing and relaxation,
@@ -88,7 +88,7 @@ export default function BenefitsSection() {
             className="
               flex-shrink-0 bg-[#354C9C] text-white font-semibold rounded-lg
               px-4 sm:px-5 md:px-7 py-2 sm:py-2.5
-              text-[10px] sm:text-[11px] md:text-[12px] lg:text-[13px]
+              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]
               text-center mx-auto sm:mx-0
             "
           >
@@ -143,7 +143,7 @@ export default function BenefitsSection() {
               <p
                 className="
                   font-semibold text-[#363435] leading-snug
-                  text-[12px] sm:text-[13px] md:text-[14px]
+                  text-[14px] sm:text-[15px] md:text-[16px]
                 "
               >
                 {item}
@@ -174,7 +174,7 @@ export default function BenefitsSection() {
           <p
             className="
               relative z-10 text-center text-white/90 leading-[1.75]
-              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]
+              text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
               max-w-[680px] mx-auto
             "
           >

@@ -109,11 +109,11 @@ const steps = [
   Spacer       : 190 px  (420 - 170 - 20 - 40)
   Spine y      : 170 + 20 + 20 = 210 px from top
 */
-const TOTAL_H  = 530;
-const CARD_H   = 185;
+const TOTAL_H  = 620;
+const CARD_H   = 225;
 const LINE_H   = 26;
 const CIRCLE_D = 64;
-const SPACER_H = TOTAL_H - CARD_H - LINE_H - CIRCLE_D; // 255
+const SPACER_H = TOTAL_H - CARD_H - LINE_H - CIRCLE_D; // 305
 
 export default function ProcessSection() {
   return (
@@ -131,7 +131,7 @@ export default function ProcessSection() {
           <h2
             className="
               font-extrabold leading-[1.1] tracking-tight text-[#363435]
-              text-[20px] sm:text-[26px] md:text-[32px] lg:text-[38px] xl:text-[44px]
+              text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]
             "
           >
             Our{" "}
@@ -141,7 +141,7 @@ export default function ProcessSection() {
           <p
             className="
               mt-4 text-gray-500 leading-[1.8]
-              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]
+              text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
             "
           >
             Every HydraFacial session at Hair O Graft begins with understanding
@@ -186,10 +186,10 @@ export default function ProcessSection() {
                             Step {step.num}
                           </span>
                         </div>
-                        <h4 className="font-extrabold text-[#363435] text-[13px] leading-snug mb-2">
+                        <h4 className="font-extrabold text-[#363435] text-[14px] lg:text-[15px] leading-snug mb-2">
                           {step.title}
                         </h4>
-                        <p className="text-gray-500 text-[12px] leading-relaxed flex-1 overflow-hidden">
+                        <p className="text-gray-500 text-[13px] lg:text-[14px] leading-relaxed flex-1 overflow-hidden">
                           {step.desc}
                         </p>
                       </div>
@@ -251,10 +251,10 @@ export default function ProcessSection() {
                             Step {step.num}
                           </span>
                         </div>
-                        <h4 className="font-extrabold text-[#363435] text-[13px] leading-snug mb-2">
+                        <h4 className="font-extrabold text-[#363435] text-[14px] lg:text-[15px] leading-snug mb-2">
                           {step.title}
                         </h4>
-                        <p className="text-gray-500 text-[12px] leading-relaxed flex-1 overflow-hidden">
+                        <p className="text-gray-500 text-[13px] lg:text-[14px] leading-relaxed flex-1 overflow-hidden">
                           {step.desc}
                         </p>
                       </div>
@@ -306,10 +306,10 @@ export default function ProcessSection() {
                       Step {step.num}
                     </span>
                   </div>
-                  <h4 className="font-extrabold text-[#363435] text-[14px] sm:text-[17px] leading-snug mb-2">
+                  <h4 className="font-extrabold text-[#363435] text-[16px] sm:text-[18px] md:text-[20px] leading-snug mb-2">
                     {step.title}
                   </h4>
-                  <p className="text-gray-500 text-[12px] sm:text-[14px] leading-relaxed">
+                  <p className="text-gray-500 text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed">
                     {step.desc}
                   </p>
                 </div>

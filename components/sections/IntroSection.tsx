@@ -36,7 +36,7 @@ function FeatureCard({ item }: { item: typeof features[0] }) {
       </div>
       <h3 className="font-bold text-[#363435] leading-snug
                      mt-2 sm:mt-2.5 md:mt-3
-                     text-[10px] sm:text-[11px] md:text-[12px]">
+                     text-[11px] sm:text-[12px] md:text-[13px]">
         {item.title}
       </h3>
     </div>
@@ -50,7 +50,7 @@ export default function IntroSection() {
 
         {/* ── Heading ── */}
         <h2 className="text-center font-extrabold text-[#363435] leading-[1.2] tracking-tight
-                        text-[18px] sm:text-[24px] md:text-[30px] lg:text-[36px] xl:text-[42px]">
+                        text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]">
           Why Patients Choose{" "}
           <span className="text-[#354C9C]">Hair O Graft</span>
           <br className="hidden sm:block" />
@@ -61,7 +61,7 @@ export default function IntroSection() {
         <p className="mx-auto text-center text-gray-600 leading-[1.8]
                        max-w-[600px] xl:max-w-[760px]
                        mt-3 sm:mt-4 md:mt-5 lg:mt-6
-                       text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]">
+                       text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
           At Hair O Graft, healthy skin begins with understanding your unique
           skin needs. Our team conducts a detailed skin assessment to identify
           concerns, evaluate skin health, and create a personalised treatment plan.
@@ -72,7 +72,7 @@ export default function IntroSection() {
           <div className="bg-[#354C9C] text-white font-semibold rounded-2xl
                           shadow-[0_8px_24px_rgba(53,76,156,0.35)]
                           px-5 sm:px-7 md:px-8 py-2 sm:py-2.5
-                          text-[11px] sm:text-[12px] md:text-[13px]">
+                          text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]">
             Patients trust us for:
           </div>
         </div>

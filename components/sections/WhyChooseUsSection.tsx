@@ -54,7 +54,7 @@ export default function WhyChooseUsSection() {
 
           {/* Heading */}
           <h2 className="font-extrabold leading-[1.05] tracking-tight text-[#363435]
-                          text-[22px] sm:text-[30px] md:text-[36px] lg:text-[42px] xl:text-[48px]">
+                          text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]">
             Understanding
             <br />
             <span className="text-[#354C9C]">HydraFacial</span>
@@ -90,7 +90,7 @@ export default function WhyChooseUsSection() {
                                 shadow-[0_2px_16px_rgba(53,76,156,0.07)]
                                 px-3 sm:px-5 py-2.5 sm:py-4">
                   <p className="text-[#555555] leading-[1.65]
-                                text-[11px] sm:text-[12px] md:text-[13px] xl:text-[14px]">
+                                text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px]">
                     {row.text}
                   </p>
                 </div>
