@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/7b94b15d-2be9-4436-9439-f037beb443f8.png')",
+          backgroundImage:    "url('/8db4a677-55d8-46ee-8476-6d37e37fe4a0.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",

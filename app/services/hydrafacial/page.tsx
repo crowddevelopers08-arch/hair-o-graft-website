@@ -47,8 +47,8 @@ export default function HydraFacialPage() {
           <IdealCandidateSection />
           <BenefitsSection />
           <ProcessSection />
-          <RecoverySection />
-          <ExpertsSection />
+          {/* <RecoverySection /> */}
+          {/* <ExpertsSection /> */}
           <FAQSection />
           <FinalCTASection />
         </ScrollReveal>
