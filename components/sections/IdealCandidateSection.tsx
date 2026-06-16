@@ -1,0 +1,254 @@
+/* ── Inline SVG icons — blue / white outline, viewBox 0 0 24 24 ── */
+
+function CleansingIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 4h16l-6 7v6l-4 2V11z" />
+      <circle cx="9"  cy="2" r="0.6" fill="currentColor" stroke="none" />
+      <circle cx="12" cy="1.5" r="0.6" fill="currentColor" stroke="none" />
+      <circle cx="15" cy="2" r="0.6" fill="currentColor" stroke="none" />
+    </svg>
+  );
+}
+
+function HydrationIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 3C9.5 6.5 7 10.5 7 13.5a5 5 0 0010 0C17 10.5 14.5 6.5 12 3z" />
+      <path d="M10 11C9.5 12.5 9.5 13.5 10 14.5" strokeOpacity="0.45" />
+    </svg>
+  );
+}
+
+function BrightnessIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="4" />
+      <line x1="12" y1="2"  x2="12" y2="5" />
+      <line x1="12" y1="19" x2="12" y2="22" />
+      <line x1="2"  y1="12" x2="5"  y2="12" />
+      <line x1="19" y1="12" x2="22" y2="12" />
+      <line x1="4.93"  y1="4.93"  x2="7.05"  y2="7.05" />
+      <line x1="16.95" y1="16.95" x2="19.07" y2="19.07" />
+      <line x1="4.93"  y1="19.07" x2="7.05"  y2="16.95" />
+      <line x1="16.95" y1="7.05"  x2="19.07" y2="4.93" />
+    </svg>
+  );
+}
+
+function SmoothTextureIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 8C5 6.5 6.5 9.5 8 8S10.5 6.5 12 8 13.5 9.5 15 8 16.5 6.5 18 8 19.5 9.5 21 8" />
+      <line x1="3" y1="13" x2="21" y2="13" />
+      <line x1="3" y1="17" x2="21" y2="17" />
+    </svg>
+  );
+}
+
+function PoreShrinkIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="8"  cy="10" r="3.5" />
+      <circle cx="16" cy="10" r="1.8" />
+      <path d="M12 10h1.5" />
+      <line x1="6"  y1="16" x2="10" y2="16" />
+      <line x1="15" y1="16" x2="17" y2="16" />
+    </svg>
+  );
+}
+
+function ElasticityIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 5C8 5 16 5 16 8C16 11 8 11 8 14C8 17 16 17 16 20" />
+      <line x1="6"  y1="5"  x2="18" y2="5" />
+      <line x1="6"  y1="20" x2="18" y2="20" />
+    </svg>
+  );
+}
+
+function GlowIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 3L13.2 9.8H20L14.4 13.5L16.6 20L12 16.2L7.4 20L9.6 13.5L4 9.8H10.8Z" />
+      <path d="M19.5 3L20 5.5H22.5L20.5 6.8L21 9.3L19.5 8L18 9.3L18.5 6.8L16.5 5.5H19Z" strokeWidth="1.2" />
+    </svg>
+  );
+}
+
+function AbsorptionIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="14" width="18" height="3" rx="1" />
+      <rect x="3" y="18" width="18" height="3" rx="1" strokeOpacity="0.4" />
+      <path d="M8  3C7.2 4.5 6.5 6 6.5 7.5a1.5 1.5 0 003 0C9.5 6 8.8 4.5 8 3z" />
+      <path d="M12 3C11.2 4.5 10.5 6 10.5 7.5a1.5 1.5 0 003 0C13.5 6 12.8 4.5 12 3z" />
+      <path d="M16 3C15.2 4.5 14.5 6 14.5 7.5a1.5 1.5 0 003 0C17.5 6 16.8 4.5 16 3z" />
+      <line x1="8"  y1="9.5" x2="8"  y2="13" />
+      <line x1="12" y1="9.5" x2="12" y2="13" />
+      <line x1="16" y1="9.5" x2="16" y2="13" />
+    </svg>
+  );
+}
+
+function RefreshIcon({ className }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M3 12A9 9 0 1 0 6 5.3" />
+      <polyline points="3 3 3 6 6 6" />
+      <circle cx="12" cy="13" r="4" />
+      <path d="M10.5 14.5q1.5 1 3 0" />
+    </svg>
+  );
+}
+
+/* ── Benefit data ── */
+const benefits = [
+  { Icon: CleansingIcon,     title: "Deep cleansing of pores" },
+  { Icon: HydrationIcon,     title: "Improved skin hydration" },
+  { Icon: BrightnessIcon,    title: "Brighter and fresher complexion" },
+  { Icon: SmoothTextureIcon, title: "Smoother skin texture" },
+  { Icon: PoreShrinkIcon,    title: "Reduced appearance of enlarged pores" },
+  { Icon: ElasticityIcon,    title: "Improved skin elasticity" },
+  { Icon: GlowIcon,          title: "Enhanced skin glow" },
+  { Icon: AbsorptionIcon,    title: "Better absorption of skincare products" },
+  { Icon: RefreshIcon,       title: "Refreshed and revitalised appearance" },
+];
+
+export default function IdealCandidateSection() {
+  return (
+    <section className="overflow-hidden">
+      <div className="flex flex-col lg:flex-row min-h-0">
+
+        {/* ── LEFT PANEL — dark navy ─────────────────────────────────── */}
+        <div
+          className="
+            relative flex flex-col justify-center
+            lg:w-[42%] xl:w-[38%]
+            px-6 sm:px-10 md:px-12 lg:px-10 xl:px-14
+            py-10 sm:py-12 lg:py-14 xl:py-16
+            overflow-hidden
+          "
+          style={{ background: "linear-gradient(145deg,#363435 0%,#1a3080 60%,#253d9e 100%)" }}
+        >
+          {/* Subtle decorative blobs */}
+          <div className="absolute -top-16 -right-16 w-48 h-48 rounded-full opacity-10 pointer-events-none"
+            style={{ background: "radial-gradient(circle,#354C9C 0%,transparent 70%)" }} />
+          <div className="absolute -bottom-12 -left-12 w-40 h-40 rounded-full opacity-10 pointer-events-none"
+            style={{ background: "radial-gradient(circle,#354C9C 0%,transparent 70%)" }} />
+
+          {/* Heading */}
+          <h2
+            className="
+              relative z-10 font-extrabold leading-[1.1] tracking-tight text-white
+              text-[22px] sm:text-[28px] md:text-[34px] lg:text-[32px] xl:text-[38px]
+            "
+          >
+            Benefits of{" "}
+            <span className="text-[#FEEA1B]">HydraFacial</span>
+            <br className="hidden sm:block" /> Treatment
+          </h2>
+
+          {/* Accent bar */}
+          <div className="relative z-10 flex items-center gap-1.5 mt-4 sm:mt-5">
+            <div className="w-10 h-[3px] rounded-full bg-[#FEEA1B]" />
+            <div className="w-4  h-[3px] rounded-full bg-[#FEEA1B] opacity-50" />
+            <div className="w-2  h-[3px] rounded-full bg-[#FEEA1B] opacity-25" />
+          </div>
+
+          {/* Subtitle */}
+          <p
+            className="
+              relative z-10 mt-4 sm:mt-5 text-white/65 leading-[1.75]
+              text-[12px] sm:text-[13px] md:text-[14px] lg:text-[13px] xl:text-[14px]
+            "
+          >
+            HydraFacial offers multiple skin benefits in a single session,
+            making it one of the most popular skin rejuvenation treatments.
+          </p>
+
+          {/* Bottom note */}
+          <div
+            className="
+              relative z-10 mt-6 sm:mt-8
+              rounded-2xl border border-white/15 bg-white/10
+              px-4 sm:px-5 py-4
+            "
+          >
+            <p className="text-white/80 leading-[1.7] text-[12px] sm:text-[13px]">
+              Many patients notice an{" "}
+              <span className="text-[#FEEA1B] font-semibold">immediate improvement</span>{" "}
+              in skin quality following treatment.
+            </p>
+          </div>
+        </div>
+
+        {/* ── RIGHT PANEL — light, benefit list ─────────────────────── */}
+        <div
+          className="
+            flex-1 flex flex-col justify-center
+            bg-[#FEFEFE]
+            px-6 sm:px-10 md:px-12 lg:px-10 xl:px-14
+            py-10 sm:py-12 lg:py-14 xl:py-16
+          "
+        >
+          {/* "Benefits may include:" label */}
+          <div className="inline-flex self-start items-center gap-2 mb-5 sm:mb-6
+                          bg-[#354C9C] text-white font-semibold rounded-lg
+                          px-4 sm:px-5 py-2
+                          text-[11px] sm:text-[12px] md:text-[13px]">
+            Benefits may include:
+          </div>
+
+          {/* Benefit rows — numbered list */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-0">
+            {benefits.map((b, i) => (
+              <div key={i} className="flex items-center gap-3 py-3 border-b border-[#D8DDE8] last:border-b-0 sm:[&:nth-last-child(2)]:border-b-0">
+
+                {/* Number badge */}
+                <span
+                  className="
+                    flex-shrink-0 flex items-center justify-center
+                    rounded-full bg-[#354C9C] text-white font-bold
+                    w-7 h-7 sm:w-8 sm:h-8
+                    text-[10px] sm:text-[11px]
+                  "
+                >
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+
+                {/* Icon */}
+                <div
+                  className="
+                    flex-shrink-0 flex items-center justify-center
+                    rounded-lg bg-[#F7F8FC]
+                    w-8 h-8 sm:w-9 sm:h-9
+                  "
+                >
+                  <b.Icon className="text-[#354C9C] w-4 h-4 sm:w-[18px] sm:h-[18px]" />
+                </div>
+
+                {/* Title */}
+                <p className="font-semibold text-[#363435] leading-snug
+                              text-[11px] sm:text-[12px] md:text-[13px]">
+                  {b.title}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </section>
+  );
+}
