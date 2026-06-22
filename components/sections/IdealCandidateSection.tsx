@@ -50,56 +50,6 @@ function SmoothTextureIcon({ className }: { className?: string }) {
   );
 }
 
-function PoreShrinkIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <circle cx="8"  cy="10" r="3.5" />
-      <circle cx="16" cy="10" r="1.8" />
-      <path d="M12 10h1.5" />
-      <line x1="6"  y1="16" x2="10" y2="16" />
-      <line x1="15" y1="16" x2="17" y2="16" />
-    </svg>
-  );
-}
-
-function ElasticityIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M8 5C8 5 16 5 16 8C16 11 8 11 8 14C8 17 16 17 16 20" />
-      <line x1="6"  y1="5"  x2="18" y2="5" />
-      <line x1="6"  y1="20" x2="18" y2="20" />
-    </svg>
-  );
-}
-
-function GlowIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 3L13.2 9.8H20L14.4 13.5L16.6 20L12 16.2L7.4 20L9.6 13.5L4 9.8H10.8Z" />
-      <path d="M19.5 3L20 5.5H22.5L20.5 6.8L21 9.3L19.5 8L18 9.3L18.5 6.8L16.5 5.5H19Z" strokeWidth="1.2" />
-    </svg>
-  );
-}
-
-function AbsorptionIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <rect x="3" y="14" width="18" height="3" rx="1" />
-      <rect x="3" y="18" width="18" height="3" rx="1" strokeOpacity="0.4" />
-      <path d="M8  3C7.2 4.5 6.5 6 6.5 7.5a1.5 1.5 0 003 0C9.5 6 8.8 4.5 8 3z" />
-      <path d="M12 3C11.2 4.5 10.5 6 10.5 7.5a1.5 1.5 0 003 0C13.5 6 12.8 4.5 12 3z" />
-      <path d="M16 3C15.2 4.5 14.5 6 14.5 7.5a1.5 1.5 0 003 0C17.5 6 16.8 4.5 16 3z" />
-      <line x1="8"  y1="9.5" x2="8"  y2="13" />
-      <line x1="12" y1="9.5" x2="12" y2="13" />
-      <line x1="16" y1="9.5" x2="16" y2="13" />
-    </svg>
-  );
-}
-
 function RefreshIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none"
@@ -114,15 +64,11 @@ function RefreshIcon({ className }: { className?: string }) {
 
 /* ── Benefit data ── */
 const benefits = [
-  { Icon: CleansingIcon,     title: "Deep cleansing of pores" },
-  { Icon: HydrationIcon,     title: "Improved skin hydration" },
-  { Icon: BrightnessIcon,    title: "Brighter and fresher complexion" },
-  { Icon: SmoothTextureIcon, title: "Smoother skin texture" },
-  { Icon: PoreShrinkIcon,    title: "Reduced appearance of enlarged pores" },
-  { Icon: ElasticityIcon,    title: "Improved skin elasticity" },
-  { Icon: GlowIcon,          title: "Enhanced skin glow" },
-  { Icon: AbsorptionIcon,    title: "Better absorption of skincare products" },
-  { Icon: RefreshIcon,       title: "Refreshed and revitalised appearance" },
+  { Icon: CleansingIcon,     title: "Deep cleansing and removal of impurities" },
+  { Icon: HydrationIcon,     title: "Improved skin hydration and freshness" },
+  { Icon: BrightnessIcon,    title: "Brighter, more radiant-looking skin" },
+  { Icon: SmoothTextureIcon, title: "Smoother skin texture and refined pores" },
+  { Icon: RefreshIcon,       title: "Healthier, revitalised appearance" },
 ];
 
 export default function IdealCandidateSection() {
@@ -154,9 +100,8 @@ export default function IdealCandidateSection() {
               text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]
             "
           >
-            Benefits of{" "}
+            Benefits &amp; Results of{" "}
             <span className="text-[#FEEA1B]">HydraFacial</span>
-            <br className="hidden sm:block" /> Treatment
           </h2>
 
           {/* Accent bar */}
@@ -173,8 +118,9 @@ export default function IdealCandidateSection() {
               text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
             "
           >
-            HydraFacial offers multiple skin benefits in a single session,
-            making it one of the most popular skin rejuvenation treatments.
+            HydraFacial offers multiple skin benefits in a single session and may help
+            improve overall skin health and appearance. It is suitable for a wide range
+            of skin types and concerns, helping improve overall skin health and appearance.
           </p>
 
           {/* Bottom note */}
@@ -186,9 +132,10 @@ export default function IdealCandidateSection() {
             "
           >
             <p className="text-white/80 leading-[1.7] text-[13px] sm:text-[14px] md:text-[15px]">
-              Many patients notice an{" "}
-              <span className="text-[#FEEA1B] font-semibold">immediate improvement</span>{" "}
-              in skin quality following treatment.
+              Many patients notice their skin feels cleaner, smoother, and more refreshed
+              shortly after treatment. Individual results vary depending on skin type,
+              condition, and treatment goals, and periodic maintenance sessions may help
+              support ongoing results.
             </p>
           </div>
         </div>
@@ -207,7 +154,7 @@ export default function IdealCandidateSection() {
                           bg-[#354C9C] text-white font-semibold rounded-lg
                           px-4 sm:px-5 py-2
                           text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px]">
-            Benefits may include:
+            Potential benefits and results may include:
           </div>
 
           {/* Benefit list — 2×2 cards on mobile, numbered rows on sm+ */}

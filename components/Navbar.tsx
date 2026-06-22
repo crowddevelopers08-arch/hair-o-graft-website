@@ -425,7 +425,7 @@ export default function Navbar() {
               <button
                 className="text-white px-5 py-2.5 rounded-full text-[13px] font-bold transition-all duration-200 whitespace-nowrap hover:scale-[1.04] active:scale-95"
                 style={{
-                  background: "linear-gradient(135deg, #ED3136, #C41D22)",
+                  background: "#ed3136",
                   boxShadow: "0 4px 20px rgba(237,49,54,0.45), 0 0 0 1px rgba(237,49,54,0.2) inset",
                 }}
                 onMouseEnter={(e) => {

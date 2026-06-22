@@ -4,12 +4,12 @@ const rows = [
   {
     img: "/pone.png",
     alt: "Personalised skin consultation",
-    text: "HydraFacial is a non-invasive skin rejuvenation treatment that combines cleansing, exfoliation, extraction, hydration, and antioxidant protection in one procedure.",
+    text: "HydraFacial is a non-invasive skin rejuvenation treatment that deeply cleanses, exfoliates, extracts impurities, and hydrates the skin in one procedure.",
   },
   {
     img: "/ptwo.png",
     alt: "Advanced aesthetic technology",
-    text: "Using specialised vortex technology, the treatment removes dead skin cells, excess oil, and impurities while simultaneously delivering nourishing serums deep into the skin.",
+    text: "Using advanced vortex technology, it removes dead skin cells, excess oil, and debris while infusing the skin with nourishing serums. The treatment helps improve hydration, refine skin texture, and restore a healthy, radiant glow with minimal discomfort or downtime.",
   },
   {
     img: "/pthree.png",
@@ -55,9 +55,9 @@ export default function WhyChooseUsSection() {
           {/* Heading */}
           <h2 className="font-extrabold leading-[1.05] tracking-tight text-[#363435]
                           text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]">
-            Understanding
+            What is
             <br />
-            <span className="text-[#354C9C]">HydraFacial</span>
+            <span className="text-[#354C9C]">HydraFacial?</span>
           </h2>
 
           {/* Rows */}

@@ -1,16 +1,14 @@
 import Image from "next/image";
 
 const features = [
-  { number: "01", title: "Personalised skin consultations",    icon: "/one.png" },
-  { number: "02", title: "Advanced aesthetic technology",      icon: "/two.png" },
-  { number: "03", title: "Focus on safety and hygiene",        icon: "/three.png" },
-  { number: "04", title: "Experienced skincare professionals", icon: "/four.png" },
-  { number: "05", title: "Comfortable clinical environment",   icon: "/five.png" },
-  { number: "06", title: "Patient-centric treatment approach", icon: "/six.png" },
-  { number: "07", title: "Tailored skincare recommendations",  icon: "/seven.png" },
+  { number: "01", title: "Personalised skin consultations",       icon: "/one.png" },
+  { number: "02", title: "Experienced skincare professionals",    icon: "/two.png" },
+  { number: "03", title: "Advanced aesthetic technology",         icon: "/three.png" },
+  { number: "04", title: "High standards of safety and hygiene",  icon: "/four.png" },
+  { number: "05", title: "Patient-focused care and support",      icon: "/five.png" },
 ];
 
-const COL_CENTERS = [7.14, 21.43, 35.71, 50, 64.29, 78.57, 92.86];
+const COL_CENTERS = [10, 30, 50, 70, 90];
 
 function FeatureCard({ item }: { item: typeof features[0] }) {
   return (
@@ -62,9 +60,9 @@ export default function IntroSection() {
                        max-w-[600px] xl:max-w-[760px]
                        mt-3 sm:mt-4 md:mt-5 lg:mt-6
                        text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
-          At Hair O Graft, healthy skin begins with understanding your unique
-          skin needs. Our team conducts a detailed skin assessment to identify
-          concerns, evaluate skin health, and create a personalised treatment plan.
+          At Hair O Graft, before recommending any treatment, our team conducts a
+          detailed skin assessment to identify concerns, evaluate skin health, and
+          create a personalised treatment plan.
         </p>
 
         {/* ── Pill ── */}
@@ -82,14 +80,14 @@ export default function IntroSection() {
           <div className="absolute w-[3px] bg-[#D8DDE8]"
             style={{ left: "50%", top: 0, height: "18px", transform: "translateX(-50%)" }} />
           <div className="absolute bg-[#D8DDE8]"
-            style={{ top: "18px", left: "8.14%", right: "8.14%", height: "3px" }} />
+            style={{ top: "18px", left: "10%", right: "10%", height: "3px" }} />
           <div className="absolute"
-            style={{ top: "18px", left: "7.14%", width: "16px", height: "30px",
+            style={{ top: "18px", left: "10%", width: "16px", height: "30px",
               borderTop: "3px solid #D8DDE8", borderLeft: "3px solid #D8DDE8", borderTopLeftRadius: "10px" }} />
           <div className="absolute"
-            style={{ top: "18px", right: "7.14%", width: "16px", height: "30px",
+            style={{ top: "18px", right: "10%", width: "16px", height: "30px",
               borderTop: "3px solid #D8DDE8", borderRight: "3px solid #D8DDE8", borderTopRightRadius: "10px" }} />
-          {COL_CENTERS.slice(1, 6).map((pct) => (
+          {COL_CENTERS.slice(1, 4).map((pct) => (
             <div key={pct} className="absolute w-[3px] bg-[#D8DDE8]"
               style={{ left: `${pct}%`, top: "18px", height: "30px", transform: "translateX(-50%)" }} />
           ))}
@@ -128,7 +126,7 @@ export default function IntroSection() {
 
         {/* ── sm+: regular grid (hidden on mobile) ── */}
         <div className="hidden sm:grid mt-0 gap-3 md:gap-4
-                        sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-7">
+                        sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5">
           {features.map((item) => (
             <FeatureCard key={item.number} item={item} />
           ))}

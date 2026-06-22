@@ -14,7 +14,7 @@ const faqs = [
   {
     num: "01",
     q: "Is HydraFacial painful?",
-    a: "HydraFacial is generally considered a gentle and comfortable treatment with minimal discomfort.",
+    a: "HydraFacial is generally considered a gentle and comfortable treatment with minimal discomfort. May feel a slight tingling effect or discomfort.",
   },
   {
     num: "02",
@@ -29,7 +29,7 @@ const faqs = [
   {
     num: "04",
     q: "How soon will I see results?",
-    a: "Many patients notice visible improvements immediately after treatment.",
+    a: "Many patients notice visible improvements immediately after treatment. Individual results may vary.",
   },
   {
     num: "05",

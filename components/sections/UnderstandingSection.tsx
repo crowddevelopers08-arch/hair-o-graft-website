@@ -1,8 +1,3 @@
-/* ──────────────────────────────────────────────────────────────────
-   UnderstandingSection — "Who Is an Ideal Candidate for HydraFacial?"
-   9 cards  ·  flex-wrap justify-center so last row auto-centres
-────────────────────────────────────────────────────────────────── */
-
 /* ── Condition card icons (blue outline, viewBox 0 0 24 24) ── */
 
 /** 1. Dull / tired-looking skin – droopy face */
@@ -23,21 +18,7 @@ function DullFaceIcon({ className }: { className?: string }) {
   );
 }
 
-/** 2. Dry / dehydrated skin – drop + two wavy lines */
-function DryDropIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 2.5C10 5.5 8 8.5 8 11.5a4 4 0 008 0C16 8.5 14 5.5 12 2.5z" />
-      {/* Wave 1 */}
-      <path d="M7 17.5C8 16.5 9 18.5 10 17.5S12 16.5 13 17.5 14 18.5 15 17.5 16 16.5 17 17.5" />
-      {/* Wave 2 */}
-      <path d="M7 21C8 20 9 22 10 21S12 20 13 21 14 22 15 21 16 20 17 21" />
-    </svg>
-  );
-}
-
-/** 3. Uneven skin texture – face in side profile */
+/** 2. Uneven skin texture – face in side profile */
 function FaceProfileIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none"
@@ -57,27 +38,7 @@ function FaceProfileIcon({ className }: { className?: string }) {
   );
 }
 
-/** 4. Enlarged / congested pores – pore channel with branches */
-function EnlargedPoreIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      {/* Top bar + pore dot */}
-      <line x1="8" y1="6" x2="16" y2="6" />
-      <circle cx="12" cy="6" r="1.5" fill="currentColor" stroke="none" />
-      {/* Pore stem */}
-      <line x1="12" y1="7.5" x2="12" y2="12" />
-      {/* Branches */}
-      <path d="M12 11L8.5 15" />
-      <path d="M12 11L15.5 15" />
-      {/* Terminal dots */}
-      <circle cx="8" cy="15.5" r="1.3" fill="currentColor" stroke="none" />
-      <circle cx="16" cy="15.5" r="1.3" fill="currentColor" stroke="none" />
-    </svg>
-  );
-}
-
-/** 5. Oily skin – simple clean teardrop */
+/** 3. Oily skin – simple clean teardrop */
 function OilDropIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none"
@@ -89,25 +50,7 @@ function OilDropIcon({ className }: { className?: string }) {
   );
 }
 
-/** 6. Blackheads & whiteheads – clogged pore dots */
-function BlackheadIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      {/* Top pore dot */}
-      <circle cx="12" cy="5" r="1.5" fill="currentColor" stroke="none" />
-      <line x1="12" y1="6.5" x2="12" y2="11" />
-      <path d="M12 9L8.5 13.5" />
-      <path d="M12 9L15.5 13.5" />
-      {/* Three filled dots — blackheads */}
-      <circle cx="8" cy="14" r="1.5" fill="currentColor" stroke="none" />
-      <circle cx="16" cy="14" r="1.5" fill="currentColor" stroke="none" />
-      <circle cx="12" cy="15.5" r="1.5" fill="currentColor" stroke="none" />
-    </svg>
-  );
-}
-
-/** 7. Mild acne concerns – three overlapping circles */
+/** 4. Mild acne concerns – three overlapping circles */
 function AcneIcon({ className }: { className?: string }) {
   return (
     <svg className={className} viewBox="0 0 24 24" fill="none"
@@ -115,31 +58,6 @@ function AcneIcon({ className }: { className?: string }) {
       <circle cx="12" cy="14" r="4" />
       <circle cx="7.5" cy="10" r="3" />
       <circle cx="17" cy="10.5" r="2.5" />
-    </svg>
-  );
-}
-
-/** 8. Fine lines / early ageing – three wavy horizontal lines */
-function FineLinesIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M4 8C5.5 7 6.5 9 8 8S10.5 7 12 8 13.5 9 15 8 16.5 7 18 8 19.5 9 21 8" />
-      <path d="M4 12C5.5 11 6.5 13 8 12S10.5 11 12 12 13.5 13 15 12 16.5 11 18 12 19.5 13 21 12" />
-      <path d="M4 16C5.5 15 6.5 17 8 16S10.5 15 12 16 13.5 17 15 16 16.5 15 18 16 19.5 17 21 16" />
-    </svg>
-  );
-}
-
-/** 9. Lack of skin radiance – two 4-point sparkle stars */
-function RadianceIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="none"
-      stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-      {/* Large star */}
-      <path d="M12 4L13.1 9.9H19L14.4 13.1L16.1 19L12 15.8L7.9 19L9.6 13.1L5 9.9H10.9Z" />
-      {/* Small star top-right */}
-      <path d="M19.5 3.5L20.1 6H22.5L20.7 7.4L21.3 9.9L19.5 8.5L17.7 9.9L18.3 7.4L16.5 6H18.9Z" />
     </svg>
   );
 }
@@ -165,15 +83,10 @@ function ClipboardShieldIcon({ className }: { className?: string }) {
 
 /* ── Card data ── */
 const conditions = [
-  { Icon: DullFaceIcon,      title: "Dull or tired-looking skin" },
-  { Icon: DryDropIcon,       title: "Dry and dehydrated skin" },
-  { Icon: FaceProfileIcon,   title: "Uneven skin texture" },
-  { Icon: EnlargedPoreIcon,  title: "Enlarged or congested pores" },
-  { Icon: OilDropIcon,       title: "Oily skin" },
-  { Icon: BlackheadIcon,     title: "Blackheads and whiteheads" },
-  { Icon: AcneIcon,          title: "Mild acne concerns" },
-  { Icon: FineLinesIcon,     title: "Fine lines and early signs of ageing" },
-  { Icon: RadianceIcon,      title: "Lack of skin radiance" },
+  { Icon: DullFaceIcon,    title: "Dull, tired, or dehydrated skin" },
+  { Icon: OilDropIcon,     title: "Oily, congested skin with clogged pores, blackheads, or whiteheads" },
+  { Icon: FaceProfileIcon, title: "Uneven skin texture or reduced skin radiance" },
+  { Icon: AcneIcon,        title: "Mild acne concerns or early signs of skin ageing" },
 ];
 
 export default function UnderstandingSection() {
@@ -244,7 +157,7 @@ export default function UnderstandingSection() {
               lg  (1024px+) : 5 per row  — lg:w-[calc(20%_-_13px)]
             Last row's 4 cards auto-centre because of justify-center.
         ──────────────────────────────────────────────────────────────── */}
-        <div className="mt-3 sm:mt-4 flex flex-wrap justify-center gap-2 sm:gap-3">
+        <div className="mt-3 sm:mt-4 flex flex-wrap justify-center gap-1 sm:gap-2">
           {conditions.map((cond, i) => (
             <div
               key={i}
@@ -259,8 +172,8 @@ export default function UnderstandingSection() {
                 p-3 sm:p-4 md:p-4
                 w-full
                 min-[420px]:w-[calc(50%_-_5px)]
-                sm:w-[calc(33.33%_-_6px)]
-                lg:w-[calc(20%_-_10px)]
+                sm:w-[calc(50%_-_6px)]
+                lg:w-[calc(25%_-_8px)]
               "
             >
               {/* Icon circle */}
@@ -340,10 +253,9 @@ export default function UnderstandingSection() {
               text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
             "
           >
-            Our specialists will assess your skin condition and recommend
-            whether{" "}
+            A consultation with our skincare specialists can help determine whether{" "}
             <span className="text-[#354C9C] font-semibold">HydraFacial</span>{" "}
-            is the most suitable treatment for your goals.
+            is appropriate for your skin type, concerns, and goals.
           </p>
         </div>
 

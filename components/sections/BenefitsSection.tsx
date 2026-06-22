@@ -1,20 +1,20 @@
-/* ── Check icon for benefit rows ── */
-function CheckIcon({ className }: { className?: string }) {
-  return (
-    <svg className={className} viewBox="0 0 20 20" fill="none"
-      stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <polyline points="4 10 8 14 16 6" />
-    </svg>
-  );
-}
-
 const offers = [
-  "Simultaneous cleansing and hydration",
-  "Advanced extraction without manual squeezing",
-  "Targeted serum infusion",
-  "Consistent treatment outcomes",
-  "Minimal irritation",
-  "No significant downtime",
+  {
+    regular: "Basic cleansing",
+    hydrafacial: "Deep cleansing + hydration",
+  },
+  {
+    regular: "Manual extraction",
+    hydrafacial: "Vortex extraction",
+  },
+  {
+    regular: "Temporary freshness",
+    hydrafacial: "Visible skin improvement",
+  },
+  {
+    regular: "Variable results",
+    hydrafacial: "Consistent treatment protocol",
+  },
 ];
 
 export default function BenefitsSection() {
@@ -24,21 +24,11 @@ export default function BenefitsSection() {
       className="relative overflow-hidden"
       style={{ background: "linear-gradient(160deg,#F7F8FC 0%,#ffffff 50%,#FEFEFE 100%)" }}
     >
-      {/* ── Large decorative arc — top-right corner ── */}
-      {/* <div
-        className="absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full pointer-events-none opacity-[0.07]"
-        style={{ border: "40px solid #354C9C" }}
-      />
       <div
-        className="absolute -top-10 -right-10 w-[260px] h-[260px] rounded-full pointer-events-none opacity-[0.05]"
-        style={{ border: "24px solid #354C9C" }}
-      /> */}
-
-      <div className="relative z-10 max-w-[1100px] mx-auto
-                      px-4 sm:px-6 md:px-8 lg:px-10
-                      py-10 sm:py-12 md:py-14 lg:py-16">
-
-        {/* ── Heading ─────────────────────────────────────────────── */}
+        className="relative z-10 max-w-[1100px] mx-auto
+                   px-4 sm:px-6 md:px-8 lg:px-10
+                   py-10 sm:py-12 md:py-14 lg:py-16"
+      >
         <div className="text-center max-w-[720px] mx-auto">
           <h2
             className="
@@ -62,28 +52,12 @@ export default function BenefitsSection() {
           </p>
         </div>
 
-        {/* ── "HydraFacial offers:" divider ───────────────────────── */}
-        {/* <div className="mt-8 sm:mt-10 flex items-center gap-3 sm:gap-4">
-          <div className="flex-1 h-px bg-[#D8DDE8]" />
-          <div
-            className="
-              flex-shrink-0 bg-[#354C9C] text-white font-semibold rounded-lg
-              px-5 sm:px-7 py-2 sm:py-2.5
-              text-[11px] sm:text-[12px] md:text-[13px]
-            "
-          >
-            HydraFacial offers:
-          </div>
-          <div className="flex-1 h-px bg-[#D8DDE8]" />
-        </div> */}
-          <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
-          {/* Left: dot → line */}
+        <div className="mt-4 sm:mt-5 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4">
           <div className="hidden sm:flex items-center gap-1.5 flex-1 min-w-0">
             <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C]" />
             <div className="flex-1 h-px bg-[#D8DDE8]" />
           </div>
 
-          {/* Pill */}
           <div
             className="
               flex-shrink-0 bg-[#354C9C] text-white font-semibold rounded-lg
@@ -95,95 +69,41 @@ export default function BenefitsSection() {
             HydraFacial offers:
           </div>
 
-          {/* Right: line → dot */}
           <div className="hidden sm:flex items-center gap-1.5 flex-1 min-w-0">
             <div className="flex-1 h-px bg-[#D8DDE8]" />
             <div className="flex-shrink-0 w-2 h-2 rounded-full bg-[#354C9C]" />
           </div>
         </div>
 
-        {/* ── Benefit rows ────────────────────────────────────────── */}
-        <div className="mt-5 sm:mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-0">
-          {offers.map((item, i) => (
-            <div
-              key={i}
-              className="
-                group flex items-center gap-4
-                py-4 sm:py-5
-                border-b border-[#D8DDE8]
-                hover:bg-[#F7F8FC] hover:px-3 hover:rounded-xl
-                transition-all duration-200
-                sm:[&:nth-last-child(2)]:border-b-0
-                last:border-b-0
-              "
-            >
-              {/* Large background number — decorative */}
-              <span
-                className="
-                  flex-shrink-0 font-black text-[#354C9C] select-none
-                  text-[22px] sm:text-[26px] opacity-[0.12] w-8 text-right leading-none
-                "
-              >
-                {i + 1}
-              </span>
-
-              {/* Check badge */}
-              <div
-                className="
-                  flex-shrink-0 flex items-center justify-center rounded-full
-                  bg-[#354C9C] group-hover:bg-[#2B3E80]
-                  transition-colors duration-200
-                  w-7 h-7 sm:w-8 sm:h-8
-                "
-              >
-                <CheckIcon className="text-white w-3.5 h-3.5 sm:w-4 sm:h-4" />
-              </div>
-
-              {/* Text */}
-              <p
-                className="
-                  font-semibold text-[#363435] leading-snug
-                  text-[14px] sm:text-[15px] md:text-[16px]
-                "
-              >
-                {item}
+        <div className="mt-5 sm:mt-6 overflow-hidden rounded-[28px] border border-[#D8DDE8] bg-white shadow-[0_8px_28px_rgba(53,76,156,0.06)]">
+          <div className="grid grid-cols-2">
+            <div className="border-b border-[#D8DDE8] bg-[#F7F8FC] px-4 sm:px-6 py-4">
+              <p className="font-bold text-[#363435] text-[14px] sm:text-[15px] md:text-[16px]">
+                Regular Facial
               </p>
+            </div>
+            <div className="border-b border-l border-[#D8DDE8] bg-[#354C9C] px-4 sm:px-6 py-4">
+              <p className="font-bold text-white text-[14px] sm:text-[15px] md:text-[16px]">
+                HydraFacial
+              </p>
+            </div>
+          </div>
+
+          {offers.map((item, index) => (
+            <div key={index} className="grid grid-cols-2">
+              <div className="px-4 sm:px-6 py-4 sm:py-5 border-b border-[#E3E7F0]">
+                <p className="text-[#555555] leading-[1.7] text-[13px] sm:text-[14px] md:text-[15px]">
+                  {item.regular}
+                </p>
+              </div>
+              <div className="px-4 sm:px-6 py-4 sm:py-5 border-l border-b border-[#E3E7F0] bg-[#FBFCFF]">
+                <p className="font-semibold text-[#363435] leading-[1.7] text-[13px] sm:text-[14px] md:text-[15px]">
+                  {item.hydrafacial}
+                </p>
+              </div>
             </div>
           ))}
         </div>
-
-        {/* ── Bottom note ─────────────────────────────────────────── */}
-        <div
-          className="
-            mt-8 sm:mt-10 relative overflow-hidden
-            rounded-2xl
-            px-6 sm:px-8 md:px-10 py-5 sm:py-6
-          "
-          style={{ background: "linear-gradient(135deg,#354C9C 0%,#1a3080 60%,#363435 100%)" }}
-        >
-          {/* Decorative circle */}
-          <div
-            className="absolute -right-10 -bottom-10 w-32 h-32 rounded-full opacity-10 pointer-events-none"
-            style={{ border: "20px solid #fff" }}
-          />
-          <div
-            className="absolute -right-4 -bottom-4 w-20 h-20 rounded-full opacity-10 pointer-events-none"
-            style={{ border: "12px solid #fff" }}
-          />
-
-          <p
-            className="
-              relative z-10 text-center text-white/90 leading-[1.75]
-              text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]
-              max-w-[680px] mx-auto
-            "
-          >
-            This makes HydraFacial an excellent option for individuals seeking{" "}
-            <span className="font-bold text-white">visible skin improvement</span>{" "}
-            with convenience and comfort.
-          </p>
-        </div>
-
       </div>
     </section>
   );

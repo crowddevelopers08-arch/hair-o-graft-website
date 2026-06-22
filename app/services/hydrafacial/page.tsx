@@ -4,14 +4,16 @@ import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
 
 import HeroSection from "@/components/sections/HeroSection";
+import HydraFacialIntroSection from "@/components/sections/HydraFacialIntroSection";
 import IntroSection from "@/components/sections/IntroSection";
 import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
 import UnderstandingSection from "@/components/sections/UnderstandingSection";
-import IdealCandidateSection from "@/components/sections/IdealCandidateSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
+import IdealCandidateSection from "@/components/sections/IdealCandidateSection";
 import ProcessSection from "@/components/sections/ProcessSection";
+import TreatmentDurationSection from "@/components/sections/TreatmentDurationSection";
 import RecoverySection from "@/components/sections/RecoverySection";
-import ExpertsSection from "@/components/sections/ExpertsSection";
+import BeforeAfterSection from "@/components/sections/BeforeAfterSection";
 import FAQSection from "@/components/sections/FAQSection";
 import FinalCTASection from "@/components/sections/FinalCTASection";
 
@@ -41,12 +43,16 @@ export default function HydraFacialPage() {
       <main className="mt-[76px]">
         <ScrollReveal>
           <HeroSection />
+          {/* <HydraFacialIntroSection /> */}
           <IntroSection />
           <WhyChooseUsSection />
           <UnderstandingSection />
-          <IdealCandidateSection />
           <BenefitsSection />
+          <IdealCandidateSection />
           <ProcessSection />
+          <TreatmentDurationSection />
+          <RecoverySection />
+          <BeforeAfterSection />
           <FAQSection />
           <FinalCTASection />
         </ScrollReveal>
@@ -54,4 +60,4 @@ export default function HydraFacialPage() {
       <Footer />
     </>
   );
-} 
+}

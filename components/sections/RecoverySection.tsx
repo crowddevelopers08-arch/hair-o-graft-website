@@ -1,62 +1,100 @@
 import Image from "next/image";
 
-/* ── Inline SVG icon ── */
 function CheckCircleIcon({ className }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+    <svg
+      className={className}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
       <polyline points="22 4 12 14.01 9 11.01" />
     </svg>
   );
 }
 
 const tips = [
-  "Daily Sunscreen Application",
-  "Maintain Internal Hydration",
-  "Avoid harsh chemical exfoliants for 48 hours",
+  "Applying sunscreen daily",
+  "Staying well hydrated",
+  "Following recommended skincare products",
+  "Avoiding harsh exfoliants for a few days",
+  "Limiting excessive sun exposure",
 ];
 
 export default function RecoverySection() {
   return (
-    <section className="py-14 sm:py-20 md:py-24 bg-[#F7F8FC]">
-      <div className="max-w-[1280px] mx-auto px-4 sm:px-6 md:px-16 grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 items-center">
-
-        {/* Text */}
-        <div className="space-y-6 sm:space-y-8 order-2 md:order-1">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-100 border border-amber-200">
-            <span className="w-2 h-2 rounded-full bg-amber-500 flex-shrink-0" />
-            <span className="text-amber-700 text-xs font-bold tracking-widest uppercase">Post-Treatment Care</span>
+    <section
+      className="relative overflow-hidden"
+      style={{ background: "linear-gradient(170deg,#F7F8FC 0%,#FEFEFE 55%,#ffffff 100%)" }}
+    >
+      <div className="max-w-[1180px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 py-8 sm:py-9 md:py-10 lg:py-10">
+        <div className="text-center max-w-[760px] mx-auto mb-6 sm:mb-7 lg:mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#354C9C]/10 border border-[#354C9C]/15">
+            <span className="w-2 h-2 rounded-full bg-[#354C9C] flex-shrink-0" />
+            <span className="text-[#354C9C] text-[11px] font-bold tracking-widest uppercase">
+              Post-Treatment Care
+            </span>
           </div>
-          <h2 className="text-[24px] sm:text-[30px] md:text-[32px] font-bold leading-[1.3] text-[#354C9C]">
-            Zero Downtime. Instant Results.
+
+          <h2 className="mt-4 font-extrabold leading-[1.1] tracking-tight text-[#363435] text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]">
+            Recovery &{" "}
+            <span className="text-[#354C9C]">Aftercare</span>
           </h2>
-          <p className="text-[14px] sm:text-base md:text-lg leading-relaxed text-gray-500">
-            The session typically lasts 30–60 minutes, allowing you to return to your daily
-            activities immediately. To maintain results, follow our expert tips:
+
+          <p className="mt-3 text-gray-500 leading-[1.75] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px]">
+            HydraFacial typically requires little to no downtime, and most patients can
+            resume their daily activities soon after treatment.
           </p>
-          <ul className="space-y-4 sm:space-y-5">
-            {tips.map((tip) => (
-              <li key={tip} className="flex items-center gap-3 sm:gap-4">
-                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-full bg-[#ED3136]/10 flex items-center justify-center flex-shrink-0">
-                  <CheckCircleIcon className="w-5 h-5 sm:w-5 sm:h-5 text-[#ED3136]" />
-                </div>
-                <span className="font-medium text-[#354C9C] text-sm sm:text-base md:text-lg leading-snug">{tip}</span>
-              </li>
-            ))}
-          </ul>
         </div>
 
-        {/* Image with tilt decoration */}
-        <div className="relative group order-1 md:order-2">
-          <div className="absolute inset-0 bg-[#354C9C]/10 rounded-2xl transform rotate-3 group-hover:rotate-0 transition-transform duration-500 pointer-events-none" />
-          <div className="relative z-10 w-full aspect-[4/3]">
-            <Image
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiblTPCnq0GSgLQqEzfTZ27eXZcDCZukqhhgFNhplP8Osw1mlDsWGbG7-V4gufK-YDuKeBn4uKihOQl3XrAzZaddltN1rJR2JJNQPKYXeIzrjeXfKtZzNhYfdm8ZLhpl6UYpkmsENY8g3zr4yFiR8G5rPxNx_4Zc9eKE1rAR12jBfkn3LAt65Kly8XArLU47TJAAv7bYIpL5ckCn_SOhPWLuDsNX9fVgL5lcmqcE9wZaxbyOUy-dZIRA"
-              alt="Aftercare Consultation"
-              fill
-              className="rounded-2xl shadow-2xl object-cover border-4 border-white"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
+        <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-4 sm:gap-5 lg:gap-6 items-stretch">
+          <div className="relative min-h-[240px] sm:min-h-[280px] lg:min-h-full rounded-[28px] overflow-hidden bg-white border border-[#D8DDE8] shadow-[0_8px_30px_rgba(53,76,156,0.08)]">
+            <div className="relative h-full min-h-[240px] sm:min-h-[280px]">
+              <Image
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiblTPCnq0GSgLQqEzfTZ27eXZcDCZukqhhgFNhplP8Osw1mlDsWGbG7-V4gufK-YDuKeBn4uKihOQl3XrAzZaddltN1rJR2JJNQPKYXeIzrjeXfKtZzNhYfdm8ZLhpl6UYpkmsENY8g3zr4yFiR8G5rPxNx_4Zc9eKE1rAR12jBfkn3LAt65Kly8XArLU47TJAAv7bYIpL5ckCn_SOhPWLuDsNX9fVgL5lcmqcE9wZaxbyOUy-dZIRA"
+                alt="HydraFacial aftercare consultation"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#1D2752]/75 via-[#1D2752]/20 to-transparent" />
+            </div>
+          </div>
+
+          <div className="bg-white rounded-[28px] border border-[#D8DDE8] shadow-[0_8px_30px_rgba(53,76,156,0.07)] p-4 sm:p-5 md:p-5 lg:p-6">
+            <div className="flex items-center gap-3 pb-3 border-b border-[#E4E8F0]">
+              <div className="w-10 h-10 rounded-2xl bg-[#354C9C] flex items-center justify-center flex-shrink-0">
+                <CheckCircleIcon className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <p className="text-[#354C9C] font-black tracking-widest uppercase text-[11px]">
+                  For optimal results, we recommend:
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-4 space-y-3">
+              {tips.map((tip, index) => (
+                <div
+                  key={tip}
+                  className="group flex items-start gap-3 rounded-2xl border border-[#E4E8F0] bg-[#FBFCFF] px-4 py-3 hover:border-[#C9D4F4] hover:shadow-[0_8px_24px_rgba(53,76,156,0.08)] transition-all duration-200"
+                >
+                  <span className="w-7 text-[#354C9C] text-[18px] font-black leading-none opacity-15">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div className="w-9 h-9 rounded-full bg-[#354C9C]/10 flex items-center justify-center flex-shrink-0">
+                    <CheckCircleIcon className="w-4 h-4 text-[#354C9C]" />
+                  </div>
+                  <p className="text-[#555555] leading-[1.65] text-[14px] sm:text-[15px] md:text-[15px]">
+                    {tip}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
