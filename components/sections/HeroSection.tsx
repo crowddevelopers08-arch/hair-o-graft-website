@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/hydramobban.png')",
+          backgroundImage:    "url('/hymob.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",
@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage:    "url('/bandes.png')",
+          backgroundImage:    "url('/hyban.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center center",
           backgroundRepeat:   "no-repeat",

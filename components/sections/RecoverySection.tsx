@@ -55,7 +55,7 @@ export default function RecoverySection() {
           <div className="relative min-h-[240px] sm:min-h-[280px] lg:min-h-full rounded-[28px] overflow-hidden bg-white border border-[#D8DDE8] shadow-[0_8px_30px_rgba(53,76,156,0.08)]">
             <div className="relative h-full min-h-[240px] sm:min-h-[280px]">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiblTPCnq0GSgLQqEzfTZ27eXZcDCZukqhhgFNhplP8Osw1mlDsWGbG7-V4gufK-YDuKeBn4uKihOQl3XrAzZaddltN1rJR2JJNQPKYXeIzrjeXfKtZzNhYfdm8ZLhpl6UYpkmsENY8g3zr4yFiR8G5rPxNx_4Zc9eKE1rAR12jBfkn3LAt65Kly8XArLU47TJAAv7bYIpL5ckCn_SOhPWLuDsNX9fVgL5lcmqcE9wZaxbyOUy-dZIRA"
+                src="/hyrecovery.png"
                 alt="HydraFacial aftercare consultation"
                 fill
                 className="object-cover"

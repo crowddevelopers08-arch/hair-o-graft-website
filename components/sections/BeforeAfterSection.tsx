@@ -5,15 +5,15 @@ import { useEffect, useState } from "react";
 
 const galleryImages = [
   {
-    src: "/hydraban.png",
+    src: "/hyone.png",
     alt: "HydraFacial treatment showcase",
   },
   {
-    src: "/whyy.png",
+    src: "/hytwo.png",
     alt: "HydraFacial device close-up",
   },
   {
-    src: "/hydramobban.png",
+    src: "/hythree.png",
     alt: "HydraFacial skin care visual",
   },
 ];
@@ -58,7 +58,7 @@ export default function BeforeAfterSection() {
               style={{ transform: `translateX(-${activeIndex * 100}%)` }}
             >
               {galleryImages.map((image) => (
-                <div key={image.src} className="relative min-w-full aspect-[16/10] sm:aspect-[16/9]">
+                <div key={image.src} className="relative min-w-full aspect-square">
                   <Image
                     src={image.src}
                     alt={image.alt}
@@ -90,7 +90,7 @@ export default function BeforeAfterSection() {
           {galleryImages.map((image) => (
             <div
               key={image.src}
-              className="relative overflow-hidden rounded-[28px] border border-[#D8DDE8] bg-[#F7F8FC] shadow-[0_8px_28px_rgba(53,76,156,0.06)] aspect-[16/11]"
+              className="relative overflow-hidden rounded-[28px] border border-[#D8DDE8] bg-[#F7F8FC] shadow-[0_8px_28px_rgba(53,76,156,0.06)] aspect-square"
             >
               <Image
                 src={image.src}
