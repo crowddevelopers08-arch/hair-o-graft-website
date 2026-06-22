@@ -164,21 +164,21 @@ export default function IdealCandidateSection() {
               <div key={i}
                 className={`relative flex flex-col items-center text-center
                             bg-[#F7F8FC] border border-[#D8DDE8] rounded-xl
-                            px-2 py-3 gap-1.5
+                            px-3 py-4 gap-2
                             ${i === benefits.length - 1 ? "col-span-2 max-w-[50%] mx-auto w-full" : ""}`}>
                 {/* Number chip */}
                 <span className="absolute top-1.5 left-1.5 flex items-center justify-center
                                   rounded-full bg-[#354C9C] text-white font-bold
-                                  w-4 h-4 text-[8px]">
+                                  w-6 h-6 text-[10px]">
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 {/* Icon */}
                 <div className="flex items-center justify-center rounded-lg bg-white
-                                shadow-sm w-9 h-9 mt-1">
-                  <b.Icon className="text-[#354C9C] w-5 h-5" />
+                                shadow-sm w-11 h-11 mt-1.5">
+                  <b.Icon className="text-[#354C9C] w-6 h-6" />
                 </div>
                 {/* Title */}
-                <p className="font-semibold text-[#363435] leading-snug text-[10px]">
+                <p className="font-semibold text-[#363435] leading-snug text-[12px]">
                   {b.title}
                 </p>
               </div>

@@ -170,8 +170,7 @@ export default function UnderstandingSection() {
                 hover:-translate-y-0.5
                 transition-all duration-200
                 p-3 sm:p-4 md:p-4
-                w-full
-                min-[420px]:w-[calc(50%_-_5px)]
+                w-[calc(50%_-_4px)]
                 sm:w-[calc(50%_-_6px)]
                 lg:w-[calc(25%_-_8px)]
               "
