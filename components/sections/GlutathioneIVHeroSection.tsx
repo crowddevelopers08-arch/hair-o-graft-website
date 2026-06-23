@@ -1,12 +1,12 @@
-export default function AcneScarHeroSection() {
+export default function GlutathioneIVHeroSection() {
   return (
     <section id="overview" className="relative w-full overflow-hidden">
 
-      {/* Mobile image (hidden on lg+) */}
+      {/* ── Mobile image (hidden on lg+) ── */}
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/acnemobbanner.png')",
+          backgroundImage:    "url('/Glutathionemobban.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",
@@ -14,11 +14,11 @@ export default function AcneScarHeroSection() {
         }}
       />
 
-      {/* Desktop image (hidden below lg) */}
+      {/* ── Desktop image (hidden below lg) ── */}
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage:    "url('/neacnebanner.png')",
+          backgroundImage:    "url('/Glutathioneban.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center center",
           backgroundRepeat:   "no-repeat",
@@ -31,3 +31,4 @@ export default function AcneScarHeroSection() {
     </section>
   );
 }
+
