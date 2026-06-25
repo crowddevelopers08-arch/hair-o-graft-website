@@ -23,7 +23,7 @@ export default function CarbonPeelWhyChooseUsSection() {
     <section
       className="relative overflow-hidden"
       style={{
-        backgroundImage:    "url('/whyy.png')",
+        backgroundImage:    "url('/CARBONWHY.png')",
         backgroundSize:     "cover",
         backgroundPosition: "right center",
         backgroundRepeat:   "no-repeat",

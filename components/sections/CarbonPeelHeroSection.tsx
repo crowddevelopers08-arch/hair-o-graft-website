@@ -6,11 +6,11 @@ export default function CarbonPeelHeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/cpmob.png')",
+          backgroundImage:    "url('/carbonmob.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",
-          minHeight:          "150vw",
+          minHeight:          "208vw",
         }}
       />
 
@@ -18,7 +18,7 @@ export default function CarbonPeelHeroSection() {
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage:    "url('/cpban.png')",
+          backgroundImage:    "url('/carbonban.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center center",
           backgroundRepeat:   "no-repeat",

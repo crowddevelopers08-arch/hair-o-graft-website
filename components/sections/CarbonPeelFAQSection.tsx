@@ -13,32 +13,32 @@ const faqs = [
   {
     num: "01",
     q: "Is Carbon Peel painful?",
-    a: "Carbon Peel is generally considered a comfortable treatment. Patients may feel a mild warming or slight tingling sensation during the laser phase, which is usually well tolerated.",
+    a: "Carbon Peel is generally considered a gentle and comfortable treatment. You may feel mild warmth or a slight tingling sensation during the procedure.",
   },
   {
     num: "02",
     q: "How long does a Carbon Peel session take?",
-    a: "A typical Carbon Peel session takes approximately 30 to 45 minutes, including preparation and post-treatment care.",
+    a: "Most Carbon Peel sessions take between 20 and 45 minutes.",
   },
   {
     num: "03",
     q: "Is there any downtime after treatment?",
-    a: "Carbon Peel usually requires little to no downtime. Most patients can return to their daily routine shortly after the session.",
+    a: "Carbon Peel usually requires little to no downtime. Mild redness may occur briefly after treatment.",
   },
   {
     num: "04",
-    q: "How many sessions are recommended?",
-    a: "The number of sessions varies depending on individual skin concerns and goals. A personalised treatment plan is created during the initial consultation.",
+    q: "How soon will I see results?",
+    a: "Some patients notice changes in skin texture and appearance shortly after treatment, while others may require multiple sessions. Results vary between individuals.",
   },
   {
     num: "05",
-    q: "Can Carbon Peel help with acne-prone skin?",
-    a: "Carbon Peel may help improve congested pores and oily skin, which are common factors associated with acne-prone skin, when recommended by a skincare professional.",
+    q: "Can Carbon Peel help with oily or acne-prone skin?",
+    a: "Carbon Peel may help reduce excess oil and improve congested, acne-prone skin when recommended by a skincare professional.",
   },
   {
     num: "06",
-    q: "Is it suitable for all skin types?",
-    a: "Carbon Peel is generally suitable for a wide range of skin types. A consultation with our specialists helps determine if it is the right treatment for your individual skin.",
+    q: "How often should I get Carbon Peel treatments?",
+    a: "Treatment frequency depends on your skin concerns, skin type, and treatment goals. Your clinician can recommend a suitable treatment plan during your consultation.",
   },
 ];
 

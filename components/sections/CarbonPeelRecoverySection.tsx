@@ -39,16 +39,16 @@ export default function CarbonPeelRecoverySection() {
           </h2>
 
           <p className="mt-3 text-gray-500 leading-[1.75] text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px]">
-            Carbon Peel typically requires little to no downtime, and most patients can
-            resume their daily activities soon after the treatment session.
+            Carbon Peel generally involves little to no downtime, although some patients may
+            experience temporary redness or warmth following treatment.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-[0.92fr_1.08fr] gap-4 sm:gap-5 lg:gap-6 items-stretch">
           <div className="relative min-h-[240px] sm:min-h-[280px] lg:min-h-full rounded-[28px] overflow-hidden bg-white border border-[#D8DDE8] shadow-[0_8px_30px_rgba(53,76,156,0.08)]">
-            <div className="relative h-full min-h-[240px] sm:min-h-[280px]">
+            <div className="relative h-full min-h-[350px] sm:min-h-[280px]">
               <Image
-                src="/cprecovery.png"
+                src="/carbonlaser.png"
                 alt="Carbon peel aftercare"
                 fill
                 className="object-cover"
@@ -65,7 +65,7 @@ export default function CarbonPeelRecoverySection() {
               </div>
               <div>
                 <p className="text-[#354C9C] font-black tracking-widest uppercase text-[11px]">
-                  For optimal results, we recommend:
+                  After treatment, you may be advised to:
                 </p>
               </div>
             </div>

@@ -5,15 +5,15 @@ import { useEffect, useState } from "react";
 
 const galleryImages = [
   {
-    src: "/cpone.png",
+    src: "/cone.png",
     alt: "Carbon peel treatment showcase",
   },
   {
-    src: "/cptwo.png",
+    src: "/ctwo.png",
     alt: "Carbon peel skin improvement visual",
   },
   {
-    src: "/cpthree.png",
+    src: "/cthree.png",
     alt: "Carbon peel before and after result",
   },
 ];
