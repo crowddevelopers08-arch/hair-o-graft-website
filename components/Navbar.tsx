@@ -57,11 +57,11 @@ const navItems: NavSection[] = [
     color: "#e95b8a",
     Icon: SkinIcon,
     items: [
-      { label: "Glutathione IV", href: "/services/glutathione-iv" },
-      { label: "Hydrafacial", href: "/services/hydrafacial" },
-      { label: "Acne and scar", href: "/services/acne-scar-removal" },
-      { label: "Laser Hair Removal" },
-      { label: "Carbon Peel" },
+      { label: "Glutathione IV", href: "/services/skin-treatments/glutathione-iv" },
+      { label: "Hydrafacial", href: "/services/skin-treatments/hydrafacial" },
+      { label: "Acne and scar", href: "/services/skin-treatments/acne-scar-removal" },
+      { label: "Laser Hair Removal",href: "/services/skin-treatments/laser-hair-removal" },
+      { label: "Carbon Peel", href: "/services/skin-treatments/carbon-peel" },
     ],
   },
   {
@@ -69,11 +69,12 @@ const navItems: NavSection[] = [
     color: "#7EB3FF",
     Icon: HairIcon,
     items: [
-      { label: "GFC" },
-      { label: "PRP" },
-      { label: "PRP Pro+" },
+      { label: "GFC", href: "/services/hair-treatments/gfc" },
+      { label: "PRP", href: "/services/hair-treatments/prp" },
+      { label: "Micro Needling", href: "/services/hair-treatments/microneedling" },
       { label: "UV Light" },
-      { label: "Dandruff Treatment" },
+      // { label: "UV Light", href: "/services/hair-treatments/uv-light" },
+      { label: "Dandruff Treatment", href: "/services/hair-treatments/dandruff-treatment" },
     ],
   },
   {

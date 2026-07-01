@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/prpbfaf.png",   alt: "PRP hair treatment result showcase" },
-  { src: "/prpbfaf1.png",   alt: "PRP hair density improvement" },
-  { src: "/prpbfaf2.png", alt: "PRP hair restoration visual" },
+  { src: "/microbfaf1.png", alt: "Microneedling result showcase" },
+  { src: "/microbfaf2.png", alt: "Microneedling hair density improvement" },
+  { src: "/microbfaf3.png", alt: "Microneedling hair restoration visual" },
 ];
 
-export default function PRPBeforeAfterSection() {
+export default function MicroneedlingBeforeAfterSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -21,18 +21,24 @@ export default function PRPBeforeAfterSection() {
 
   return (
     <section className="bg-white">
-      <div className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10
-                      py-10 sm:py-12 md:py-14 lg:py-16">
-
+      <div
+        className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10
+                      py-10 sm:py-12 md:py-14 lg:py-16"
+      >
         <div className="text-center max-w-[680px] mx-auto mb-8 sm:mb-10">
-          <h2 className="font-extrabold leading-[1.1] tracking-tight text-[#363435]
-                         text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]">
+          <h2
+            className="font-extrabold leading-[1.1] tracking-tight text-[#363435]
+                         text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]"
+          >
             Before &amp; <span className="text-[#354C9C]">After Gallery</span>
           </h2>
-          <p className="mt-4 text-gray-500 leading-[1.8]
-                        text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
-            Explore real patient transformations and see how PRP has supported
-            healthier, stronger-looking hair.
+          <p
+            className="mt-4 text-gray-500 leading-[1.8]
+                        text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]"
+          >
+            Explore real patient transformations and see how microneedling has
+            supported healthier-looking hair as part of a personalised treatment
+            plan.
           </p>
         </div>
 
@@ -69,11 +75,18 @@ export default function PRPBeforeAfterSection() {
         {/* Desktop grid */}
         <div className="hidden lg:grid lg:grid-cols-3 gap-5 xl:gap-6">
           {galleryImages.map((image) => (
-            <div key={image.src}
+            <div
+              key={image.src}
               className="relative overflow-hidden rounded-[28px] border border-[#D8DDE8]
-                         bg-[#F7F8FC] shadow-[0_8px_28px_rgba(53,76,156,0.06)] aspect-square">
-              <Image src={image.src} alt={image.alt} fill className="object-cover"
-                sizes="(max-width: 1280px) 33vw, 360px" />
+                         bg-[#F7F8FC] shadow-[0_8px_28px_rgba(53,76,156,0.06)] aspect-square"
+            >
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1280px) 33vw, 360px"
+              />
             </div>
           ))}
         </div>
@@ -84,7 +97,6 @@ export default function PRPBeforeAfterSection() {
           <span className="text-[#354C9C] font-semibold">Hair O Graft</span>{" "}
           for their hair care journey.
         </p>
-
       </div>
     </section>
   );

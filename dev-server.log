@@ -1,0 +1,15 @@
+
+> hair-o-graft@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+▲ Next.js 16.2.9 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+✓ Ready in 3.7s
+Creating turbopack project {
+  dir: 'D:\\CrowMedi\\hair-o-graft-web\\hair-o-graft-website',
+  testMode: true
+}
+
+ GET /services/prp 200 in 5.3s (next.js: 4.0s, application-code: 1284ms)
+ GET /services/microneedling 200 in 1210ms (next.js: 546ms, application-code: 664ms)
