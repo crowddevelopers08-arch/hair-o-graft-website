@@ -21,7 +21,7 @@ export default function UVLightWhyChooseUsSection() {
     <section
       className="relative overflow-hidden"
       style={{
-        backgroundImage: "url('/prpbg.png')",
+        backgroundImage: "url('/uv-lightwhy.png')",
         backgroundSize: "cover",
         backgroundPosition: "right center",
         backgroundRepeat: "no-repeat",

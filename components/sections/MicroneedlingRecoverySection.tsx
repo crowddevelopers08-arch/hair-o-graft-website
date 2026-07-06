@@ -54,7 +54,7 @@ export default function MicroneedlingRecoverySection() {
           >
             <div className="relative h-full min-h-[350px] sm:min-h-[280px]">
               <Image
-                src="/microneedtreat.png"
+                src="/microneedling-treat.png"
                 alt="Microneedling aftercare"
                 fill
                 className="object-cover"

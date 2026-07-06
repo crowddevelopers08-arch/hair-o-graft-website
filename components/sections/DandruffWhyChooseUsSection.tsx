@@ -21,7 +21,7 @@ export default function DandruffWhyChooseUsSection() {
     <section
       className="relative overflow-hidden"
       style={{
-        backgroundImage: "url('/dandruffbg.png')",
+        backgroundImage: "url('/dandruff-choose.png')",
         backgroundSize: "cover",
         backgroundPosition: "right center",
         backgroundRepeat: "no-repeat",

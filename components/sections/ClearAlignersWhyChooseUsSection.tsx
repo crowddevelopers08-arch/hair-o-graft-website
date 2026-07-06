@@ -4,24 +4,24 @@ import type { IconType } from "react-icons";
 const rows: { Icon: IconType; text: string }[] = [
   {
     Icon: FiInfo,
-    text: "Scalp microneedling is a minimally invasive treatment that uses fine, sterile needles to create controlled micro-channels in the scalp.",
+    text: "Clear aligners are custom-made, removable, transparent trays that gradually move your teeth into better alignment.",
   },
   {
     Icon: FiDroplet,
-    text: "The treatment is designed to stimulate the scalp's natural healing response and may support the absorption of topical hair treatments. It is commonly used as part of a personalised hair restoration plan rather than as a standalone treatment for hair loss.",
+    text: "Created using a digital scan of your teeth, each set of aligners is designed to make small, controlled tooth movements. Because they are removable, you can eat, brush, and floss more comfortably throughout treatment.",
   },
   {
     Icon: FiShield,
-    text: "A consultation can help determine whether microneedling is suitable for your scalp condition and treatment goals.",
+    text: "A consultation helps determine whether clear aligners are suitable for your orthodontic needs.",
   },
 ];
 
-export default function MicroneedlingWhyChooseUsSection() {
+export default function ClearAlignersWhyChooseUsSection() {
   return (
     <section
       className="relative overflow-hidden"
       style={{
-        backgroundImage: "url('/micro-choose.png')",
+        backgroundImage: "url('/dental-choose.png')",
         backgroundSize: "cover",
         backgroundPosition: "right center",
         backgroundRepeat: "no-repeat",
@@ -44,7 +44,7 @@ export default function MicroneedlingWhyChooseUsSection() {
 
       <div
         className="relative z-10 flex flex-col justify-center
-                      min-h-[auto] lg:min-h-[640px] xl:min-h-[700px]
+                      min-h-[auto] lg:min-h-[600px] xl:min-h-[600px]
                       px-4 sm:px-8 md:px-12 lg:px-14 xl:px-16 2xl:px-20
                       py-8 sm:py-12 lg:py-0"
       >
@@ -53,9 +53,9 @@ export default function MicroneedlingWhyChooseUsSection() {
             className="font-extrabold leading-[1.05] tracking-tight text-[#363435]
                           text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]"
           >
-            What is
+            What Are
             <br />
-            <span className="text-[#354C9C]">Microneedling for Hair?</span>
+            <span className="text-[#354C9C]">Clear Aligners?</span>
           </h2>
 
           <div className="mt-5 sm:mt-7 lg:mt-8 space-y-3 sm:space-y-5">

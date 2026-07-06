@@ -1,4 +1,4 @@
-export default function DandruffHeroSection() {
+export default function RootCanalHeroSection() {
   return (
     <section id="overview" className="relative w-full overflow-hidden">
 
@@ -6,7 +6,7 @@ export default function DandruffHeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/dandruff-bg-mb.png')",
+          backgroundImage:    "url('/gfcmob.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",
@@ -18,7 +18,7 @@ export default function DandruffHeroSection() {
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage:    "url('/dandruff-bg-lt.png')",
+          backgroundImage:    "url('/gfcbann.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center center",
           backgroundRepeat:   "no-repeat",

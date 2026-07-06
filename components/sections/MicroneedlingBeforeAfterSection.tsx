@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/microbfaf1.png", alt: "Microneedling result showcase" },
-  { src: "/microbfaf2.png", alt: "Microneedling hair density improvement" },
-  { src: "/microbfaf3.png", alt: "Microneedling hair restoration visual" },
+  { src: "/microbfaf-1.png", alt: "Microneedling result showcase" },
+  { src: "/microbfaf-2.png", alt: "Microneedling hair density improvement" },
+  { src: "/microbfaf-3.png", alt: "Microneedling hair restoration visual" },
 ];
 
 export default function MicroneedlingBeforeAfterSection() {

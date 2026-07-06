@@ -54,7 +54,7 @@ export default function UVLightRecoverySection() {
           >
             <div className="relative h-full min-h-[350px] sm:min-h-[280px]">
               <Image
-                src="/prptreatment.png"
+                src="/uv-light-treatus.png"
                 alt="UV light therapy aftercare"
                 fill
                 className="object-cover"

@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/dandruffone.png",   alt: "Dandruff treatment result showcase" },
-  { src: "/dandrufftwo.png",   alt: "Scalp health improvement after dandruff treatment" },
-  { src: "/dandruffthree.png", alt: "Dandruff treatment before and after visual" },
+  { src: "/dandruff-bfaf-1.png",   alt: "Dandruff treatment result showcase" },
+  { src: "/dandruff-bfaf-3.png",   alt: "Scalp health improvement after dandruff treatment" },
+  { src: "/dandruff-bfaf-2.png", alt: "Dandruff treatment before and after visual" },
 ];
 
 export default function DandruffBeforeAfterSection() {

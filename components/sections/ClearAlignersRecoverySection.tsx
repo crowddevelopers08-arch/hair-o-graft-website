@@ -2,14 +2,14 @@ import Image from "next/image";
 import { FiCheckCircle } from "react-icons/fi";
 
 const tips = [
-  "Following the recommended scalp care routine",
-  "Using suggested medicated or scalp-friendly products",
-  "Avoiding harsh hair products that may irritate the scalp",
-  "Not scratching or over-washing the scalp",
-  "Keeping up with maintenance care to help reduce recurrence",
+  "Wearing your aligners as instructed (20-22 hours per day)",
+  "Cleaning your aligners regularly",
+  "Maintaining good oral hygiene and regular brushing",
+  "Wearing retainers as advised once treatment is complete",
+  "Attending your scheduled review appointments",
 ];
 
-export default function DandruffRecoverySection() {
+export default function ClearAlignersRecoverySection() {
   return (
     <section
       className="relative overflow-hidden"
@@ -35,7 +35,8 @@ export default function DandruffRecoverySection() {
 
           <p className="mt-3 text-gray-500 leading-[1.75]
                         text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px]">
-            Dandruff treatment typically requires little to no downtime.
+            Clear aligners involve no downtime, though mild pressure or tenderness when
+            starting a new tray is normal and usually settles within a day or two.
           </p>
         </div>
 
@@ -44,10 +45,10 @@ export default function DandruffRecoverySection() {
           <div className="relative min-h-[240px] sm:min-h-[280px] lg:min-h-full
                           rounded-[28px] overflow-hidden bg-white border border-[#D8DDE8]
                           shadow-[0_8px_30px_rgba(53,76,156,0.08)]">
-            <div className="relative h-full min-h-[350px] sm:min-h-[280px]">
+            <div className="relative h-full min-h-[380px] sm:min-h-[280px]">
               <Image
-                src="/dandruff-treat.png"
-                alt="Dandruff treatment aftercare"
+                src="/dental-treat.png"
+                alt="Clear aligners aftercare"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 45vw"
@@ -64,7 +65,7 @@ export default function DandruffRecoverySection() {
                 <FiCheckCircle className="w-5 h-5 text-white" />
               </div>
               <p className="text-[#354C9C] font-black tracking-widest uppercase text-[11px]">
-                For optimal results, we recommend:
+                For the best results, we recommend:
               </p>
             </div>
 

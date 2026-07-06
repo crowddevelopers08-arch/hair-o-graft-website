@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/uv-bfaf-3.png", alt: "UV light therapy result showcase" },
-  { src: "/uv-bfaf-1.png", alt: "UV light therapy scalp and hair improvement" },
-  { src: "/uv-bfaf-2.png", alt: "UV light therapy hair outcome visual" },
+  { src: "/gfc1.png", alt: "Clear aligners smile transformation showcase" },
+  { src: "/gfc2.png", alt: "Clear aligners teeth alignment result" },
+  { src: "/gfc3.png", alt: "Clear aligners smile improvement visual" },
 ];
 
-export default function UVLightBeforeAfterSection() {
+export default function ClearAlignersBeforeAfterSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -21,24 +21,18 @@ export default function UVLightBeforeAfterSection() {
 
   return (
     <section className="bg-white">
-      <div
-        className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10
-                      py-10 sm:py-12 md:py-14 lg:py-16"
-      >
+      <div className="max-w-[1100px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10
+                      py-10 sm:py-12 md:py-14 lg:py-16">
+
         <div className="text-center max-w-[680px] mx-auto mb-8 sm:mb-10">
-          <h2
-            className="font-extrabold leading-[1.1] tracking-tight text-[#363435]
-                         text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]"
-          >
+          <h2 className="font-extrabold leading-[1.1] tracking-tight text-[#363435]
+                         text-[24px] sm:text-[28px] md:text-[33px] lg:text-[40px] xl:text-[48px]">
             Before &amp; <span className="text-[#354C9C]">After Gallery</span>
           </h2>
-          <p
-            className="mt-4 text-gray-500 leading-[1.8]
-                        text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]"
-          >
-            Explore real patient transformations and see how UV light therapy
-            has supported healthier scalp and hair outcomes for suitable
-            conditions.
+          <p className="mt-4 text-gray-500 leading-[1.8]
+                        text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
+            Explore real patient transformations and see how clear aligners have helped
+            individuals achieve straighter, healthier-looking smiles.
           </p>
         </div>
 
@@ -75,18 +69,11 @@ export default function UVLightBeforeAfterSection() {
         {/* Desktop grid */}
         <div className="hidden lg:grid lg:grid-cols-3 gap-5 xl:gap-6">
           {galleryImages.map((image) => (
-            <div
-              key={image.src}
+            <div key={image.src}
               className="relative overflow-hidden rounded-[28px] border border-[#D8DDE8]
-                         bg-[#F7F8FC] shadow-[0_8px_28px_rgba(53,76,156,0.06)] aspect-square"
-            >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1280px) 33vw, 360px"
-              />
+                         bg-[#F7F8FC] shadow-[0_8px_28px_rgba(53,76,156,0.06)] aspect-square">
+              <Image src={image.src} alt={image.alt} fill className="object-cover"
+                sizes="(max-width: 1280px) 33vw, 360px" />
             </div>
           ))}
         </div>
@@ -95,8 +82,9 @@ export default function UVLightBeforeAfterSection() {
         <p className="mt-8 sm:mt-10 text-center text-gray-400 text-[13px] sm:text-[14px]">
           Patients have trusted{" "}
           <span className="text-[#354C9C] font-semibold">Hair O Graft</span>{" "}
-          for their hair care journey.
+          for their smile journey.
         </p>
+
       </div>
     </section>
   );

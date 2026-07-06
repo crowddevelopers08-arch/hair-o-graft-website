@@ -3,13 +3,13 @@ export default function UVLightHeroSection() {
     <section id="overview" className="relative w-full overflow-hidden">
       {/* Mobile image (hidden on lg+) */}
       <div
-        className="block lg:hidden w-full"
+        className="block lg:hidden"
         style={{
-          backgroundImage: "url('/prpmobban.png')",
+          backgroundImage: "url('/uv-lightbackground.png')",
           backgroundSize: "cover",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
-          minHeight: "210vw",
+          minHeight: "180vw",
         }}
       />
 
@@ -17,7 +17,7 @@ export default function UVLightHeroSection() {
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage: "url('/prpban.png')",
+          backgroundImage: "url('/uvlight-bg.png')",
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundRepeat: "no-repeat",
