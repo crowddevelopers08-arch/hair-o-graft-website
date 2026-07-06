@@ -17,31 +17,31 @@ import UVLightFAQSection from "@/components/sections/UVLightFAQSection";
 import UVLightFinalCTASection from "@/components/sections/UVLightFinalCTASection";
 
 export const metadata: Metadata = {
-  title: "PRP Hair Treatment in Chennai | Hair O Graft",
+  title: "UV Light Therapy for Hair in Chennai | Hair O Graft",
   description:
-    "PRP (Platelet-Rich Plasma) hair treatment at Hair O Graft, Avadi Chennai. A non-surgical, autologous treatment for hair thinning and hair loss. Book a consultation today.",
+    "UV light therapy at Hair O Graft, Avadi Chennai. Controlled phototherapy for scalp conditions and hair concerns, guided by specialist assessment.",
   keywords: [
-    "PRP hair treatment Chennai",
-    "platelet rich plasma hair treatment Chennai",
-    "PRP treatment Avadi",
-    "hair loss treatment Chennai",
+    "UV light therapy Chennai",
+    "UV light therapy for hair Chennai",
+    "phototherapy for scalp Chennai",
+    "UV hair treatment Avadi",
+    "scalp phototherapy Chennai",
     "non-surgical hair restoration Chennai",
-    "hair thinning treatment Avadi",
-    "PRP hair treatment Hair O Graft",
-    "autologous hair treatment Chennai",
+    "hair loss treatment Chennai",
+    "UV light therapy Hair O Graft",
   ],
   openGraph: {
-    title: "PRP Hair Treatment in Chennai | Hair O Graft",
+    title: "UV Light Therapy for Hair in Chennai | Hair O Graft",
     description:
-      "PRP (Platelet-Rich Plasma) hair treatment at Hair O Graft, Avadi Chennai. A personalised, non-surgical approach for hair thinning and hair loss.",
-    url: "https://hairograft.com/services/prp",
+      "Controlled UV light therapy at Hair O Graft, Avadi Chennai, for suitable scalp and hair concerns after specialist evaluation.",
+    url: "https://hairograft.com/services/hair-treatments/uv-light",
     siteName: "Hair O Graft",
     locale: "en_IN",
     type: "website",
   },
 };
 
-export default function PRPPage() {
+export default function UVLightPage() {
   return (
     <>
       <Navbar />

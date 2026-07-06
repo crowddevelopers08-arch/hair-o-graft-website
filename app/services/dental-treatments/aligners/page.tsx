@@ -16,31 +16,31 @@ import ClearAlignersFAQSection from "@/components/sections/ClearAlignersFAQSecti
 import ClearAlignersFinalCTASection from "@/components/sections/ClearAlignersFinalCTASection";
 
 export const metadata: Metadata = {
-  title: "GFC Hair Treatment in Chennai | Hair O Graft",
+  title: "Clear Aligners in Chennai | Hair O Graft",
   description:
-    "GFC (Growth Factor Concentrate) hair treatment at Hair O Graft, Avadi Chennai. A non-surgical, autologous treatment for hair thinning and hair loss. Book a consultation today.",
+    "Clear aligners at Hair O Graft, Avadi Chennai. Custom-made, removable, transparent aligners for discreet teeth straightening. Book a dental consultation today.",
   keywords: [
-    "GFC hair treatment Chennai",
-    "growth factor concentrate Chennai",
-    "GFC treatment Avadi",
-    "hair loss treatment Chennai",
-    "non-surgical hair restoration Chennai",
-    "hair thinning treatment Avadi",
-    "GFC hair treatment Hair O Graft",
-    "autologous hair treatment Chennai",
+    "clear aligners Chennai",
+    "clear aligners Avadi",
+    "teeth aligners Chennai",
+    "invisible aligners Chennai",
+    "transparent braces Chennai",
+    "teeth straightening Avadi",
+    "orthodontic aligners Chennai",
+    "clear aligners Hair O Graft",
   ],
   openGraph: {
-    title: "GFC Hair Treatment in Chennai | Hair O Graft",
+    title: "Clear Aligners in Chennai | Hair O Graft",
     description:
-      "GFC (Growth Factor Concentrate) hair treatment at Hair O Graft, Avadi Chennai. A personalised, non-surgical approach for hair thinning and hair loss.",
-    url: "https://hairograft.com/services/gfc",
+      "Custom-made clear aligners at Hair O Graft, Avadi Chennai. A discreet, removable option for improving teeth alignment and smile aesthetics.",
+    url: "https://hairograft.com/services/dental-treatments/aligners",
     siteName: "Hair O Graft",
     locale: "en_IN",
     type: "website",
   },
 };
 
-export default function GFCPage() {
+export default function ClearAlignersPage() {
   return (
     <>
       <Navbar />

@@ -6,7 +6,7 @@ export default function ClearAlignersHeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/dental-bg.png')",
+          backgroundImage:    "url('/aligner-mb.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",

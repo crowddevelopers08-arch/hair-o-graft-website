@@ -16,31 +16,31 @@ import RootCanalFAQSection from "@/components/sections/RootCanalFAQSection";
 import RootCanalFinalCTASection from "@/components/sections/RootCanalFinalCTASection";
 
 export const metadata: Metadata = {
-  title: "GFC Hair Treatment in Chennai | Hair O Graft",
+  title: "Root Canal Treatment in Chennai | Hair O Graft",
   description:
-    "GFC (Growth Factor Concentrate) hair treatment at Hair O Graft, Avadi Chennai. A non-surgical, autologous treatment for hair thinning and hair loss. Book a consultation today.",
+    "Root canal treatment at Hair O Graft, Avadi Chennai. Gentle endodontic care to relieve tooth pain, treat infection, and help preserve your natural tooth.",
   keywords: [
-    "GFC hair treatment Chennai",
-    "growth factor concentrate Chennai",
-    "GFC treatment Avadi",
-    "hair loss treatment Chennai",
-    "non-surgical hair restoration Chennai",
-    "hair thinning treatment Avadi",
-    "GFC hair treatment Hair O Graft",
-    "autologous hair treatment Chennai",
+    "root canal treatment Chennai",
+    "root canal treatment Avadi",
+    "root canal dentist Chennai",
+    "endodontic treatment Chennai",
+    "tooth pain treatment Avadi",
+    "infected tooth treatment Chennai",
+    "dental root canal Chennai",
+    "root canal Hair O Graft",
   ],
   openGraph: {
-    title: "GFC Hair Treatment in Chennai | Hair O Graft",
+    title: "Root Canal Treatment in Chennai | Hair O Graft",
     description:
-      "GFC (Growth Factor Concentrate) hair treatment at Hair O Graft, Avadi Chennai. A personalised, non-surgical approach for hair thinning and hair loss.",
-    url: "https://hairograft.com/services/gfc",
+      "Gentle root canal treatment at Hair O Graft, Avadi Chennai, designed to relieve pain, treat infection, and preserve your natural tooth.",
+    url: "https://hairograft.com/services/dental-treatments/root-canal",
     siteName: "Hair O Graft",
     locale: "en_IN",
     type: "website",
   },
 };
 
-export default function GFCPage() {
+export default function RootCanalPage() {
   return (
     <>
       <Navbar />

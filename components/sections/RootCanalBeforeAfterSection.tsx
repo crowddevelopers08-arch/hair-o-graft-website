@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/gfc1.png", alt: "Root canal treatment result showcase" },
-  { src: "/gfc2.png", alt: "Root canal restored tooth visual" },
-  { src: "/gfc3.png", alt: "Root canal dental treatment transformation" },
+  { src: "/rtc-bfaf-1.png", alt: "Root canal treatment result showcase" },
+  { src: "/rtc-bfaf-2.png", alt: "Root canal restored tooth visual" },
+  { src: "/rtc-bfaf-3.png", alt: "Root canal dental treatment transformation" },
 ];
 
 export default function RootCanalBeforeAfterSection() {

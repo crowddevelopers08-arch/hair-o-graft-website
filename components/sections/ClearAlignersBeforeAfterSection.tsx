@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/gfc1.png", alt: "Clear aligners smile transformation showcase" },
-  { src: "/gfc2.png", alt: "Clear aligners teeth alignment result" },
-  { src: "/gfc3.png", alt: "Clear aligners smile improvement visual" },
+  { src: "/cl-bfaf-1.png", alt: "Clear aligners smile transformation showcase" },
+  { src: "/cl-bfafs-2.png", alt: "Clear aligners teeth alignment result" },
+  { src: "/cl-bfaf-3.png", alt: "Clear aligners smile improvement visual" },
 ];
 
 export default function ClearAlignersBeforeAfterSection() {

@@ -16,31 +16,31 @@ import MicroneedlingFAQSection from "@/components/sections/MicroneedlingFAQSecti
 import MicroneedlingFinalCTASection from "@/components/sections/MicroneedlingFinalCTASection";
 
 export const metadata: Metadata = {
-  title: "PRP Hair Treatment in Chennai | Hair O Graft",
+  title: "Microneedling for Hair in Chennai | Hair O Graft",
   description:
-    "PRP (Platelet-Rich Plasma) hair treatment at Hair O Graft, Avadi Chennai. A non-surgical, autologous treatment for hair thinning and hair loss. Book a consultation today.",
+    "Scalp microneedling at Hair O Graft, Avadi Chennai. A minimally invasive hair treatment that supports scalp health, hair thinning care, and treatment absorption.",
   keywords: [
-    "PRP hair treatment Chennai",
-    "platelet rich plasma hair treatment Chennai",
-    "PRP treatment Avadi",
+    "microneedling for hair Chennai",
+    "scalp microneedling Chennai",
+    "microneedling treatment Avadi",
     "hair loss treatment Chennai",
-    "non-surgical hair restoration Chennai",
+    "hair regrowth treatment Chennai",
     "hair thinning treatment Avadi",
-    "PRP hair treatment Hair O Graft",
-    "autologous hair treatment Chennai",
+    "non-surgical hair restoration Chennai",
+    "microneedling Hair O Graft",
   ],
   openGraph: {
-    title: "PRP Hair Treatment in Chennai | Hair O Graft",
+    title: "Microneedling for Hair in Chennai | Hair O Graft",
     description:
-      "PRP (Platelet-Rich Plasma) hair treatment at Hair O Graft, Avadi Chennai. A personalised, non-surgical approach for hair thinning and hair loss.",
-    url: "https://hairograft.com/services/prp",
+      "Scalp microneedling at Hair O Graft, Avadi Chennai. A personalised, minimally invasive option to support scalp health and hair thinning care.",
+    url: "https://hairograft.com/services/hair-treatments/microneedling",
     siteName: "Hair O Graft",
     locale: "en_IN",
     type: "website",
   },
 };
 
-export default function PRPPage() {
+export default function MicroneedlingPage() {
   return (
     <>
       <Navbar />

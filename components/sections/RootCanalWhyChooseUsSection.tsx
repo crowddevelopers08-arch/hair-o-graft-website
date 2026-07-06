@@ -21,7 +21,7 @@ export default function RootCanalWhyChooseUsSection() {
     <section
       className="relative overflow-hidden"
       style={{
-        backgroundImage: "url('/gfcwhyyy.png')",
+        backgroundImage: "url('/root-choose.png')",
         backgroundSize: "cover",
         backgroundPosition: "right center",
         backgroundRepeat: "no-repeat",

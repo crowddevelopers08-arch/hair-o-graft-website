@@ -6,11 +6,11 @@ export default function RootCanalHeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/gfcmob.png')",
+          backgroundImage:    "url('/root-lp-mb.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",
-          minHeight:          "210vw",
+          minHeight:          "190vw",
         }}
       />
 
@@ -18,7 +18,7 @@ export default function RootCanalHeroSection() {
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage:    "url('/gfcbann.png')",
+          backgroundImage:    "url('/root-lp-bg.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center center",
           backgroundRepeat:   "no-repeat",

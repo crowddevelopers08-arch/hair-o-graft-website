@@ -47,7 +47,7 @@ export default function RootCanalRecoverySection() {
                           shadow-[0_8px_30px_rgba(53,76,156,0.08)]">
             <div className="relative h-full min-h-[380px] sm:min-h-[280px]">
               <Image
-                src="/gfcct.png"
+                src="/root-treatment.png"
                 alt="Root canal treatment aftercare"
                 fill
                 className="object-cover"
