@@ -5,7 +5,7 @@ export default function UVLightHeroSection() {
       <div
         className="block lg:hidden"
         style={{
-          backgroundImage: "url('/uv-lightbackground.png')",
+          backgroundImage: "url('/uv-light-mb.png')",
           backgroundSize: "cover",
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",

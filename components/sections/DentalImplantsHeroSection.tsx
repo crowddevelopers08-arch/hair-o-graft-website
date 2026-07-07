@@ -1,4 +1,4 @@
-export default function DandruffHeroSection() {
+export default function DentalImplantsHeroSection() {
   return (
     <section id="overview" className="relative w-full overflow-hidden">
 
@@ -6,11 +6,11 @@ export default function DandruffHeroSection() {
       <div
         className="block lg:hidden w-full"
         style={{
-          backgroundImage:    "url('/dandruff-mb-bg.png')",
+          backgroundImage:    "url('/dental-implant-mb.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center top",
           backgroundRepeat:   "no-repeat",
-          minHeight:          "185vw",
+          minHeight:          "190vw",
         }}
       />
 
@@ -18,7 +18,7 @@ export default function DandruffHeroSection() {
       <div
         className="hidden lg:block w-full"
         style={{
-          backgroundImage:    "url('/dandruff-bg-lt.png')",
+          backgroundImage:    "url('/dental-implant-lp.png')",
           backgroundSize:     "cover",
           backgroundPosition: "center center",
           backgroundRepeat:   "no-repeat",
