@@ -2,14 +2,14 @@ import Image from "next/image";
 import { FiCheckCircle } from "react-icons/fi";
 
 const tips = [
-  "Following all post-procedure instructions provided by your dentist",
-  "Sticking to a soft diet in the initial days",
-  "Maintaining good oral hygiene around the implant area",
-  "Avoiding smoking, which can affect healing",
-  "Attending all follow-up appointments and routine dental check-ups",
+  "Encouraging gentle brushing twice a day",
+  "Supporting a balanced, low-sugar diet",
+  "Following any specific post-treatment instructions",
+  "Attending regular follow-up check-ups",
+  "Reaching out to us if any discomfort continues",
 ];
 
-export default function DentalImplantsRecoverySection() {
+export default function KidsDentistryRecoverySection() {
   return (
     <section
       className="relative overflow-hidden"
@@ -35,8 +35,8 @@ export default function DentalImplantsRecoverySection() {
 
           <p className="mt-3 text-gray-500 leading-[1.75]
                         text-[14px] sm:text-[15px] md:text-[16px] lg:text-[17px]">
-            Most patients experience only mild discomfort or swelling after implant
-            placement, which usually settles within a few days.
+            Most routine dental visits involve little to no downtime, and aftercare is
+            usually simple.
           </p>
         </div>
 
@@ -45,10 +45,10 @@ export default function DentalImplantsRecoverySection() {
           <div className="relative min-h-[240px] sm:min-h-[280px] lg:min-h-full
                           rounded-[28px] overflow-hidden bg-white border border-[#D8DDE8]
                           shadow-[0_8px_30px_rgba(53,76,156,0.08)]">
-            <div className="relative h-full min-h-[380px] sm:min-h-[280px]">
+            <div className="relative h-full min-h-[350px] sm:min-h-[280px]">
               <Image
-                src="/dentals-treat.png"
-                alt="Dental implant aftercare"
+                src="/kids-density.png"
+                alt="Kids dentistry aftercare"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 45vw"
@@ -65,7 +65,7 @@ export default function DentalImplantsRecoverySection() {
                 <FiCheckCircle className="w-5 h-5 text-white" />
               </div>
               <p className="text-[#354C9C] font-black tracking-widest uppercase text-[11px]">
-                For comfortable healing and long-term results, we recommend:
+                To support your child&apos;s oral health, we recommend:
               </p>
             </div>
 

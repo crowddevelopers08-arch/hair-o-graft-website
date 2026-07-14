@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/dm-bfaf-1.png", alt: "Dental implants smile transformation showcase" },
-  { src: "/dm-bfaf-3.png", alt: "Dental implants restored bite result" },
-  { src: "/dm-bfaf-2.png", alt: "Dental implants smile restoration visual" },
+  { src: "/dc-bfafs-1.png", alt: "Dental crown result showcase" },
+  { src: "/dc-bfafs-2.png", alt: "Dental crown tooth restoration result" },
+  { src: "/dc-bfafs-3.png", alt: "Dental crown smile restoration visual" },
 ];
 
-export default function DentalImplantsBeforeAfterSection() {
+export default function DentalCrownsBeforeAfterSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -31,8 +31,8 @@ export default function DentalImplantsBeforeAfterSection() {
           </h2>
           <p className="mt-4 text-gray-500 leading-[1.8]
                         text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
-            Explore real patient transformations and see how dental implants have helped
-            individuals restore their smile and bite.
+            Explore real patient transformations and see how dental crowns have helped
+            individuals restore the function and appearance of damaged teeth.
           </p>
         </div>
 
@@ -82,7 +82,7 @@ export default function DentalImplantsBeforeAfterSection() {
         <p className="mt-8 sm:mt-10 text-center text-gray-400 text-[13px] sm:text-[14px]">
           Patients have trusted{" "}
           <span className="text-[#354C9C] font-semibold">Hair O Graft</span>{" "}
-          for their smile journey.
+          for their dental care journey.
         </p>
 
       </div>

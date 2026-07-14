@@ -4,12 +4,12 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const galleryImages = [
-  { src: "/dm-bfaf-1.png", alt: "Dental implants smile transformation showcase" },
-  { src: "/dm-bfaf-3.png", alt: "Dental implants restored bite result" },
-  { src: "/dm-bfaf-2.png", alt: "Dental implants smile restoration visual" },
+  { src: "/kid-bfaf-1.png", alt: "Kids dentistry smile result showcase" },
+  { src: "/kid-bfaf-3.png", alt: "Paediatric dental care result" },
+  { src: "/kid-bfaf-2.png", alt: "Child dental care smile visual" },
 ];
 
-export default function DentalImplantsBeforeAfterSection() {
+export default function KidsDentistryBeforeAfterSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -31,8 +31,8 @@ export default function DentalImplantsBeforeAfterSection() {
           </h2>
           <p className="mt-4 text-gray-500 leading-[1.8]
                         text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px]">
-            Explore real patient transformations and see how dental implants have helped
-            individuals restore their smile and bite.
+            Explore real patient transformations and see how paediatric dental care has
+            supported healthier smiles for children.
           </p>
         </div>
 
@@ -80,9 +80,9 @@ export default function DentalImplantsBeforeAfterSection() {
 
         {/* Trust note */}
         <p className="mt-8 sm:mt-10 text-center text-gray-400 text-[13px] sm:text-[14px]">
-          Patients have trusted{" "}
+          Families have trusted{" "}
           <span className="text-[#354C9C] font-semibold">Hair O Graft</span>{" "}
-          for their smile journey.
+          for their children&apos;s dental care journey.
         </p>
 
       </div>
