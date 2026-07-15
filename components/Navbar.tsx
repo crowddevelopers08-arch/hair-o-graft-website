@@ -90,6 +90,11 @@ const navItems: NavSection[] = [
   },
 ];
 
+const primaryNavItems: NavItem[] = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+];
+
 const contact = {
   email: "hairograft@gmail.com",
   phone: "7448866675",
@@ -204,6 +209,16 @@ export default function Navbar() {
           </Link>
 
           <div className="hidden items-center lg:flex">
+            {primaryNavItems.map((item) => (
+              <Link
+                key={item.label}
+                href={item.href!}
+                className="rounded-lg px-3.5 py-2 text-[13px] font-semibold text-white/70 transition-all duration-200 hover:bg-white/8 hover:text-white"
+              >
+                {item.label}
+              </Link>
+            ))}
+
             {navItems.map((nav) => (
               <div key={nav.label} className="relative" onMouseEnter={() => enter(nav.label)} onMouseLeave={leave}>
                 <button
@@ -335,6 +350,19 @@ export default function Navbar() {
           </div>
 
           <div className="flex-1 overflow-y-auto">
+            <div style={{ borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
+              {primaryNavItems.map((item) => (
+                <Link
+                  key={item.label}
+                  href={item.href!}
+                  onClick={() => setMobileOpen(false)}
+                  className="block px-5 py-4 text-[13.5px] font-semibold text-white/80 transition-colors hover:bg-white/5 hover:text-white"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+
             {navItems.map((nav, index) => {
               const { Icon } = nav;
 

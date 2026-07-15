@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ContactHeroBanner from "@/components/contacts/ContactHeroBanner";
+import ContactFormSection from "@/components/contacts/ContactFormSection";
 
 export const metadata: Metadata = {
   title: "Contact Us | Hair O Graft",
@@ -18,14 +20,30 @@ export default function ContactPage() {
   return (
     <>
       <Navbar />
-      <main className="mt-[76px] min-h-screen bg-[linear-gradient(180deg,#f6f8ff_0%,#ffffff_45%,#f8fbff_100%)]">
-        <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <main className="mt-[76px]">
+        <ContactHeroBanner />
+        <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-10">
           <div className="mb-12 max-w-3xl">
-            <p className="mb-4 inline-flex rounded-full border border-[#354C9C]/15 bg-white px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#354C9C] shadow-[0_10px_30px_rgba(53,76,156,0.08)]">
+            <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#354C9C]">
+              <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-[#ED3136]/50" />
+              <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-[#ED3136]/50" />
+              <span className="h-1.5 w-1.5 rounded-full bg-[#ED3136]" />
               Contact Us
-            </p>
-            <h1 className="text-4xl font-extrabold tracking-tight text-[#0d1440] sm:text-5xl">
-              Book your consultation with Hair O Graft
+            </span>
+            <h1 className="mt-5 text-[28px] font-extrabold leading-[1.08] tracking-tight text-[#363435] sm:text-[36px] lg:text-[44px]">
+              Book your consultation with{" "}
+              <span className="relative inline-block text-[#ED3136]">
+                Hair O Graft .
+                <svg
+                  className="absolute -bottom-1.5 left-0 w-full sm:-bottom-2"
+                  height="8"
+                  viewBox="0 0 200 10"
+                  preserveAspectRatio="none"
+                  aria-hidden
+                >
+                  <path d="M2 6 C 50 2, 150 2, 198 6" stroke="#ED3136" strokeWidth="4" strokeLinecap="round" fill="none" />
+                </svg>
+              </span>
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
               Reach out for skin, hair, or dental treatment enquiries. We&apos;ll help you choose the right next step.
@@ -59,6 +77,7 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
+        <ContactFormSection />
       <Footer />
     </>
   );
