@@ -91,7 +91,7 @@ export default function AboutWelcomeSection() {
           <h1 className="mx-auto mt-3 max-w-[640px] text-[27px] font-extrabold leading-[1.1] tracking-tight text-[#111836] sm:text-[36px] lg:text-[44px]">
             One clinic for your skin, {" "}
             <span className="relative inline-block text-[#ED3136]">
-              hair and smile.
+              hair and smile .
               <svg
                 className="absolute -bottom-1.5 left-0 w-full sm:-bottom-2"
                 height="8"

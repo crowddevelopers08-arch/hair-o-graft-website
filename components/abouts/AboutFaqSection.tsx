@@ -67,10 +67,10 @@ export default function AboutFaqSection() {
             </span>
           </span>
 
-          <h2 className="mx-auto mt-4 max-w-[800px] text-[30px] font-extrabold leading-[1.08] tracking-tight text-[#111836] sm:text-[40px] lg:text-[50px]">
+          <h2 className="mx-auto mt-4 max-w-[800px] text-[27px] font-extrabold leading-[1.08] tracking-tight text-[#111836] sm:text-[36px] lg:text-[44px]">
             Have questions? We&rsquo;ve answered the ones we hear{" "}
             <span className="relative inline-block text-[#ED3136]">
-              most often.
+              most often .
               <svg className="absolute -bottom-1.5 left-0 w-full sm:-bottom-2" height="8" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden>
                 <path d="M2 6 C 50 2, 150 2, 198 6" stroke="#ED3136" strokeWidth="4" strokeLinecap="round" fill="none" />
               </svg>

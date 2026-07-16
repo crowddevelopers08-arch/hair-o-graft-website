@@ -44,10 +44,10 @@ export default function ContactFormSection() {
       <div className="mx-auto grid max-w-[1280px] overflow-hidden rounded-[30px] bg-white shadow-[0_28px_80px_rgba(13,27,82,0.12)] lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative min-h-[360px] overflow-hidden sm:min-h-[440px] lg:min-h-[580px]">
           <Image
-            src="/clinic-image2.png"
+            src="/contact-us.png"
             alt="Hair O Graft clinic reception"
             fill
-            className="object-cover object-left-bottom"
+            className="object-cover object-bottom"
             sizes="(max-width: 1023px) 100vw, 45vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#07102E]/95 via-[#07102E]/30 to-transparent" aria-hidden />
