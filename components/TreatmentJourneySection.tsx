@@ -110,13 +110,18 @@ export default function TreatmentJourneySection() {
 
   return (
     <section className="bg-[#0D1B52] px-4 py-10 sm:px-6 sm:py-16 md:px-8 lg:px-12 lg:py-10">
-      <div className="mx-auto max-w-[1280px]">
+      <div className="mx-auto max-w-[1180px]">
         <div>
-                    <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
-            <span aria-hidden className="absolute -right-0 -top-1 h-px w-8 rotate-0 bg-white" />
-            <span aria-hidden className="absolute -bottom-1 -left-0 h-px w-8 rotate-0 bg-white" />
-            <span className="h-1.5 w-1.5 rounded-full bg-white" />
+          <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-white" />
+              <span className="h-px w-6 bg-white/40" />
+            </span>
             Solutions at Hair O Graft
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-px w-6 bg-white/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-white" />
+            </span>
           </span>
           <h2 className="mt-3 max-w-[640px] text-[27px] font-extrabold leading-[1.1] tracking-tight text-white sm:text-[36px] lg:text-[44px]">
             Everything your skin, hair{" "}
@@ -164,7 +169,7 @@ export default function TreatmentJourneySection() {
           })}
         </div>
 
-        <div className="mt-4 flex justify-center gap-2 sm:justify-start">
+        <div className="mt-2 flex justify-center gap-2 sm:justify-start">
           {tabs.map((item, index) => (
             <span
               key={item.key}
@@ -174,7 +179,7 @@ export default function TreatmentJourneySection() {
           ))}
         </div>
 
-        <div className="mt-8 max-sm:mt-1 grid grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] gap-x-3 gap-y-6 sm:mt-10 sm:grid-cols-1 sm:gap-10 lg:grid-cols-2 lg:items-center lg:gap-14">
+        <div className="mt-8 max-sm:mt-1 grid grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] gap-x-3 gap-y-6 sm:mt-5 sm:grid-cols-1 sm:gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-14">
           <div key={tab.key} className="contents sm:block sm:animate-[fade-up_0.5s_cubic-bezier(0.16,1,0.3,1)_both]">
             <div className="order-1 col-span-2 sm:order-none">
               <span className="hidden h-14 w-14 items-center justify-center rounded-full sm:flex" style={{ backgroundColor: `${ACCENT}22`, color: ACCENT }}>
@@ -188,44 +193,44 @@ export default function TreatmentJourneySection() {
               </p>
             </div>
 
-            <ul className="order-3 col-start-2 row-start-2 flex flex-col gap-2 sm:order-none sm:mt-6 sm:block sm:space-y-1 sm:border-t sm:border-white/10">
+            <ul className="order-3 col-start-2 row-start-2 flex flex-col gap-2 sm:order-none sm:mt-2 sm:grid sm:grid-cols-3 sm:gap-3">
               {tab.items.map((item) => (
                 <li
                   key={item.label}
-                  className="flex-1 rounded-xl border border-white/10 bg-white/[0.03] sm:rounded-none sm:border-x-0 sm:border-t-0 sm:bg-transparent"
+                  className="rounded-xl border border-white/10 bg-white/[0.03] transition-colors duration-200 hover:border-white/25 hover:bg-white/[0.06]"
                 >
                   <Link
                     href={item.href}
-                    className="group flex h-full min-h-[54px] items-center justify-between gap-2 px-3 py-2.5 text-[12px] font-semibold leading-tight text-white/85 transition-colors duration-200 hover:text-white sm:min-h-0 sm:gap-3 sm:px-0 sm:py-3.5 sm:text-[15px] sm:leading-normal"
+                    className="group flex h-full min-h-[54px] items-center justify-between gap-2 px-3 py-2.5 text-[12px] font-semibold leading-tight text-white/85 transition-colors duration-200 hover:text-white sm:min-h-[64px] sm:px-4 sm:text-[13px]"
                   >
                     {item.label}
                     <ArrowRight
-                      className="h-4 w-4 flex-shrink-0 translate-x-0 opacity-100 transition-all duration-200 sm:-translate-x-1 sm:opacity-0 group-hover:translate-x-0 group-hover:opacity-100"
+                      className="h-4 w-4 flex-shrink-0 transition-transform duration-200 group-hover:translate-x-0.5"
                       style={{ color: ACCENT }}
                     />
                   </Link>
                 </li>
               ))}
             </ul>
+
+            <div className="order-4 col-span-2 mt-6 flex flex-col items-start gap-3 text-left sm:order-none sm:flex-row sm:items-center sm:justify-between">
+              <p className="text-[15px] font-semibold text-white">Not sure where to start?</p>
+              <Link
+                href="/contact"
+                className="group inline-flex w-full items-center justify-between gap-2 rounded-full py-2 pl-4 pr-2 text-left text-[12px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 min-[375px]:text-[15px] min-[425px]:text-[17px] sm:w-auto sm:justify-start sm:gap-3 sm:pl-6"
+                style={{ backgroundColor: ACCENT }}
+              >
+                <span className="whitespace-nowrap">Book a consultation and we&rsquo;ll guide you</span>
+                <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" style={{ color: ACCENT }}>
+                  <ArrowUpRight className="h-4 w-4" />
+                </span>
+              </Link>
+            </div>
           </div>
 
-          <div key={`${tab.key}-image`} className="relative order-2 col-start-1 row-start-2 h-full min-h-[302px] w-full overflow-hidden rounded-[20px] animate-[fade-up_0.6s_cubic-bezier(0.16,1,0.3,1)_both] sm:order-none sm:col-auto sm:row-auto sm:aspect-[16/11] sm:h-auto sm:min-h-0 lg:aspect-[4/3]">
+          <div key={`${tab.key}-image`} className="relative order-2 col-start-1 row-start-2 h-full min-h-[302px] w-full overflow-hidden rounded-[20px] animate-[fade-up_0.6s_cubic-bezier(0.16,1,0.3,1)_both] sm:order-none sm:col-auto sm:row-auto sm:aspect-[16/11] sm:h-auto sm:min-h-0 lg:aspect-auto lg:h-full">
             <Image src={tab.image} alt={tab.label} fill className="object-cover" />
           </div>
-        </div>
-
-        <div className="mt-8 max-sm:mt-4 flex flex-col items-center justify-center gap-3 text-center sm:mt-10 sm:flex-row sm:gap-4 lg:mt-14">
-          <p className="text-[15px] font-semibold text-white">Not sure where to start?</p>
-          <Link
-            href="/contact"
-            className="group inline-flex w-full items-center justify-between gap-2 rounded-full py-2 pl-4 pr-2 text-left text-[12px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 min-[375px]:text-[15px] min-[425px]:text-[17px] sm:w-auto sm:justify-start sm:gap-3 sm:pl-6"
-            style={{ backgroundColor: ACCENT }}
-          >
-            <span className="whitespace-nowrap">Book a consultation and we&rsquo;ll guide you</span>
-            <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" style={{ color: ACCENT }}>
-              <ArrowUpRight className="h-4 w-4" />
-            </span>
-          </Link>
         </div>
       </div>
     </section>

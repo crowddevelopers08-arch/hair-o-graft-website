@@ -46,17 +46,22 @@ export default function ModernCareSection() {
       <div className="absolute inset-0 -z-10 bg-[#0D1B52]/90" aria-hidden />
       <div className="relative mx-auto max-w-[1280px]">
         <header className="mx-auto max-sm:mt-2 max-w-[850px] text-center">
-          <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
-            <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-white/70" />
-            <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-white/70" />
-            <span className="h-1.5 w-1.5 rounded-full bg-white" />
+          <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-white" />
+              <span className="h-px w-6 bg-white/40" />
+            </span>
             Our Approach
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-px w-6 bg-white/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-white" />
+            </span>
           </span>
 
           <h2 className="mx-auto mt-4 max-w-[780px] text-[30px] font-extrabold leading-[1.08] tracking-tight text-white sm:text-[40px] lg:text-[50px]">
             Modern treatments, delivered with{" "}
             <span className="relative inline-block text-[#ED3136]">
-              genuine care
+              genuine care .  
               <svg className="absolute -bottom-1.5 left-0 w-full sm:-bottom-2" height="8" viewBox="0 0 200 10" preserveAspectRatio="none" aria-hidden>
                 <path d="M2 6 C 50 2, 150 2, 198 6" stroke="#ED3136" strokeWidth="4" strokeLinecap="round" fill="none" />
               </svg>
@@ -70,24 +75,24 @@ export default function ModernCareSection() {
         </header>
 
         <div className="mt-10 max-sm:mt-5 grid gap-6 lg:mt-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
-          <article className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.06] shadow-[0_24px_70px_rgba(0,0,0,0.16)]">
-            <div className="relative aspect-[16/10] overflow-hidden">
+          <article className="group overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.06] shadow-[0_24px_70px_rgba(0,0,0,0.16)] transition-transform duration-300 hover:-translate-y-1">
+            <div className="relative aspect-[16/11] overflow-hidden">
               <Image
-                src="/clinic-image.png"
+                src="/modern.png"
                 alt="Modern treatment technology at Hair O Graft"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 1023px) 100vw, 42vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B52]/80 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0D1B52] via-[#0D1B52]/45 to-transparent" />
+              <span className="absolute left-6 top-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ED3136] text-white shadow-[0_10px_25px_rgba(237,49,54,0.3)]">
+                <TechnologyIcon />
+              </span>
+              <h3 className="absolute inset-x-6 bottom-6 text-[22px] font-bold text-white sm:text-[25px]">The technology</h3>
             </div>
 
             <div className="p-6 sm:p-8">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ED3136] text-white shadow-[0_10px_25px_rgba(237,49,54,0.3)]">
-                <TechnologyIcon />
-              </span>
-              <h3 className="mt-5 text-[22px] font-bold text-white sm:text-[25px]">The technology</h3>
-              <p className="mt-3 text-[14px] leading-7 text-white/70 sm:text-[15px]">
+              <p className="text-[14px] leading-7 text-white/70 sm:text-[15px]">
                 Our skin, hair and dental treatments are carried out using German Trichology
                 Technology, well-maintained equipment and up-to-date clinical methods. Before
                 any treatment, we use proper assessment and diagnosis, because choosing the
@@ -107,17 +112,26 @@ export default function ModernCareSection() {
             </p>
 
             <div className="mt-7 grid gap-3 sm:grid-cols-2 sm:gap-4">
-              {carePrinciples.map((item, index) => (
-                <div key={item.title} className="rounded-2xl border border-[#E4E7EF] bg-[#F8F9FC] p-4 sm:p-5">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#354C9C] text-[12px] font-bold text-white">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <p className="mt-4 text-[14px] leading-6 text-[#606579]">
-                    <strong className="font-bold text-[#111836]">{item.title}</strong>{" "}
-                    {item.text}
-                  </p>
-                </div>
-              ))}
+              {carePrinciples.map((item, index) => {
+                const accent = index % 2 === 0 ? "#354C9C" : "#ED3136";
+                return (
+                  <div
+                    key={item.title}
+                    className="rounded-2xl border border-[#E4E7EF] bg-[#F8F9FC] p-4 transition-colors duration-200 hover:border-transparent hover:bg-white hover:shadow-[0_10px_25px_rgba(13,27,82,0.08)] sm:p-5"
+                  >
+                    <span
+                      className="flex h-8 w-8 items-center justify-center rounded-full text-[12px] font-bold text-white"
+                      style={{ backgroundColor: accent }}
+                    >
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <p className="mt-4 text-[14px] leading-6 text-[#606579]">
+                      <strong className="font-bold text-[#111836]">{item.title}</strong>{" "}
+                      {item.text}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </article>
         </div>

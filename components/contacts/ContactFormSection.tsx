@@ -42,7 +42,7 @@ export default function ContactFormSection() {
   return (
     <section className="px-4 max-sm:pb-5 sm:px-6 sm:py-10 lg:px-10 lg:py-10">
       <div className="mx-auto grid max-w-[1280px] overflow-hidden rounded-[30px] bg-white shadow-[0_28px_80px_rgba(13,27,82,0.12)] lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="relative min-h-[360px] overflow-hidden sm:min-h-[440px] lg:min-h-[680px]">
+        <div className="relative min-h-[360px] overflow-hidden sm:min-h-[440px] lg:min-h-[580px]">
           <Image
             src="/clinic-image2.png"
             alt="Hair O Graft clinic reception"
@@ -51,47 +51,28 @@ export default function ContactFormSection() {
             sizes="(max-width: 1023px) 100vw, 45vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#07102E]/95 via-[#07102E]/30 to-transparent" aria-hidden />
-
-          <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8 lg:p-10">
-            <div className="hidden sm:block">
-              <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-[#FF555A]">Visit Hair O Graft</p>
-              <h2 className="mt-3 max-w-[430px] text-[28px] font-extrabold leading-tight sm:text-[34px]">
-                Let&rsquo;s talk about the care that&rsquo;s right for you.
-              </h2>
-            </div>
-
-            <div className="mt-6 space-y-3 text-[14px] text-white/80">
-              <a href="tel:+917448866675" className="flex items-center gap-3 transition-colors hover:text-white">
-                <span className="flex h-9 w-9 items-center justify-center rounded-full bg-white/10 text-[#FF555A]">
-                  <PhoneIcon />
-                </span>
-                +91 74488 66675
-              </a>
-              <div className="flex items-start gap-3">
-                <span className="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-white/10 text-[#FF555A]">
-                  <PinIcon />
-                </span>
-                <span className="pt-2">25, Nehru Bazaar, Avadi, Chennai — 600054</span>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div className="p-6 sm:p-9 lg:p-12">
-          <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
-            <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-[#354C9C]" />
-            <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-[#354C9C]" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#354C9C]" />
+          <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#111836]">
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+              <span className="h-px w-6 bg-[#ED3136]/40" />
+            </span>
             Send an Enquiry
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-px w-6 bg-[#ED3136]/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+            </span>
           </span>
-          <h2 className="mt-4 text-[28px] font-extrabold leading-tight tracking-tight text-[#111836] sm:text-[36px] lg:text-[42px]">
+          <h2 className="mt-3 text-[28px] font-extrabold leading-tight tracking-tight text-[#111836] sm:text-[36px] lg:text-[42px]">
             Book your consultation
           </h2>
-          <p className="mt-3 max-w-[560px] text-[15px] leading-7 text-[#666C7E]">
+          <p className="mt-1 max-w-[560px] text-[15px] leading-7 text-[#666C7E]">
             Tell us what you&rsquo;d like help with, and our team will guide you towards the right specialist.
           </p>
 
-          <form onSubmit={handleSubmit} className="mt-8 grid gap-5 sm:grid-cols-2">
+          <form onSubmit={handleSubmit} className="mt-2 grid gap-5 sm:grid-cols-2">
             <label className="text-[13px] font-bold text-[#242A45]">
               Full Name
               <input className={inputClass} type="text" name="name" placeholder="Enter your name" autoComplete="name" required />
@@ -128,7 +109,7 @@ export default function ContactFormSection() {
                 type="submit"
                 className="inline-flex w-full items-center justify-center rounded-full bg-[#ED3136] px-7 py-4 text-[14px] font-bold text-white shadow-[0_14px_30px_rgba(237,49,54,0.24)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E] sm:w-auto"
               >
-                Send Enquiry on WhatsApp
+                Submit Enquiry
               </button>
             </div>
           </form>

@@ -24,11 +24,16 @@ export default function ContactPage() {
         <ContactHeroBanner />
         <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-10">
           <div className="max-sm:mb-2 mb-12 max-w-3xl">
-            <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#354C9C]">
-              <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-[#ED3136]/50" />
-              <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-[#ED3136]/50" />
-              <span className="h-1.5 w-1.5 rounded-full bg-[#ED3136]" />
+            <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#354C9C]">
+              <span aria-hidden className="flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+                <span className="h-px w-6 bg-[#ED3136]/40" />
+              </span>
               Contact Us
+              <span aria-hidden className="flex items-center gap-1.5">
+                <span className="h-px w-6 bg-[#ED3136]/40" />
+                <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+              </span>
             </span>
             <h1 className="mt-5 text-[28px] font-extrabold leading-[1.08] tracking-tight text-[#363435] sm:text-[36px] lg:text-[44px]">
               Book your consultation with{" "}

@@ -63,11 +63,16 @@ export default function ConsultationCTASection() {
 
         <div className="relative z-10 px-6 py-10 sm:px-10 sm:py-12 md:px-12 md:py-14 lg:px-16 lg:py-16">
           <div className="max-w-[600px]">
-            <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
-              <span aria-hidden className="absolute -right-0 -top-1 h-px w-8 bg-white" />
-              <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-white" />
-              <span className="h-1.5 w-1.5 rounded-full bg-white" />
+            <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
+              <span aria-hidden className="flex items-center gap-1.5">
+                <span className="h-1.5 w-1.5 rotate-45 bg-white" />
+                <span className="h-px w-6 bg-white/40" />
+              </span>
               Book Your Consultation
+              <span aria-hidden className="flex items-center gap-1.5">
+                <span className="h-px w-6 bg-white/40" />
+                <span className="h-1.5 w-1.5 rotate-45 bg-white" />
+              </span>
             </span>
 
             <h2 className="mt-3 max-w-[640px] text-[27px] font-extrabold leading-[1.1] tracking-tight text-white sm:text-[36px] lg:text-[44px]">

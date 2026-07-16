@@ -77,11 +77,16 @@ export default function AboutWelcomeSection() {
     <section className="overflow-hidden bg-[#FAF9F7] px-4 py-10 sm:px-6 sm:py-10 lg:px-10 lg:py-10">
       <div className="mx-auto max-w-[1420px]">
         <header className="mx-auto max-w-[720px] text-center">
-          <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
-            <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-[#354C9C]" />
-            <span aria-hidden className="absolute bottom-[-2px] -left-0 h-px w-8 bg-[#354C9C]" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#354C9C]" />
+          <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#354C9C]" />
+              <span className="h-px w-6 bg-[#354C9C]/40" />
+            </span>
             Who We Are
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-px w-6 bg-[#354C9C]/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#354C9C]" />
+            </span>
           </span>
           <h1 className="mx-auto mt-3 max-w-[640px] text-[27px] font-extrabold leading-[1.1] tracking-tight text-[#111836] sm:text-[36px] lg:text-[44px]">
             One clinic for your skin, {" "}
@@ -107,15 +112,27 @@ export default function AboutWelcomeSection() {
         </header>
 
         <div className="relative mt-10 grid gap-10 max-sm:gap-5 sm:mt-14 lg:grid-cols-[0.95fr_1.08fr_0.75fr] lg:items-start lg:gap-16">
-          <div className="relative mx-auto h-[430px] w-full max-w-[430px] overflow-hidden rounded-[280px_24px_24px_24px] sm:h-[540px] lg:mx-0">
-            <Image
-              src="/clinic-image2.png"
-              alt="Hair O Graft clinic reception in Avadi"
-              fill
-              priority
-              className="object-cover object-left-bottom"
-              sizes="(max-width: 1023px) 90vw, 32vw"
-            />
+          <div className="relative mx-auto w-full max-w-[430px] lg:mx-0">
+            <div className="relative h-[430px] w-full overflow-hidden rounded-[280px_24px_24px_24px] sm:h-[540px]">
+              <Image
+                src="/about-1.png"
+                alt="Hair O Graft clinic reception in Avadi"
+                fill
+                priority
+                className="object-cover object-center"
+                sizes="(max-width: 1023px) 90vw, 32vw"
+              />
+            </div>
+
+            <div className="absolute -bottom-8 -right-6 h-[150px] w-[120px] overflow-hidden rounded-[20px_20px_20px_84px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[150px]">
+              <Image
+                src="/about-2.png"
+                alt="Hair O Graft treatment care"
+                fill
+                className="object-cover object-center"
+                sizes="150px"
+              />
+            </div>
           </div>
 
           <div className="lg:pt-10">
@@ -125,16 +142,6 @@ export default function AboutWelcomeSection() {
               a trichologist for their hair, and a dentist for their teeth. We brought all
               three together under one roof in Avadi, Chennai.
             </p>
-
-            <div className="relative mx-auto my-8 h-[220px] w-[175px] overflow-hidden rounded-[20px_20px_84px_20px] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:hidden">
-              <Image
-                src="/clinic-image1.png"
-                alt="Hair O Graft treatment care"
-                fill
-                className="object-cover object-center"
-                sizes="175px"
-              />
-            </div>
 
             <p className="mt-6 max-sm:mt-4 text-[15px] leading-8 text-[#52566A] sm:text-[16px]">
               Today, our skin, hair and dental specialists work side by side, so your care
@@ -158,25 +165,6 @@ export default function AboutWelcomeSection() {
               width={370}
               height={467}
               className="absolute right-0 top-[-150px] h-[360px] w-auto object-contain opacity-40"
-            />
-            <div className="absolute -bottom-20 left-0 h-[180px] w-[145px] overflow-hidden rounded-[18px_18px_72px_18px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)]">
-              <Image
-                src="/clinic-image1.png"
-                alt="Hair O Graft treatment care"
-                fill
-                className="object-cover object-center"
-                sizes="145px"
-              />
-            </div>
-          </div>
-
-          <div className="relative mx-auto hidden h-[220px] w-[175px] overflow-hidden rounded-[20px_20px_84px_20px] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:block lg:hidden">
-            <Image
-              src="/clinic-image1.png"
-              alt="Hair O Graft treatment care"
-              fill
-              className="object-cover object-center"
-              sizes="175px"
             />
           </div>
         </div>

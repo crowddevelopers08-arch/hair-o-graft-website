@@ -49,11 +49,16 @@ export default function RoadmapSection() {
     <section className="bg-white py-10 sm:py-8 lg:py-10">
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 md:px-8 lg:px-10">
         <div className="mx-auto mb-5 max-w-[680px] text-center sm:mb-10 lg:mb-10">
-          <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#354C9C]">
-            <span aria-hidden className="absolute -right-0 -top-1 h-px w-8 rotate-0 bg-[#ED3136]/50" />
-            <span aria-hidden className="absolute -bottom-1 -left-0 h-px w-8 rotate-0 bg-[#ED3136]/50" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#ED3136]" />
+          <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#354C9C]">
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+              <span className="h-px w-6 bg-[#ED3136]/40" />
+            </span>
             Your Journey With Us
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-px w-6 bg-[#ED3136]/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+            </span>
           </span>
           <h2 className="mt-3 text-[26px] font-extrabold leading-[1.15] tracking-tight text-[#363435] sm:text-[32px] lg:text-[40px]">
             From first call to{" "}
@@ -87,9 +92,9 @@ export default function RoadmapSection() {
             </div>
           </div>
 
-          <div className="mt-7 grid grid-cols-5 gap-6 xl:gap-8">
+          <div className="mt-5 grid grid-cols-5 gap-6 xl:gap-8">
             {steps.map((step) => (
-              <div key={step.num} className="border-t-2 border-[#ED3136] px-1 pt-4 text-center">
+              <div key={step.num} className="px-1 pt-0 text-center">
                 <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-[#ED3136]">Step {step.num}</p>
                 <h3 className="mt-2 text-[16px] font-extrabold leading-snug text-[#363435] xl:text-[17px]">
                   {step.title}

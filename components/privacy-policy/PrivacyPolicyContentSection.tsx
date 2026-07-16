@@ -50,11 +50,16 @@ export default function PrivacyPolicyContentSection() {
         </Link>
 
         <header className="mx-auto mt-6 max-w-[720px] text-center">
-          <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
-            <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-[#354C9C]" />
-            <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-[#354C9C]" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#354C9C]" />
+          <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#354C9C]" />
+              <span className="h-px w-6 bg-[#354C9C]/40" />
+            </span>
             Your Privacy Matters
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-px w-6 bg-[#354C9C]/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#354C9C]" />
+            </span>
           </span>
           <h2 className="mx-auto mt-3 max-w-[640px] text-[27px] font-extrabold leading-[1.1] tracking-tight text-[#111836] sm:text-[36px] lg:text-[42px]">
             How we look after{" "}
@@ -76,9 +81,6 @@ export default function PrivacyPolicyContentSection() {
             collect, how we use it, and the choices you have when you visit our clinic or
             this website.
           </p>
-          <span className="mt-5 inline-flex items-center rounded-full bg-[#354C9C]/10 px-4 py-1.5 text-[12px] font-bold uppercase tracking-[0.06em] text-[#354C9C]">
-            Last updated: 16 July 2026
-          </span>
         </header>
 
         <div className="mt-10 grid gap-4 sm:mt-14 sm:grid-cols-2 sm:gap-5">

@@ -146,11 +146,18 @@ export default function HeroCarousel() {
             key={`location-${current}`}
             className="mb-7 flex animate-[hero-content-in_0.85s_cubic-bezier(0.16,1,0.3,1)_1s_both] items-center gap-3 text-left"
           >
-            <span className="h-px w-9 flex-none bg-[#ED3136] sm:w-12" />
+            <span aria-hidden className="flex flex-none items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+              <span className="h-px w-6 bg-white/40 sm:w-9" />
+            </span>
             <p className="text-[10px] font-bold uppercase tracking-[0.16em] text-white/75 sm:text-[12px]">
               Multi-specialty Skin, Hair &amp; Dental Clinic <span className="hidden sm:inline">—</span>
               <span className="block text-white sm:ml-1.5 sm:inline">Avadi, Chennai</span>
             </p>
+            <span aria-hidden className="hidden flex-none items-center gap-1.5 sm:flex">
+              <span className="h-px w-9 bg-white/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
+            </span>
           </div>
 
           <div key={`content-${current}`}>

@@ -55,11 +55,16 @@ export default function AboutFaqSection() {
     <section className="bg-[#F7F8FC] px-4 py-10 sm:px-6 sm:py-10 lg:px-10 lg:py-10">
       <div className="mx-auto max-w-[1280px]">
         <header className="mx-auto max-w-[850px] text-center">
-          <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
-            <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-[#354C9C]" />
-            <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-[#354C9C]" />
-            <span className="h-1.5 w-1.5 rounded-full bg-[#354C9C]" />
+          <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#354C9C]" />
+              <span className="h-px w-6 bg-[#354C9C]/40" />
+            </span>
             FAQs
+            <span aria-hidden className="flex items-center gap-1.5">
+              <span className="h-px w-6 bg-[#354C9C]/40" />
+              <span className="h-1.5 w-1.5 rotate-45 bg-[#354C9C]" />
+            </span>
           </span>
 
           <h2 className="mx-auto mt-4 max-w-[800px] text-[30px] font-extrabold leading-[1.08] tracking-tight text-[#111836] sm:text-[40px] lg:text-[50px]">
