@@ -66,7 +66,7 @@ export default function ThankYouSection() {
           shortly to confirm your appointment and answer any questions you have.
         </p>
 
-        <div className="mt-9 flex flex-nowrap items-center justify-center gap-2.5 sm:gap-4">
+        <div className="mt-4 flex flex-nowrap items-center justify-center gap-2.5 sm:gap-4">
           <Link
             href="/"
             className="inline-flex items-center whitespace-nowrap rounded-full bg-[#ED3136] px-4 py-3 text-[12.5px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E] sm:px-7 sm:py-3.5 sm:text-[14px]"
@@ -81,7 +81,7 @@ export default function ThankYouSection() {
           </Link>
         </div>
 
-        <div className="mx-auto mt-12 flex max-w-[450px] flex-col items-center gap-4 rounded-[24px] border border-[#DEE2EC] bg-white p-6 shadow-[0_10px_35px_rgba(13,27,82,0.05)] sm:flex-row sm:justify-center sm:gap-8">
+        <div className="mx-auto mt-6 flex max-w-[450px] flex-col items-center gap-4 rounded-[24px] border border-[#DEE2EC] bg-white p-6 shadow-[0_10px_35px_rgba(13,27,82,0.05)] sm:flex-row sm:justify-center sm:gap-8">
           <a href="tel:+917448866675" className="flex items-center gap-2.5 text-[14px] font-semibold text-[#111836] transition-colors hover:text-[#ED3136]">
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#354C9C]/10 text-[#354C9C]">
               <PhoneIcon />
