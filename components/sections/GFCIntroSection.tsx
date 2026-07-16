@@ -105,7 +105,7 @@ export default function GFCIntroSection() {
                             bg-gradient-to-l from-[#F7F8FC] to-transparent pointer-events-none" />
             <div className="marquee-track gap-3 py-2 px-2">
               {[...features, ...features].map((item, i) => (
-                <div key={i} className="w-[130px] flex-shrink-0">
+                <div key={i} className="w-[154px] flex-shrink-0">
                   <FeatureCard item={item} />
                 </div>
               ))}

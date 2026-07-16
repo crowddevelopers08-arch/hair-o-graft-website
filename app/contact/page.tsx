@@ -18,12 +18,12 @@ const contact = {
 
 export default function ContactPage() {
   return (
-    <>
+    <div>
       <Navbar />
       <main className="mt-[76px]">
         <ContactHeroBanner />
         <section className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-10">
-          <div className="mb-12 max-w-3xl">
+          <div className="max-sm:mb-2 mb-12 max-w-3xl">
             <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#354C9C]">
               <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-[#ED3136]/50" />
               <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-[#ED3136]/50" />
@@ -50,35 +50,35 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 max-sm:gap-3 md:grid-cols-3">
             <a
               href={`tel:+91${contact.phone}`}
-              className="rounded-[28px] border border-[#354C9C]/10 bg-white p-7 shadow-[0_24px_70px_rgba(13,20,64,0.08)] transition-transform duration-200 hover:-translate-y-1"
+              className="rounded-[28px] border border-[#354C9C]/10 bg-white p-7 max-sm:p-6 shadow-[0_24px_70px_rgba(13,20,64,0.08)] transition-transform duration-200 hover:-translate-y-1"
             >
               <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-[#354C9C]">Call Us</p>
-              <p className="mt-4 text-2xl font-extrabold text-[#0d1440]">+91 {contact.phone}</p>
-              <p className="mt-3 text-sm leading-6 text-slate-500">Speak with the clinic directly for appointments and treatment guidance.</p>
+              <p className="mt-4 max-sm:mt-2 text-2xl font-extrabold text-[#0d1440]">+91 {contact.phone}</p>
+              <p className="mt-3 max-sm:mt-1 text-sm leading-6 text-slate-500">Speak with the clinic directly for appointments and treatment guidance.</p>
             </a>
 
             <a
               href={`mailto:${contact.email}`}
-              className="rounded-[28px] border border-[#354C9C]/10 bg-white p-7 shadow-[0_24px_70px_rgba(13,20,64,0.08)] transition-transform duration-200 hover:-translate-y-1"
+              className="rounded-[28px] border border-[#354C9C]/10 bg-white p-7 max-sm:p-6 shadow-[0_24px_70px_rgba(13,20,64,0.08)] transition-transform duration-200 hover:-translate-y-1"
             >
               <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-[#354C9C]">Email Us</p>
-              <p className="mt-4 text-2xl font-extrabold text-[#0d1440] break-words">{contact.email}</p>
-              <p className="mt-3 text-sm leading-6 text-slate-500">Send us your questions and our team can get back to you with details.</p>
+              <p className="mt-4 max-sm:mt-2 text-2xl font-extrabold text-[#0d1440] break-words">{contact.email}</p>
+              <p className="mt-3 max-sm:mt-1 text-sm leading-6 text-slate-500">Send us your questions and our team can get back to you with details.</p>
             </a>
 
-            <div className="rounded-[28px] border border-[#354C9C]/10 bg-white p-7 shadow-[0_24px_70px_rgba(13,20,64,0.08)]">
+            <div className="rounded-[28px] border border-[#354C9C]/10 bg-white p-7 max-sm:p-6 shadow-[0_24px_70px_rgba(13,20,64,0.08)]">
               <p className="text-[12px] font-bold uppercase tracking-[0.22em] text-[#354C9C]">Visit Us</p>
-              <p className="mt-4 text-2xl font-extrabold text-[#0d1440]">Avadi, Chennai</p>
-              <p className="mt-3 text-sm leading-7 text-slate-500">{contact.address}</p>
+              <p className="mt-4 max-sm:mt-2 text-2xl font-extrabold text-[#0d1440]">Avadi, Chennai</p>
+              <p className="mt-3 max-sm:mt-1 text-sm leading-7 text-slate-500">{contact.address}</p>
             </div>
           </div>
         </section>
-      </main>
         <ContactFormSection />
+      </main>
       <Footer />
-    </>
+    </div>
   );
 }

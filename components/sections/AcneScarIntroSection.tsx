@@ -116,7 +116,7 @@ export default function AcneScarIntroSection() {
             <div className="marquee-track gap-3 py-2 px-2">
               {/* render twice for seamless loop */}
               {[...features, ...features].map((item, i) => (
-                <div key={i} className="w-[130px] flex-shrink-0">
+                <div key={i} className="w-[154px] flex-shrink-0">
                   <FeatureCard item={item} />
                 </div>
               ))}

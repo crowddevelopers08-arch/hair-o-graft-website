@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 function InstagramIcon({ className }: { className?: string }) {
   return (
@@ -156,11 +157,14 @@ export default function Footer() {
             © 2025 Hair O Graft. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
-            {["Privacy Policy", "Terms of Service"].map((label) => (
-              <a key={label} href="#"
+            {[
+              { label: "Privacy Policy", href: "/privacy-policy" },
+              { label: "Terms of Service", href: "/terms-condition" },
+            ].map(({ label, href }) => (
+              <Link key={label} href={href}
                 className="text-white/35 hover:text-white/70 text-[11px] transition-colors">
                 {label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

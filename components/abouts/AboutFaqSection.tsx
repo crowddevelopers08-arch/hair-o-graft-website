@@ -102,13 +102,13 @@ export default function AboutFaqSection() {
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-center gap-5 text-center sm:mt-14 sm:flex-row">
+        <div className="mt-12 max-sm:mt-5 flex flex-col items-center justify-center gap-5 text-center sm:mt-14 sm:flex-row">
           <p className="text-[17px] font-semibold text-[#111836] sm:text-[18px]">
             Still have a question? We&rsquo;re happy to answer it.
           </p>
           <Link
             href="/contact"
-            className="inline-flex min-w-[138px] items-center justify-center rounded-full bg-[#ED3136] px-7 py-3.5 text-[14px] font-bold text-white shadow-[0_12px_28px_rgba(237,49,54,0.24)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E]"
+            className="inline-flex min-w-[138px] items-center justify-center rounded-full bg-[#ED3136] px-7 py-3.5 text-[14px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E]"
           >
             Book Now
           </Link>

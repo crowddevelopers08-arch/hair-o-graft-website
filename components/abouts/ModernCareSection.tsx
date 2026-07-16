@@ -45,7 +45,7 @@ export default function ModernCareSection() {
     >
       <div className="absolute inset-0 -z-10 bg-[#0D1B52]/90" aria-hidden />
       <div className="relative mx-auto max-w-[1280px]">
-        <header className="mx-auto max-w-[850px] text-center">
+        <header className="mx-auto max-sm:mt-2 max-w-[850px] text-center">
           <span className="relative inline-flex items-center gap-2 px-1 py-1.5 text-[12px] font-bold uppercase tracking-[0.08em] text-[#ED3136]">
             <span aria-hidden className="absolute right-0 -top-1 h-px w-8 bg-white/70" />
             <span aria-hidden className="absolute -bottom-1 left-0 h-px w-8 bg-white/70" />
@@ -63,13 +63,13 @@ export default function ModernCareSection() {
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-[760px] text-[15px] leading-7 text-white/70 sm:text-[17px] sm:leading-8">
+          <p className="mx-auto mt-6 max-sm:mt-3 max-w-[760px] text-[15px] leading-7 text-white/70 sm:text-[17px] sm:leading-8">
             Good outcomes come from two things working together, the right equipment, and the
             right hands and judgement using it. We invest in both.
           </p>
         </header>
 
-        <div className="mt-10 grid gap-6 lg:mt-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
+        <div className="mt-10 max-sm:mt-5 grid gap-6 lg:mt-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-8">
           <article className="overflow-hidden rounded-[28px] border border-white/10 bg-white/[0.06] shadow-[0_24px_70px_rgba(0,0,0,0.16)]">
             <div className="relative aspect-[16/10] overflow-hidden">
               <Image

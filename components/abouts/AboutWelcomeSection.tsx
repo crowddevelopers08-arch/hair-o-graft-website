@@ -106,7 +106,7 @@ export default function AboutWelcomeSection() {
           </h1>
         </header>
 
-        <div className="relative mt-10 grid gap-10 sm:mt-14 lg:grid-cols-[0.95fr_1.08fr_0.75fr] lg:items-start lg:gap-16">
+        <div className="relative mt-10 grid gap-10 max-sm:gap-5 sm:mt-14 lg:grid-cols-[0.95fr_1.08fr_0.75fr] lg:items-start lg:gap-16">
           <div className="relative mx-auto h-[430px] w-full max-w-[430px] overflow-hidden rounded-[280px_24px_24px_24px] sm:h-[540px] lg:mx-0">
             <Image
               src="/clinic-image2.png"
@@ -136,7 +136,7 @@ export default function AboutWelcomeSection() {
               />
             </div>
 
-            <p className="mt-6 text-[15px] leading-8 text-[#52566A] sm:text-[16px]">
+            <p className="mt-6 max-sm:mt-4 text-[15px] leading-8 text-[#52566A] sm:text-[16px]">
               Today, our skin, hair and dental specialists work side by side, so your care
               stays joined-up and convenient. You&rsquo;re seen by qualified professionals who
               diagnose carefully, explain things in plain language, and recommend only what
@@ -145,7 +145,7 @@ export default function AboutWelcomeSection() {
 
             <Link
               href="/contact"
-              className="mt-9 inline-flex items-center rounded-full bg-[#ED3136] px-7 py-3.5 text-[14px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E]"
+              className="mt-9 max-sm:mt-3 inline-flex items-center rounded-full bg-[#ED3136] px-7 py-3.5 text-[14px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E]"
             >
               Book a Consultation
             </Link>

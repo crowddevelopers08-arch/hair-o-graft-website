@@ -40,7 +40,7 @@ export default function ContactFormSection() {
   }
 
   return (
-    <section className="px-4 py-10 sm:px-6 sm:py-10 lg:px-10 lg:py-10">
+    <section className="px-4 max-sm:pb-5 sm:px-6 sm:py-10 lg:px-10 lg:py-10">
       <div className="mx-auto grid max-w-[1280px] overflow-hidden rounded-[30px] bg-white shadow-[0_28px_80px_rgba(13,27,82,0.12)] lg:grid-cols-[0.9fr_1.1fr]">
         <div className="relative min-h-[360px] overflow-hidden sm:min-h-[440px] lg:min-h-[680px]">
           <Image
@@ -53,10 +53,12 @@ export default function ContactFormSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#07102E]/95 via-[#07102E]/30 to-transparent" aria-hidden />
 
           <div className="absolute inset-x-0 bottom-0 p-6 text-white sm:p-8 lg:p-10">
-            <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-[#FF555A]">Visit Hair O Graft</p>
-            <h2 className="mt-3 max-w-[430px] text-[28px] font-extrabold leading-tight sm:text-[34px]">
-              Let&rsquo;s talk about the care that&rsquo;s right for you.
-            </h2>
+            <div className="hidden sm:block">
+              <p className="text-[12px] font-bold uppercase tracking-[0.16em] text-[#FF555A]">Visit Hair O Graft</p>
+              <h2 className="mt-3 max-w-[430px] text-[28px] font-extrabold leading-tight sm:text-[34px]">
+                Let&rsquo;s talk about the care that&rsquo;s right for you.
+              </h2>
+            </div>
 
             <div className="mt-6 space-y-3 text-[14px] text-white/80">
               <a href="tel:+917448866675" className="flex items-center gap-3 transition-colors hover:text-white">

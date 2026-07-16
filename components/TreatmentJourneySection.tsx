@@ -218,10 +218,10 @@ export default function TreatmentJourneySection() {
           <p className="text-[15px] font-semibold text-white">Not sure where to start?</p>
           <Link
             href="/contact"
-            className="group inline-flex w-full items-center justify-between gap-3 rounded-full py-2 pl-5 pr-2 text-left text-[14px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 sm:w-auto sm:justify-start sm:pl-6"
+            className="group inline-flex w-full items-center justify-between gap-2 rounded-full py-2 pl-4 pr-2 text-left text-[12px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 min-[375px]:text-[15px] min-[425px]:text-[17px] sm:w-auto sm:justify-start sm:gap-3 sm:pl-6"
             style={{ backgroundColor: ACCENT }}
           >
-            Book a consultation and we&rsquo;ll guide you
+            <span className="whitespace-nowrap">Book a consultation and we&rsquo;ll guide you</span>
             <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" style={{ color: ACCENT }}>
               <ArrowUpRight className="h-4 w-4" />
             </span>
