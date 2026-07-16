@@ -124,7 +124,7 @@ export default function AboutWelcomeSection() {
               />
             </div>
 
-            <div className="absolute -bottom-8 -right-6 h-[150px] w-[120px] overflow-hidden rounded-[20px_20px_20px_84px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[150px]">
+            <div className="absolute -bottom-8 -right-6 max-sm:-right-3 h-[150px] w-[120px] overflow-hidden rounded-[20px_20px_20px_84px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[150px]">
               <Image
                 src="/about-2.png"
                 alt="Hair O Graft treatment care"
@@ -136,14 +136,14 @@ export default function AboutWelcomeSection() {
           </div>
 
           <div className="lg:pt-10">
-            <p className="text-[15px] leading-8 text-[#52566A] sm:text-[16px]">
+            <p className="text-[15px] max-sm:mt-3 leading-8 text-[#52566A] sm:text-[16px]">
               Hair O Graft began with a simple frustration: most people have to visit three
               different places for three different concerns—a dermatologist for their skin,
               a trichologist for their hair, and a dentist for their teeth. We brought all
               three together under one roof in Avadi, Chennai.
             </p>
 
-            <p className="mt-6 max-sm:mt-4 text-[15px] leading-8 text-[#52566A] sm:text-[16px]">
+            <p className="mt-6 max-sm:mt-1 text-[15px] leading-8 text-[#52566A] sm:text-[16px]">
               Today, our skin, hair and dental specialists work side by side, so your care
               stays joined-up and convenient. You&rsquo;re seen by qualified professionals who
               diagnose carefully, explain things in plain language, and recommend only what
