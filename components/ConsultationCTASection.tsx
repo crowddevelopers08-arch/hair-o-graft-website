@@ -81,7 +81,7 @@ export default function ConsultationCTASection() {
 
         <div className="relative z-10 px-6 py-10 sm:px-10 sm:py-12 md:px-12 md:py-14 lg:px-16 lg:py-16">
           <div className="max-w-[600px] [text-shadow:0_2px_10px_rgba(6,12,42,0.75)] sm:[text-shadow:none]">
-            <span className="inline-flex items-center gap-3 text-[8px] font-bold uppercase tracking-[0.18em] text-[#ED3136] min-[375px]:text-[11px] min-[425px]:text-[13px] ">
+            <span className="inline-flex items-center gap-3 text-[8px] font-bold uppercase tracking-[0.18em] text-[#ED3136] min-[375px]:text-[11px] min-[425px]:text-[13px]">
               <span aria-hidden className="flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rotate-45 bg-white" />
                 <span className="h-px w-6 bg-white/40" />
@@ -179,8 +179,8 @@ export default function ConsultationCTASection() {
                 href="https://wa.me/917448866675"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-[14px] font-semibold text-white/70 transition-colors hover:text-white"
-              >
+                className="inline-flex items-center gap-2 text-[9px] font-semibold text-white/70 transition-colors hover:text-white min-[375px]:text-[12px] min-[425px]:text-[14px]"
+              >Or 
                 <WhatsAppIcon className="h-4 w-4 flex-shrink-0 text-[#25D366]" />
                 Message us on WhatsApp — +91 74488 66675
               </a>
