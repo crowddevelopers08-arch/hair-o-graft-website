@@ -111,9 +111,18 @@ export default function AboutWelcomeSection() {
           </h1>
         </header>
 
-        <div className="relative mt-10 grid gap-10 max-sm:gap-5 sm:mt-14 lg:grid-cols-[0.95fr_1.08fr_0.75fr] lg:items-start lg:gap-16">
+        <div className="relative mt-10 grid gap-10 max-sm:gap-5 sm:mt-14 lg:grid-cols-[0.9fr_1.05fr_0.9fr] lg:items-start lg:gap-16">
+          <Image
+            src="/about-icons.png"
+            alt=""
+            aria-hidden
+            width={370}
+            height={467}
+            className="pointer-events-none absolute right-[28%] top-[-70px] hidden h-[320px] w-auto object-contain opacity-20 lg:block"
+          />
+
           <div className="relative mx-auto w-full max-w-[430px] lg:mx-0">
-            <div className="relative h-[430px] w-full overflow-hidden rounded-[280px_24px_24px_24px] sm:h-[540px]">
+            <div className="relative h-[430px] w-full overflow-hidden rounded-[24px_24px_24px_24px] sm:h-[540px]">
               <Image
                 src="/about-1.png"
                 alt="Hair O Graft clinic reception in Avadi"
@@ -124,7 +133,7 @@ export default function AboutWelcomeSection() {
               />
             </div>
 
-            <div className="absolute -bottom-8 -right-6 max-sm:-right-3 h-[150px] w-[120px] overflow-hidden rounded-[20px_20px_20px_84px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[150px]">
+            <div className="absolute -bottom-8 -right-6 max-sm:-right-3 h-[150px] w-[120px] overflow-hidden rounded-[20px_20px_20px_20px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[190px]">
               <Image
                 src="/about-2.png"
                 alt="Hair O Graft treatment care"
@@ -158,14 +167,26 @@ export default function AboutWelcomeSection() {
             </Link>
           </div>
 
-          <div className="relative hidden h-[430px] lg:block">
-            <Image
-              src="/about-icons.png"
-              alt=""
-              width={370}
-              height={467}
-              className="absolute right-0 top-[-150px] h-[360px] w-auto object-contain opacity-40"
-            />
+          <div className="relative mx-auto hidden w-full max-w-[430px] lg:mx-0 lg:ml-auto lg:block">
+            <div className="relative h-[430px] w-full overflow-hidden rounded-[24px_24px_24px_24px] sm:h-[540px]">
+              <Image
+                src="/about-2.png"
+                alt="Hair O Graft dental care in Avadi"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1023px) 90vw, 32vw"
+              />
+            </div>
+
+            <div className="absolute -bottom-8 -left-6 max-sm:-left-3 h-[150px] w-[150px] overflow-hidden rounded-[20px_20px_20px_20px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[180px]">
+              <Image
+                src="/about-1.png"
+                alt="Hair O Graft treatment care"
+                fill
+                className="object-cover object-center"
+                sizes="150px"
+              />
+            </div>
           </div>
         </div>
       </div>

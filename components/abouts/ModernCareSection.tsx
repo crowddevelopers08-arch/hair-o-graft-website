@@ -39,11 +39,7 @@ const carePrinciples = [
 
 export default function ModernCareSection() {
   return (
-    <section
-      className="relative isolate overflow-hidden bg-[#0D1B52] bg-cover bg-center bg-fixed px-4 py-10 sm:px-6 sm:py-20 lg:px-10 lg:py-10"
-      style={{ backgroundImage: "url('/contact-use.png')" }}
-    >
-      <div className="absolute inset-0 -z-10 bg-[#0D1B52]/90" aria-hidden />
+    <section className="relative isolate overflow-hidden bg-[#0D1B52] px-4 py-10 sm:px-6 sm:py-20 lg:px-10 lg:py-10">
       <div className="relative mx-auto max-w-[1280px]">
         <header className="mx-auto max-sm:mt-2 max-w-[850px] text-center">
           <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
@@ -74,8 +70,8 @@ export default function ModernCareSection() {
           </p>
         </header>
 
-        <div className="mt-10 max-sm:mt-5 grid gap-10 max-sm:gap-5 lg:mt-8 lg:grid-cols-[1fr_1.1fr] lg:items-center lg:gap-16">
-          <div className="group relative aspect-[16/12] overflow-hidden rounded-[28px] shadow-[0_24px_70px_rgba(0,0,0,0.16)] lg:aspect-[4/5]">
+        <div className="mt-8 max-sm:mt-5 flex flex-col gap-10 max-sm:gap-5 lg:mt-4 lg:flex-row lg:items-center lg:gap-16">
+          <div className="group relative aspect-[16/12] overflow-hidden rounded-[28px] lg:aspect-auto lg:h-[380px] lg:w-1/2 lg:shrink-0">
             <Image
               src="/modern.png"
               alt="Modern treatment technology at Hair O Graft"
@@ -87,9 +83,17 @@ export default function ModernCareSection() {
             <span className="absolute left-6 top-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#ED3136] text-white shadow-[0_10px_25px_rgba(237,49,54,0.3)]">
               <TechnologyIcon />
             </span>
+
+            <div className="absolute inset-x-0 bottom-0 p-6 sm:p-7">
+              <h3 className="text-[20px] font-bold text-white sm:text-[22px]">The care</h3>
+              <p className="mt-1 text-[13px] leading-6 text-white/80 sm:text-[14px]">
+                Technology is only half of it. The rest is how you&rsquo;re treated from the
+                moment you walk in.
+              </p>
+            </div>
           </div>
 
-          <div>
+          <div className="min-w-0 lg:flex lg:h-full lg:w-1/2 lg:shrink-0 lg:flex-col lg:justify-center">
             <h3 className="text-[22px] font-bold text-white sm:text-[25px]">The technology</h3>
             <p className="mt-1 text-[14px] leading-7 text-white/70 sm:text-[15px]">
               Our skin, hair and dental treatments are carried out using German Trichology
@@ -98,37 +102,32 @@ export default function ModernCareSection() {
               right treatment matters far more than simply having a machine.
             </p>
 
-            <div className="my-4 flex items-center gap-3" aria-hidden>
-              <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
-              <span className="h-px flex-1 bg-white/10" />
-            </div>
-            <h3 className="mt-2 text-[22px] font-bold text-white sm:text-[25px]">The care</h3>
-            <p className="mt-1 text-[15px] leading-7 text-white/70">
-              Technology is only half of it. The rest is how you&rsquo;re treated from the moment
-              you walk in.
-            </p>
-
-            <div className="mt-3 grid gap-3 sm:grid-cols-2 sm:gap-4">
-              {carePrinciples.map((item, index) => {
-                const accent = index % 2 === 0 ? "#354C9C" : "#ED3136";
-                return (
-                  <div
-                    key={item.title}
-                    className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-colors duration-200 hover:border-white/25 hover:bg-white/[0.08] sm:p-5"
-                  >
-                    <span
-                      className="flex h-8 w-8 items-center justify-center rounded-full text-[12px] font-bold text-white"
-                      style={{ backgroundColor: accent }}
+            <div className="mt-4 overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_5%,black_95%,transparent)]">
+              <div
+                className="marquee-track gap-3 sm:gap-4"
+                style={{ animationDuration: "32s" }}
+              >
+                {[...carePrinciples, ...carePrinciples].map((item, index) => {
+                  const accent = index % 2 === 0 ? "#354C9C" : "#ED3136";
+                  return (
+                    <div
+                      key={`${item.title}-${index}`}
+                      className="w-[230px] shrink-0 rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-colors duration-200 hover:border-white/25 hover:bg-white/[0.08] sm:w-[260px] sm:p-5"
                     >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <p className="mt-3 text-[14px] leading-6 text-white/70">
-                      <strong className="font-bold text-white">{item.title}</strong>{" "}
-                      {item.text}
-                    </p>
-                  </div>
-                );
-              })}
+                      <span
+                        className="flex h-8 w-8 items-center justify-center rounded-full text-[12px] font-bold text-white"
+                        style={{ backgroundColor: accent }}
+                      >
+                        {String((index % carePrinciples.length) + 1).padStart(2, "0")}
+                      </span>
+                      <p className="mt-1 text-[14px] leading-6 text-white/70">
+                        <strong className="font-bold text-white">{item.title}</strong>{" "}
+                        {item.text}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

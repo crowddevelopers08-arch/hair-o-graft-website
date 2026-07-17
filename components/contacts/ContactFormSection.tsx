@@ -40,9 +40,9 @@ export default function ContactFormSection() {
   }
 
   return (
-    <section className="px-4 max-sm:pb-5 sm:px-6 sm:py-10 lg:px-10 lg:py-10">
+    <section className="px-4 max-sm:pb-5 sm:px-6 sm:py-10 lg:px-10 lg:py-8">
       <div className="mx-auto grid max-w-[1280px] overflow-hidden rounded-[30px] bg-white shadow-[0_28px_80px_rgba(13,27,82,0.12)] lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="relative min-h-[360px] overflow-hidden sm:min-h-[440px] lg:min-h-[580px]">
+        <div className="relative min-h-[360px] overflow-hidden sm:min-h-[440px] lg:min-h-[400px]">
           <Image
             src="/contact-us.png"
             alt="Hair O Graft clinic reception"
@@ -53,7 +53,7 @@ export default function ContactFormSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-[#07102E]/95 via-[#07102E]/30 to-transparent" aria-hidden />
         </div>
 
-        <div className="p-6 sm:p-9 lg:p-12">
+        <div className="p-6 sm:p-4 lg:py-5 lg:px-10">
           <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#111836]">
             <span aria-hidden className="flex items-center gap-1.5">
               <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
@@ -65,14 +65,14 @@ export default function ContactFormSection() {
               <span className="h-1.5 w-1.5 rotate-45 bg-[#ED3136]" />
             </span>
           </span>
-          <h2 className="mt-3 text-[28px] font-extrabold leading-tight tracking-tight text-[#111836] sm:text-[36px] lg:text-[42px]">
+          <h2 className="mt-1 text-[28px] font-extrabold leading-tight tracking-tight text-[#111836] sm:text-[36px] lg:text-[42px]">
             Book your consultation
           </h2>
           <p className="mt-1 max-w-[560px] text-[15px] leading-7 text-[#666C7E]">
             Tell us what you&rsquo;d like help with, and our team will guide you towards the right specialist.
           </p>
 
-          <form onSubmit={handleSubmit} className="mt-2 grid gap-5 sm:grid-cols-2">
+          <form onSubmit={handleSubmit} className="mt-2 grid gap-3 sm:grid-cols-2">
             <label className="text-[13px] font-bold text-[#242A45]">
               Full Name
               <input className={inputClass} type="text" name="name" placeholder="Enter your name" autoComplete="name" required />
@@ -107,7 +107,7 @@ export default function ContactFormSection() {
             <div className="sm:col-span-2">
               <button
                 type="submit"
-                className="inline-flex w-full items-center justify-center rounded-full bg-[#ED3136] px-7 py-4 text-[14px] font-bold text-white shadow-[0_14px_30px_rgba(237,49,54,0.24)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E] sm:w-auto"
+                className="inline-flex w-full items-center justify-center rounded-full bg-[#ED3136] px-7 py-4 text-[14px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E] sm:w-auto"
               >
                 Submit Enquiry
               </button>

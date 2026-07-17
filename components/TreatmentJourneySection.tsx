@@ -182,12 +182,14 @@ export default function TreatmentJourneySection() {
         <div className="mt-8 max-sm:mt-1 grid grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] gap-x-3 gap-y-6 sm:mt-5 sm:grid-cols-1 sm:gap-10 lg:grid-cols-2 lg:items-stretch lg:gap-14">
           <div key={tab.key} className="contents sm:block sm:animate-[fade-up_0.5s_cubic-bezier(0.16,1,0.3,1)_both]">
             <div className="order-1 col-span-2 sm:order-none">
-              <span className="hidden h-14 w-14 items-center justify-center rounded-full sm:flex" style={{ backgroundColor: `${ACCENT}22`, color: ACCENT }}>
-                <TreatmentIcon src={tab.icon} className="h-8 w-8" />
-              </span>
-              <h3 className="mt-4 text-[20px] font-bold text-white sm:text-[22px]">
-                {tab.label}
-              </h3>
+              <div className="lg:flex lg:items-center lg:gap-4">
+                <span className="hidden h-14 w-14 items-center justify-center rounded-full sm:flex" style={{ backgroundColor: `${ACCENT}22`, color: ACCENT }}>
+                  <TreatmentIcon src={tab.icon} className="h-8 w-8" />
+                </span>
+                <h3 className="mt-4 text-[20px] font-bold text-white sm:text-[22px] lg:mt-0">
+                  {tab.label}
+                </h3>
+              </div>
               <p className="mt-2 max-w-[440px] text-[14px] leading-relaxed text-white/60 sm:text-[15px]">
                 {tab.text}
               </p>
@@ -201,7 +203,7 @@ export default function TreatmentJourneySection() {
                 >
                   <Link
                     href={item.href}
-                    className="group flex h-full min-h-[54px] items-center justify-between gap-2 px-3 py-2.5 text-[12px] font-semibold leading-tight text-white/85 transition-colors duration-200 hover:text-white sm:min-h-[64px] sm:px-4 sm:text-[13px]"
+                    className="group flex h-full min-h-[54px] items-center justify-between gap-2 px-2 py-1.5 text-[12px] font-semibold leading-tight text-white/85 transition-colors duration-200 hover:text-white sm:min-h-[44px] sm:px-3 sm:text-[13px]"
                   >
                     {item.label}
                     <ArrowRight
