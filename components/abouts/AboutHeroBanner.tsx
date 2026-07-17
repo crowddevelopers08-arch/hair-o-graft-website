@@ -14,7 +14,7 @@ export default function AboutHeroBanner() {
   return (
     <section className="relative flex min-h-[300px] items-center justify-center overflow-hidden sm:min-h-[360px] lg:min-h-[430px]">
       <Image
-        src="/contact-use.png"
+        src="/contact-image.png"
         alt="Hair O Graft clinic reception"
         fill
         priority

@@ -88,7 +88,7 @@ export default function AboutSection() {
           <div className="relative aspect-square sm:aspect-auto sm:h-[440px] lg:h-[650px]">
             <div className="absolute left-0 top-0 h-[80%] w-[95%] overflow-hidden rounded-[24px] border-[3px] border-white">
               <Image
-                src="/clinic-image2.png"
+                src="/clinic-image-1.png"
                 alt="Hair O Graft treatment in progress"
                 fill
                 className="object-cover object-left-bottom"
@@ -98,7 +98,7 @@ export default function AboutSection() {
 
             <div className="absolute bottom-0 right-0 h-[40%] w-[58%] overflow-hidden rounded-[20px] border-[3px] border-white sm:right-[-10%]">
               <Image
-                src="/clinic-image1.png"
+                src="/clinic-image-2.png"
                 alt="Hair O Graft clinic equipment"
                 fill
                 className="object-cover object-left-top"

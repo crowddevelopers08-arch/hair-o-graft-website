@@ -75,13 +75,13 @@ export default function Footer() {
             </p>
 
             <div className="flex items-center gap-2.5">
-              <a href="#" aria-label="Instagram"
+              <a href="https://www.instagram.com/hairograft/" aria-label="Instagram" target="_blank"
                 className="w-9 h-9 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center
                            hover:bg-[#FEEA1B] hover:border-[#FEEA1B] hover:text-[#0f1320] text-white/60
                            transition-all duration-200">
                 <InstagramIcon className="w-3.5 h-3.5" />
               </a>
-              <a href="#" aria-label="Facebook"
+              <a href="https://www.facebook.com/profile.php?id=61588733498323" aria-label="Facebook" target="_blank"
                 className="w-9 h-9 rounded-xl border border-white/10 bg-white/5 flex items-center justify-center
                            hover:bg-[#FEEA1B] hover:border-[#FEEA1B] hover:text-[#0f1320] text-white/60
                            transition-all duration-200">

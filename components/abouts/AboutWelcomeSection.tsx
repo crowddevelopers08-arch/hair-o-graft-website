@@ -116,7 +116,7 @@ export default function AboutWelcomeSection() {
           <div className="relative mx-auto w-full max-w-[430px] lg:mx-0">
             <div className="relative h-[430px] w-full overflow-hidden rounded-[24px_24px_24px_24px] sm:h-[540px]">
               <Image
-                src="/about-1.png"
+                src="/about-image-1.png"
                 alt="Hair O Graft clinic reception in Avadi"
                 fill
                 priority

@@ -51,10 +51,28 @@ export default function ConsultationCTASection() {
     <section className="px-4 py-10 sm:px-6 sm:py-12 md:px-8 lg:px-10 lg:py-16">
       <div className="relative mx-auto max-w-[1400px] overflow-hidden rounded-[32px]">
         <div className="absolute inset-0">
-          <Image src="/cta-consultation.png" alt="Hair O Graft consultation" fill className="object-cover" />
+          <Image
+            src="/cta-consultation-mb.png"
+            alt="Hair O Graft consultation"
+            fill
+            className="object-cover sm:hidden"
+          />
+          <Image
+            src="/cta-consultation.png"
+            alt="Hair O Graft consultation"
+            fill
+            className="hidden object-cover sm:block object-left-top"
+          />
         </div>
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 sm:hidden"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(13,27,82,0.72) 0%, rgba(13,27,82,0.48) 32%, rgba(13,27,82,0.62) 60%, rgba(13,27,82,0.9) 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-0 hidden sm:block"
           style={{
             background:
               "linear-gradient(90deg, rgba(13,27,82,0.97) 0%, rgba(20,28,96,0.94) 40%, rgba(20,28,96,0.65) 62%, rgba(20,28,96,0.2) 85%, rgba(20,28,96,0) 100%)",
@@ -62,8 +80,8 @@ export default function ConsultationCTASection() {
         />
 
         <div className="relative z-10 px-6 py-10 sm:px-10 sm:py-12 md:px-12 md:py-14 lg:px-16 lg:py-16">
-          <div className="max-w-[600px]">
-            <span className="inline-flex items-center gap-3 text-[12px] font-bold uppercase tracking-[0.18em] text-[#ED3136]">
+          <div className="max-w-[600px] [text-shadow:0_2px_10px_rgba(6,12,42,0.75)] sm:[text-shadow:none]">
+            <span className="inline-flex items-center gap-3 text-[8px] font-bold uppercase tracking-[0.18em] text-[#ED3136] min-[375px]:text-[11px] min-[425px]:text-[13px] ">
               <span aria-hidden className="flex items-center gap-1.5">
                 <span className="h-1.5 w-1.5 rotate-45 bg-white" />
                 <span className="h-px w-6 bg-white/40" />
@@ -97,7 +115,7 @@ export default function ConsultationCTASection() {
               </span>
             </h2>
 
-            <p className="mt-4 max-w-[500px] text-[15px] leading-relaxed text-white/70 sm:text-[16px]">
+            <p className="mt-4 max-w-[500px] text-[15px] leading-relaxed text-white sm:text-[16px]">
               Whether it&rsquo;s your hair, your skin or your smile, book a consultation
               and let&rsquo;s find the right plan for you.
             </p>
@@ -108,7 +126,7 @@ export default function ConsultationCTASection() {
                   <PhoneIcon className="h-4 w-4 flex-shrink-0" />
                   Call Us:
                 </p>
-                <a href="tel:+917448866675" className="mt-1 block text-[14px] text-white/70 transition-colors hover:text-white sm:text-[15px]">
+                <a href="tel:+917448866675" className="mt-1 block text-[14px] text-white transition-colors hover:text-white sm:text-[15px]">
                   +91 74488 66675
                 </a>
               </div>
@@ -120,7 +138,7 @@ export default function ConsultationCTASection() {
                   <MailIcon className="h-4 w-4 flex-shrink-0" />
                   E-mail Us:
                 </p>
-                <a href="mailto:hairograft@gmail.com" className="mt-1 block text-[14px] text-white/70 transition-colors hover:text-white sm:text-[15px]">
+                <a href="mailto:hairograft@gmail.com" className="mt-1 block text-[14px] text-white transition-colors hover:text-white sm:text-[15px]">
                   hairograft@gmail.com
                 </a>
               </div>
@@ -164,7 +182,7 @@ export default function ConsultationCTASection() {
                 className="inline-flex items-center gap-2 text-[14px] font-semibold text-white/70 transition-colors hover:text-white"
               >
                 <WhatsAppIcon className="h-4 w-4 flex-shrink-0 text-[#25D366]" />
-                Or message us on WhatsApp — +91 74488 66675
+                Message us on WhatsApp — +91 74488 66675
               </a>
             </div>
           </div>
