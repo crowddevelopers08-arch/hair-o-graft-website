@@ -112,14 +112,6 @@ export default function AboutWelcomeSection() {
         </header>
 
         <div className="relative mt-10 grid gap-10 max-sm:gap-5 sm:mt-14 lg:grid-cols-[0.9fr_1.05fr_0.9fr] lg:items-start lg:gap-16">
-          <Image
-            src="/about-icons.png"
-            alt=""
-            aria-hidden
-            width={370}
-            height={467}
-            className="pointer-events-none absolute right-[28%] top-[-70px] hidden h-[320px] w-auto object-contain opacity-20 lg:block"
-          />
 
           <div className="relative mx-auto w-full max-w-[430px] lg:mx-0">
             <div className="relative h-[430px] w-full overflow-hidden rounded-[24px_24px_24px_24px] sm:h-[540px]">
@@ -144,7 +136,7 @@ export default function AboutWelcomeSection() {
             </div>
           </div>
 
-          <div className="lg:pt-10">
+          <div className="text-center lg:pt-10">
             <p className="text-[15px] max-sm:mt-3 leading-8 text-[#52566A] sm:text-[16px]">
               Hair O Graft began with a simple frustration: most people have to visit three
               different places for three different concerns—a dermatologist for their skin,
@@ -161,7 +153,7 @@ export default function AboutWelcomeSection() {
 
             <Link
               href="/contact"
-              className="mt-9 max-sm:mt-3 inline-flex items-center rounded-full bg-[#ED3136] px-7 py-3.5 text-[14px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E]"
+              className="mt-9 max-sm:mt-3 inline-flex justify-center items-center rounded-full bg-[#ED3136] px-7 py-3.5 text-[14px] font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#C92A2E]"
             >
               Book a Consultation
             </Link>
