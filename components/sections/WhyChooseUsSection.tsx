@@ -23,7 +23,7 @@ export default function WhyChooseUsSection() {
     <section
       className="relative overflow-hidden"
       style={{
-        backgroundImage:    "url('/whyy.png')",
+        backgroundImage:    "url('/HydraFacial-image.png')",
         backgroundSize:     "cover",
         backgroundPosition: "right center",
         backgroundRepeat:   "no-repeat",

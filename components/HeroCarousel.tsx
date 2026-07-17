@@ -26,7 +26,7 @@ const slides: Slide[] = [
     ctaHref: "/contact",
   },
   {
-    image: "/banners-1.png",
+    image: "/ban-hero.png",
     mobileImage: "/skin-mb.png",
     tabletImage: "/skin-tab.png",
     badge: "SKIN & AESTHETICS",
@@ -36,7 +36,7 @@ const slides: Slide[] = [
     ctaHref: "/contact",
   },
   {
-    image: "/banners-2.png",
+    image: "/dental-lap.png",
     mobileImage: "/banners-mb.png",
     tabletImage: "/banners-tab.png",
     badge: "DENTAL CARE",
