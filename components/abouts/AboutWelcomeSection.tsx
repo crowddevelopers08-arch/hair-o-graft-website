@@ -116,7 +116,7 @@ export default function AboutWelcomeSection() {
           <div className="relative mx-auto w-full max-w-[430px] lg:mx-0">
             <div className="relative h-[430px] w-full overflow-hidden rounded-[24px_24px_24px_24px] sm:h-[540px]">
               <Image
-                src="/about-image-1.png"
+                src="image-abouts.png"
                 alt="Hair O Graft clinic reception in Avadi"
                 fill
                 priority
@@ -127,7 +127,7 @@ export default function AboutWelcomeSection() {
 
             <div className="absolute -bottom-8 -right-6 max-sm:-right-3 h-[150px] w-[120px] overflow-hidden rounded-[20px_20px_20px_20px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[190px]">
               <Image
-                src="/about-2.png"
+                src="/image-about.png"
                 alt="Hair O Graft treatment care"
                 fill
                 className="object-cover object-center"
@@ -162,7 +162,7 @@ export default function AboutWelcomeSection() {
           <div className="relative mx-auto hidden w-full max-w-[430px] lg:mx-0 lg:ml-auto lg:block">
             <div className="relative h-[430px] w-full overflow-hidden rounded-[24px_24px_24px_24px] sm:h-[540px]">
               <Image
-                src="/about-2.png"
+                src="/image-about.png"
                 alt="Hair O Graft dental care in Avadi"
                 fill
                 className="object-cover object-center"
@@ -172,7 +172,7 @@ export default function AboutWelcomeSection() {
 
             <div className="absolute -bottom-8 -left-6 max-sm:-left-3 h-[150px] w-[150px] overflow-hidden rounded-[20px_20px_20px_20px] border-4 border-[#FAF9F7] shadow-[0_18px_45px_rgba(13,27,82,0.12)] sm:h-[190px] sm:w-[180px]">
               <Image
-                src="/about-1.png"
+                src="/image-abouts.png"
                 alt="Hair O Graft treatment care"
                 fill
                 className="object-cover object-center"

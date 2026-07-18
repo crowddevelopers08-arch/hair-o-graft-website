@@ -50,7 +50,7 @@ const tabs = [
     label: "Hair Restoration & Growth",
     icon: "/hair-icons.png",
     text: "Target the root cause of thinning and hair loss with personalised, evidence-based care.",
-    image: "/hair-restore.png",
+    image: "/solution-hair.png",
     items: [
       { label: "GFC", href: "/services/hair-treatments/gfc" },
       { label: "PRP", href: "/services/hair-treatments/prp" },
@@ -64,7 +64,7 @@ const tabs = [
     label: "Skin & Aesthetics",
     icon: "/skin-icon.png",
     text: "Dermatology-led treatments for clearer, healthier skin, matched to your skin type.",
-    image: "/Skin-Aesthetics.png",
+    image: "/solution-skin.png",
     items: [
       { label: "HydraFacial", href: "/services/skin-treatments/hydrafacial" },
       { label: "Acne & Scar Removal", href: "/services/skin-treatments/acne-scar-removal" },
@@ -78,7 +78,7 @@ const tabs = [
     label: "Dental Care",
     icon: "/dental-icon.png",
     text: "Complete care for the whole family, from everyday fixes to a confident smile.",
-    image: "/process-dental.png",
+    image: "/solution-dental.png",
     items: [
       { label: "Aligners", href: "/services/dental-treatments/aligners" },
       { label: "Root Canal", href: "/services/dental-treatments/root-canal" },
